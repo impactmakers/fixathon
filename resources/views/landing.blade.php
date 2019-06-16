@@ -60,7 +60,7 @@
           <div class="col-12 col-sm-4 col-lg-3">
             <img alt="Prizes" src="./imgs/icons/trophy.png" style='width:42px;'>
             <h5 class='pt-2 mb-0'><strong>Prizes</strong></h5>
-            <p>+500$ <small>(up to more)</small></p>
+            <p>Thousands in cash to be won</p>
           </div>
 
           <div class="col-12 col-sm-4 col-lg-3">
@@ -69,11 +69,6 @@
             <p>Open to Everyone</p>
           </div>
         </div>
-
-        <p class="mt-4" style='display: none;'>
-            <a href="{{ route('register') }}" class="btn btn-success btn-lg px-5 py-2">Register Now</a>
-        </p>
-
 
         <div class="container register-box" style="background-image:url('imgs/icons/cup_alpha.png');">
             <h3 class="event-date col-9">
@@ -87,7 +82,7 @@
               <div class="form-error" col-8=""></div>      
             </form>
 
-            <div class="col-9 mx-auto px-0 text-left"><small>You will recieve all the info in your inbox by 10th July</small></div>
+            <div class="col-9 mx-auto px-0 text-left"><small>Full details announced soon. Subscribe to get notified</small></div>
         </div>  
 
       </div>
