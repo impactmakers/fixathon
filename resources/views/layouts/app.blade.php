@@ -3,19 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Fixathon') }}</title>
+    <meta name="description" content="Global hackathon for tech makers to help prevent climate breakdown">
+    <meta name="keywords" content="hackathon,tech,climate change,climate emergency,climate breakdown,programmers,climate,event,global,makers,products">
+    <meta name="Distribution" content="global"/>
+    <meta name="Robots" content="all"/>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fixathon">
+    <meta name="twitter:title" content="Fixathon - Global hackathon for Climate Change">
+    <meta name="twitter:description" content="Global hackathon for tech makers to help prevent climate breakdown">
+    <meta name="twitter:creator" content="@fixathon">
+    <meta name="twitter:image:src" content="{{asset('img/logo_sm.png')}}">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Fixathon - Global hackathon for Climate Change" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="http://fixathon.io" />
+    <meta property="og:image" content="{{asset('img/logo_sm.png')}}" />
+    <meta property="og:description" content="Global hackathon for tech makers to help prevent climate breakdown" />
+    <meta name="theme-color" content="#325d42"/>
     
-    <!-- Styles -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -71,9 +83,12 @@
             </div>
         </nav>
 
+        @include('partials.header')
         <main>
             @yield('content')
         </main>
+        @include('partials.footer')
     </div>
 </body>
+<script src="{{ asset('js/app.js') }}" defer></script>
 </html>

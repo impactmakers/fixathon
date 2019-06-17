@@ -1,10 +1,7 @@
 // Fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
 @import 'variables';
-
-// Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
 html{
@@ -161,4 +158,69 @@ html{
 
 h1 strong{
 	font-weight:600;
+}
+
+.nav-item:hover{
+	text-decoration: underline;
+}
+
+.icon-action:hover span{
+	filter:none;
+}
+
+/* avatars */
+
+.avatar{
+    font-size: 1rem;
+    display: inline-flex;
+    width: 48px; 
+    height: 48px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #adb5bd;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img{
+    width: 100%;
+
+    border-radius: 50%;
+}
+
+.avatar + .avatar-content {
+    display: inline-block;
+    margin-left: .75rem;
+}
+
+.avatar-lg {
+    font-size: .875rem; 
+    width: 58px;
+    height: 58px;
+}
+
+.avatar-sm {
+    font-size: .875rem; 
+    width: 38px;
+    height: 38px;
+}
+
+.avatar-xs {
+    font-size: .5rem;
+    width:20px;
+    height:20px;
+}
+
+.avatar-group .avatar {
+    position: relative;
+    z-index: 2;
+    border: 2px solid #fff;
+}
+
+.avatar-group .avatar:hover{
+    z-index: 3;
+}
+
+.avatar-group .avatar + .avatar {
+    margin-left: -1rem;
 }
