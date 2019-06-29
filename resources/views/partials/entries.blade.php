@@ -1,15 +1,15 @@
 <!-- ENTRIES -->
 <section class="my-5 py-5 bg-light" id='entries'>
-  <div class="row text-center justify-content-center mb-3 pt-3">
-      <div class="col-8">
-        <h2>Entries</h2>
-        <p class="lead">
-        	Impact makers are building this amazing products to fight Climate breakdown. Check them & start building yours! 
-        </p>
-      </div>
-  </div>
-
   <div class="container py-3">
+    <div class="row text-center justify-content-center mb-3 pt-3">
+        <div class="col-8">
+          <h2>Entries</h2>
+          <p class="lead">
+          	Impact makers are building this amazing products to fight Climate breakdown. Check them & start building yours! 
+          </p>
+        </div>
+    </div>
+
     <div class="row row-eq-height justify-content-center">
       <div class="col-6 col-md-4 col-lg-3">
         <div class="card shadow-sm shadow-lg--hover min-height-100 p-2">
