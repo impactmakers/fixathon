@@ -1765,7 +1765,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      ideas: ['Make easier for everybody to move to renowable energy', 'Create a marketplace for CO2', 'Improve deliveries inside cities', 'Reuse food waste', 'Help protect & extend mangrooves', 'Raise awareness about Climate Emergency', 'create platforms for reforestation', 'help bees', 'drones that plant trees']
+      ideas: ['Make easier to move to renowable energy', 'Create a marketplace for CO2', 'Improve deliveries inside cities', 'Reuse food waste', 'Help protect & extend mangrooves', 'Raise awareness about Climate Emergency', 'create platforms for reforestation', 'help bees', 'drones that plant trees', 'technology to detect water leaks', 'Green your commute', 'ways to invest in coral saving', 'enable recycling and conversion of food waste', 'development of green roofs', 'climate education projects']
     };
   }
 });
@@ -37092,12 +37092,16 @@ var render = function() {
     _vm._l(_vm.ideas, function(idea) {
       return _c(
         "div",
-        { staticClass: "col-4 col-sm-3 col-md-4 col-lg-2 mb-3" },
+        { staticClass: "col-4 col-sm-3 col-md-4 col-lg-2 mb-3 min-height-100" },
         [
           _c(
             "div",
-            { staticClass: "card text-center p-3 shadow-sm shadow-lg--hover" },
-            [_vm._v("\n            " + _vm._s(idea) + "\n        ")]
+            {
+              staticClass:
+                "card text-center p-3 shadow-sm shadow-lg--hover min-height-100",
+              staticStyle: { "min-height": "150px" }
+            },
+            [_c("p", { staticClass: "my-auto" }, [_vm._v(_vm._s(idea))])]
           )
         ]
       )

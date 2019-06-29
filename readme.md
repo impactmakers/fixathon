@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://fixathon.io/assets/images/image01.png?v21097705510651" style='width:150px'>
+	<img src="https://fixathon.io/assets/images/image01.png?v21097705510651" width='150'>
 </p>
 
 ## About 
