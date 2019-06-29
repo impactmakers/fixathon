@@ -13,21 +13,34 @@ It will be announced on 10th June and start on 2nd August lasting four weeks. Te
 - Action: Help people take action against climate breakdown.
 - Facilitation: Make Climate Emergency projects easier to create in the future. 
 
-## Prizes
+## Installation & Setup
 
-TBD
+- Download the repo
+- PHP & Composer is required for local development
+- Run `composer install` && `npm install`
+- Folders `/bootstrap/cache` & `/storage` should be writable 
+- Create .env from .env.example and edit with your config (DB)
+- Paste the App_Key from running: `php artisan key:generate` in the .env file
+- Run `php artisan migrate` to auto-generate the DB
+- Run `php artisan serve` to have a local dev server running on localhost:8000
+- Run `npm run watch` to have auto generate css,js files
 
-## Judges
+## Folders Structure
 
-- Simon Collison: Designer, writer, occasional speaker. Director of New Adventures @naconf.
-- Michelle Thorne: Senior Program Officer at the Mozilla Foundation. Currently interested in making the internet carbon-neutral.
-- Anne-Laure Le Cunff: Founder @ness_labs • Running @makermag • msc #neuroscience candidate • scout @BackedVC • ex @google • creator of #diversity30.
+The main folder is 'resources' where all the views, JS & css resides.
 
-## Sponsors
+- /app: The controllers (/app/http) & models (like User.php)
+- /config: Configuration files for the Laravel framework
+- /public: the generated files from Vue, Blade, SCSS... Do not edit
+- /resources
+	/js: The VueJs files. The components are loaded from app.js, the resulting file is 'public/js/app.js'.
+	/sass: It mix the Bootstrap files + _variables.scss files with the inline css classes in the file. The resulting file is 'public/css/app.css'.
+	/views: The frontend files
+		- /auth: The login, register, remember password, etc. files
+		- /layouts: app.blade.php the keystone file that loads the header, footer & content
+		- /partials: reusable files (like Header, Footer, sections, etc)
+- /routes: The web.php routes the HTTP request with the controller/view
 
-TBD
 
 ## License
-
 Fixathon is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
