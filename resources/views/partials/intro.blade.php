@@ -1,7 +1,7 @@
 <!-- INTRO -->
-<section class="py-5">
-  <img class='d-none d-lg-block pb-5' src="{{asset('img/world.png')}}" style='height: 100%;position:absolute;left:-350px;opacity:0.25;margin-top:-15px;' />
-  <div class="container pt-3">
+
+<section class="container intro__container">
+  <div class="inner intro__inner">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 text-center pb-md-5">
         <h1>

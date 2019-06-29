@@ -1,0 +1,294 @@
+// Mixins
+// --------------------------------------------------
+
+@mixin section-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include mq('tablet') {
+    width: 50%;
+  }
+  @include mq('desktop') {
+    width: 40%;
+  }
+}
+
+@mixin page-top {
+  padding-top: 20px;
+  @include mq('tablet') {
+    padding-top: 40px;
+  }
+  @include mq('desktop') {
+    padding-top: 60px;
+  }
+}
+
+/* Spacing - Standard */
+
+// Spacing Variables
+
+$space-small-mobile: 10px;
+$space-small-tablet: 15px;
+$space-small-desktop: 20px;
+
+$space-standard-mobile: 20px;
+$space-standard-tablet: 30px;
+$space-standard-desktop: 40px;
+
+$space-large-mobile: 40px;
+$space-large-tablet: 60px;
+$space-large-desktop: 80px;
+
+@mixin pad-top-standard {
+  padding-top: $space-standard-mobile;
+  @include mq('tablet') {
+    padding-top: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    padding-top: $space-standard-desktop;
+  }
+}
+
+@mixin mar-top-standard {
+  margin-top: $space-standard-mobile;
+  @include mq('tablet') {
+    margin-top: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    margin-top: $space-standard-desktop;
+  }
+}
+
+@mixin pad-bot-standard {
+  padding-bottom: $space-standard-mobile;
+  @include mq('tablet') {
+    padding-bottom: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    padding-bottom: $space-standard-desktop;
+  }
+}
+
+@mixin mar-bot-standard {
+  margin-bottom: $space-standard-mobile;
+  @include mq('tablet') {
+    margin-bottom: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    margin-bottom: $space-standard-desktop;
+  }
+}
+
+@mixin pad-left-standard {
+  padding-left: $space-standard-mobile;
+  @include mq('tablet') {
+    padding-left: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    padding-left: $space-standard-desktop;
+  }
+}
+@mixin pad-right-standard {
+  padding-right: $space-standard-mobile;
+  @include mq('tablet') {
+    padding-right: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    padding-right: $space-standard-desktop;
+  }
+}
+
+@mixin mar-right-standard {
+  margin-right: $space-standard-mobile;
+  @include mq('tablet') {
+    margin-right: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    margin-right: $space-standard-desktop;
+  }
+}
+
+@mixin mar-left-standard {
+  margin-left: $space-standard-mobile;
+  @include mq('tablet') {
+    margin-left: $space-standard-tablet;
+  }
+  @include mq('desktop') {
+    margin-left: $space-standard-desktop;
+  }
+}
+
+/* Spacing - Large */
+
+@mixin pad-top-large {
+  padding-top: $space-large-mobile;
+  @include mq('tablet') {
+    padding-top: $space-large-tablet;
+  }
+  @include mq('desktop') {
+    padding-top: $space-large-desktop;
+  }
+}
+
+@mixin mar-top-large {
+  margin-top: $space-large-mobile;
+  @include mq('tablet') {
+    margin-top: $space-large-tablet;
+  }
+  @include mq('desktop') {
+    margin-top: $space-large-desktop;
+  }
+}
+
+@mixin pad-bot-large {
+  padding-bottom: $space-large-mobile;
+  @include mq('tablet') {
+    padding-bottom: $space-large-tablet;
+  }
+  @include mq('desktop') {
+    padding-bottom: $space-large-desktop;
+  }
+}
+
+@mixin mar-bot-large {
+  margin-bottom: $space-large-mobile;
+  @include mq('tablet') {
+    margin-bottom: $space-large-tablet;
+  }
+  @include mq('desktop') {
+    margin-bottom: $space-large-desktop;
+  }
+}
+
+/* Spacing - Small */
+
+@mixin pad-top-small {
+  padding-top: $space-small-mobile;
+  @include mq('tablet') {
+    padding-top: 30px;
+  }
+  @include mq('desktop') {
+    padding-top: 40px;
+  }
+}
+
+@mixin mar-top-small {
+  margin-top: $space-small-mobile;
+  @include mq('tablet') {
+    margin-top: $space-small-tablet;
+  }
+  @include mq('desktop') {
+    padding-top: $space-small-desktop;
+  }
+}
+
+@mixin pad-bot-small {
+  padding-bottom: $space-small-mobile;
+  @include mq('tablet') {
+    padding-bottom: $space-small-tablet;
+  }
+  @include mq('desktop') {
+    padding-top: $space-small-desktop;
+  }
+}
+
+@mixin mar-bot-small {
+  margin-bottom: $space-small-mobile;
+  @include mq('tablet') {
+    margin-bottom: $space-small-tablet;
+  }
+  @include mq('desktop') {
+    padding-top: $space-small-desktop;
+  }
+}
+
+// Media Queries
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if $type == max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+// Link States
+
+@mixin link-states {
+  a {
+    text-decoration: underline;
+    font-weight: 400;
+  }
+  a:hover {
+    color: $linkHover;
+    -webkit-transition: top 0.04s ease-out;
+    transition: top 0.04s ease-out;
+  }
+  a:active {
+    color: $linkActive;
+    position: relative;
+    top: 1px;
+  }
+}
+
+@mixin links-on-light {
+  a {
+    font-weight: 400;
+    text-decoration: underline;
+    color: $link;
+  }
+  @include link-states;
+}
+
+@mixin links-on-dark {
+  @include link-states;
+  a {
+    text-decoration: underline;
+    color: $white;
+  }
+  button {
+    text-decoration: underline;
+    color: $white;
+  }
+}
+
+@mixin no-underline {
+  text-decoration: none !important;
+  a {
+    text-decoration: none !important;
+  }
+  &:hover,
+  &.hover {
+    text-decoration: none !important;
+  }
+}
+
+@mixin no-border-link {
+  border: none !important;
+  text-decoration: none;
+  a {
+    border: none !important;
+  }
+  a:hover,
+  a.hover {
+    border: none !important;
+    -webkit-transition: top 0.04s ease-out;
+    transition: top 0.04s ease-out;
+  }
+  a:active {
+    border: none !important;
+    position: relative;
+    top: 1px;
+  }
+}
+
+@mixin white-box {
+  background: $white;
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.05);
+}

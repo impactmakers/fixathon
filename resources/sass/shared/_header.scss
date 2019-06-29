@@ -1,0 +1,124 @@
+.header__container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $black;
+    color: $white;
+}
+
+.header__inner {
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    flex-direction: row;
+}
+
+.navToggle {
+    display: flex;
+    background: none;
+    height: 30px;
+    fill: $white;
+    width: auto;
+    a {
+        fill: $white;
+    }
+    svg {
+        margin-left: 10px;
+    }
+    @include mq('tablet') {
+        display: none;
+    }
+}
+
+.logo {
+    margin: 0;
+    line-height: 0;
+    height: 44px;
+}
+
+.navList {
+    display: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    @include mq('tablet') {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.navListOpen {
+    width: 90%;
+    padding: 0 5% 40px;
+    display: flex;
+    height: auto;
+    text-align: center;
+    background-color: #0d1626;
+    position: absolute;
+    display: flex;
+    top: 66px;
+    z-index: 3;
+    left: 0;
+}
+
+.navItem {
+    width: 100%;
+    &:first-child {
+        margin-left: 0;
+        border-top: none;
+    }
+    @include mq('tablet') {
+        margin-left: 35px;
+        width: auto;
+    }
+}
+
+.navItemLink {
+    @include links-on-dark;
+    @include font-size($text-small);
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    border-top: 1px solid rgba($white, 0.2);
+    a {
+        line-height: 50px;
+        height: 50px;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-weight: normal;
+        text-decoration: none;
+    }
+    @include mq('tablet') {
+        border: none;
+        margin-top: 0;
+        display: flex;
+        width: auto;
+        a {
+            display: flex;
+            width: auto;
+        }
+    }
+}
+
+.navItemAction {
+    a {
+        text-decoration: none;
+        color: $white;
+        font-weight: bold;
+        background: #1f3357;
+        border-radius: 4px;
+    }
+    border-top: none;
+    margin: 2px auto 0;
+    @include mq('tablet') {
+        margin-left: 35px;
+    }
+}
