@@ -1220,6 +1220,7 @@ p a:active {
 
 .header__container {
   position: fixed;
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1656,8 +1657,37 @@ header.sticky {
   }
 }
 
-.intro__container {
+.top__container {
   padding-top: 200px;
+}
+
+.top__container.sticky {
+  padding-top: 160px;
+}
+
+.intro__inner {
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro__inner {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .intro__inner {
+    padding-top: 80px;
+  }
+}
+
+.intro__title {
+  text-align: center;
+  font-weight: normal;
 }
 
 .home-banner {

@@ -49504,6 +49504,13 @@ $(window).scroll(function () {
     $('.header__nav-item').removeClass('sticky');
   }
 });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 250) {
+    $('.intro__container').addClass('sticky');
+  } else {
+    $('.intro__container').removeClass('sticky');
+  }
+});
 
 /***/ }),
 

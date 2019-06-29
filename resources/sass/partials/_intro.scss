@@ -1,3 +1,23 @@
-.intro__container {
+.top__container {
     padding-top: 200px;
+}
+
+.top__container.sticky {
+    padding-top: 160px;
+}
+
+.intro__container {
+}
+
+.intro__inner {
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    @include pad-top-large;
+}
+
+.intro__title {
+    text-align: center;
+    font-weight: normal;
 }
