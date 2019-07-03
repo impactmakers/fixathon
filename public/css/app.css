@@ -1223,7 +1223,7 @@ p a:active {
   flex-direction: column;
   align-items: center;
   color: #02124f;
-  background: url(/images/border-bottom-light-gray.svg?52a605368925ef397f8ae3e6dd914805) no-repeat center bottom;
+  background: url(/images/border-bottom-light-gray.svg?d57c0c204df7fd95d65e8e254545058c) no-repeat center bottom;
   background-size: cover;
   padding-top: 40px;
   transition: all 0.4s ease;
@@ -1666,12 +1666,12 @@ header.sticky {
 }
 
 .border-img__blue-top {
-  background: url(/images/border-blue.svg?3344db4f2663f437a5e5f821583002f6) repeat-x center bottom;
+  background: url(/images/border-blue.svg?40f788b9031934573d489fdc9d296c15) repeat-x center bottom;
   margin-bottom: -3px;
 }
 
 .border-img__blue-bot {
-  background: url(/images/border-blue.svg?3344db4f2663f437a5e5f821583002f6) repeat-x center bottom;
+  background: url(/images/border-blue.svg?40f788b9031934573d489fdc9d296c15) repeat-x center bottom;
   margin-top: -3px;
   transform: scaleY(-1);
   -webkit-filter: FlipV;
