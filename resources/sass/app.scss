@@ -10,7 +10,18 @@
 @import 'base/colors';
 @import 'shared/header';
 @import 'shared/footer';
+@import 'shared/global';
 @import 'partials/intro';
+@import 'partials/about';
+@import 'partials/categories';
+@import 'partials/entries';
+@import 'partials/becomeSponsor';
+@import 'partials/inspiration';
+@import 'partials/judges';
+@import 'partials/prizes';
+@import 'partials/registrationBanner';
+@import 'partials/sponsors';
+@import 'partials/takePart';
 @import 'pages/home';
 
 //@import '~bootstrap/scss/bootstrap';

@@ -1,0 +1,16 @@
+.entries__container {
+}
+.entries__inner {
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    @include pad-top-large;
+    @include pad-bot-large;
+}
+
+.entries__title {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    @include font-size($text-xxl);
+}

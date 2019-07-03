@@ -7,6 +7,7 @@
 }
 
 .intro__container {
+    // background: $gray;
 }
 
 .intro__inner {
@@ -14,11 +15,13 @@
     align-items: center;
     max-width: 800px;
     @include pad-top-large;
+    @include pad-bot-large;
 }
 
 .intro__title {
     text-align: center;
     font-weight: normal;
+    margin: 0;
     @include font-size($text-xxl);
 }
 
@@ -44,5 +47,11 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.intro__cta {
+    text-decoration: none;
+    a {
     }
 }

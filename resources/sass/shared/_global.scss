@@ -1,0 +1,23 @@
+.border-img {
+    width: 100%;
+    height: 13px;
+    display: flex;
+}
+
+.border-img__blue-top {
+    background: url('../../../public/img/decorative/border-blue.svg') repeat-x
+        center bottom;
+    margin-bottom: -3px;
+}
+
+.border-img__blue-bot {
+    background: url('../../../public/img/decorative/border-blue.svg') repeat-x
+        center bottom;
+    margin-top: -3px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: 'FlipV';
+}
