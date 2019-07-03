@@ -36,7 +36,7 @@ The main folder is 'resources' where all the views, JS & css resides.
 * /resources
 	* /js: The VueJs files. The components are loaded from app.js, the resulting file is 'public/js/app.js'.
 	* /sass: It mix the Bootstrap files + _variables.scss files with the inline css classes in the file. The resulting file is 'public/css/app.css'.
-	* /views: The frontend files
+	/views: The frontend files
 		* /auth: The login, register, remember password, etc. files
 		* /layouts: app.blade.php the keystone file that loads the header, footer & content
 		* /partials: reusable files (like Header, Footer, sections, etc)
