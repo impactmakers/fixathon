@@ -16,7 +16,7 @@
 }
 
 header.sticky {
-    height: 110px;
+    height: 90px;
     padding-top: 0;
 }
 
@@ -25,6 +25,7 @@ header.sticky {
     align-items: center;
     padding: 0;
     flex-direction: row;
+    margin-top: 0;
 }
 
 .header__logo {
@@ -36,8 +37,9 @@ header.sticky {
 }
 
 .header__logo.sticky {
+    margin-top: 15px;
     img {
-        max-width: 110px;
+        max-width: 90px;
     }
 }
 
@@ -78,7 +80,7 @@ header.sticky {
 .header__nav-item {
     @include links-on-light;
     @include brush-font;
-    @include font-size($title-small);
+    @include font-size($text-lg);
     a {
         text-decoration: none;
         color: $black;
@@ -86,9 +88,9 @@ header.sticky {
 }
 
 .header__nav-item.sticky {
-    margin-top: -5px;
+    margin-top: 35px;
     a {
-        @include font-size($text-large);
+        @include font-size($text-md);
     }
 }
 

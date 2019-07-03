@@ -431,39 +431,36 @@ textarea {
 }
 
 h1 {
-  font-size: 38px;
-  line-height: 43px;
-  font-family: "Neue Helvetica W05", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: bold;
-  color: #02124f;
-  letter-spacing: -0.24px;
 }
 
 @media screen and (min-width: 480px) {
   h1 {
-    font-size: 38px;
-    line-height: 43px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 50px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   h1 {
-    font-size: 62px;
-    line-height: 66px;
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   h1 {
-    font-size: 62px;
-    line-height: 66px;
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 
@@ -671,7 +668,7 @@ p a:active {
   top: 1px;
 }
 
-.gray-title-small {
+.gray-text-lg {
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 0.6px;
@@ -679,7 +676,7 @@ p a:active {
   color: #7e7e7e;
 }
 
-.black-title-small {
+.black-text-lg {
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 0.6px;
@@ -687,7 +684,7 @@ p a:active {
   color: #02124f;
 }
 
-.yellow-title-small {
+.yellow-text-lg {
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 0.6px;
@@ -936,8 +933,8 @@ p a:active {
 }
 
 .btn-bordered.btn-secondary {
-  border-color: #7e7e7e;
-  color: #7e7e7e;
+  border-color: #6a7586;
+  color: #6a7586;
   background: none;
 }
 
@@ -1233,7 +1230,7 @@ p a:active {
 }
 
 header.sticky {
-  height: 110px;
+  height: 90px;
   padding-top: 0;
 }
 
@@ -1242,6 +1239,7 @@ header.sticky {
   align-items: center;
   padding: 0;
   flex-direction: row;
+  margin-top: 0;
 }
 
 .header__logo {
@@ -1253,8 +1251,12 @@ header.sticky {
   max-width: 200px;
 }
 
+.header__logo.sticky {
+  margin-top: 15px;
+}
+
 .header__logo.sticky img {
-  max-width: 110px;
+  max-width: 90px;
 }
 
 .header__nav {
@@ -1366,7 +1368,7 @@ header.sticky {
 }
 
 .header__nav-item.sticky {
-  margin-top: -5px;
+  margin-top: 35px;
 }
 
 .header__nav-item.sticky a {
@@ -1618,7 +1620,7 @@ header.sticky {
 .footer__bottom {
   font-size: 14px;
   line-height: 22px;
-  color: #7e7e7e;
+  color: #6a7586;
   margin-top: 20px;
 }
 
@@ -1669,7 +1671,6 @@ header.sticky {
   flex-direction: column;
   align-items: center;
   max-width: 800px;
-  width: 100%;
   padding-top: 40px;
 }
 
@@ -1688,6 +1689,121 @@ header.sticky {
 .intro__title {
   text-align: center;
   font-weight: normal;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@media screen and (min-width: 480px) {
+  .intro__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro__title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .intro__title {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .intro__title {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
+
+.intro__key {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro__key {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .intro__key {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro__key {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .intro__key {
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro__key {
+    flex-direction: row;
+  }
+}
+
+.intro__key-item {
+  font-size: 18px;
+  line-height: 27px;
+  color: #6a7586;
+}
+
+@media screen and (min-width: 480px) {
+  .intro__key-item {
+    font-size: 18;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro__key-item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .intro__key-item {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .intro__key-item {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro__key-item {
+    margin-right: 30px;
+  }
+
+  .intro__key-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .home-banner {

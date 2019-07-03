@@ -37,7 +37,7 @@ $brush: 'Poster Brush W05', serif;
 
 // Text Styles
 
-$title-xlarge: (
+$text-xxxl: (
     null: (
         38px,
         43px
@@ -60,45 +60,45 @@ $title-xlarge: (
     )
 );
 
-@mixin title-xlarge {
-    @include font-size($title-xlarge);
+@mixin text-xxxl {
+    @include font-size($text-xl);
     font-family: $sans;
     font-weight: bold;
     color: $black;
     letter-spacing: -0.24px;
 }
 
-$title-large: (
+$text-xxl: (
     null: (
         32px,
-        35px
+        39px
     ),
     mobile: (
         32px,
-        35px
+        39px
     ),
     tablet: (
         40px,
-        46px
+        48px
     ),
     desktop: (
         50px,
-        57px
+        62px
     ),
     max: (
         50px,
-        57px
+        62px
     )
 );
 
-@mixin title-large {
+@mixin text-xxl {
     font-family: $sans;
-    @include font-size($title-large);
+    @include font-size($text-lg);
     font-weight: bold;
     color: $black;
 }
 
-$title-medium: (
+$text-xl: (
     null: (
         24px,
         30px
@@ -112,16 +112,16 @@ $title-medium: (
         37px
     ),
     desktop: (
-        40px,
-        48px
+        36px,
+        50px
     ),
     max: (
-        40px,
-        48px
+        36px,
+        50px
     )
 );
 
-$title-small: (
+$text-lg: (
     null: (
         22px,
         30px
@@ -144,7 +144,7 @@ $title-small: (
     )
 );
 
-$text-large: (
+$text-md: (
     null: (
         18px,
         27px
@@ -167,7 +167,7 @@ $text-large: (
     )
 );
 
-$text-body: (
+$text: (
     null: (
         16px,
         24px
@@ -190,7 +190,7 @@ $text-body: (
     )
 );
 
-$text-small: (
+$text-sm: (
     null: (
         16px,
         27px
@@ -213,7 +213,7 @@ $text-small: (
     )
 );
 
-$text-xsmall: (
+$text-xs: (
     null: (
         14px,
         22px
@@ -236,35 +236,35 @@ $text-xsmall: (
     )
 );
 
-@mixin text-small {
-    @include font-size($text-small);
+@mixin text-sm {
+    @include font-size($text-sm);
 }
 
-@mixin text-body {
-    @include font-size($text-body);
+@mixin text {
+    @include font-size($text);
 }
 
-@mixin title-medium {
-    @include font-size($title-medium);
+@mixin text-xl {
+    @include font-size($text-xl);
     font-weight: bold;
 }
 
-@mixin title-small {
-    @include font-size($text-body);
+@mixin text-lg {
+    @include font-size($text);
     font-weight: 700;
     letter-spacing: 0;
     text-transform: none;
 }
 
 @mixin title-uppercase-small {
-    @include font-size($text-small);
+    @include font-size($text-sm);
     letter-spacing: 0;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 @mixin black-title {
-    @include font-size($title-small);
+    @include font-size($text-lg);
     font-weight: normal;
     color: $black;
 }
@@ -279,7 +279,7 @@ $text-xsmall: (
 // Text Style Application
 
 h1 {
-    @include title-xlarge;
+    @include text-xl;
 }
 
 h2 {
@@ -289,12 +289,12 @@ h2 {
 
 h3 {
     margin: 0 0 0.5em 0;
-    @include font-size($text-large);
+    @include font-size($text-md);
     color: $black;
 }
 
 h4 {
-    @include font-size($text-large);
+    @include font-size($text-md);
     margin: 0 0 0.5em 0;
     color: $black;
 }
@@ -307,30 +307,30 @@ h6 {
 }
 
 p {
-    @include text-body;
+    @include text;
     @include links-on-light;
 }
 
-@mixin title-small-uppercase {
+@mixin text-lg-uppercase {
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 0.6px;
 }
 
-.gray-title-small {
-    @include title-small-uppercase;
+.gray-text-lg {
+    @include text-lg-uppercase;
     font-weight: normal;
     color: #7e7e7e;
 }
 
-.black-title-small {
-    @include title-small-uppercase;
+.black-text-lg {
+    @include text-lg-uppercase;
     font-weight: bold;
     color: $black;
 }
 
-.yellow-title-small {
-    @include title-small-uppercase;
+.yellow-text-lg {
+    @include text-lg-uppercase;
     font-weight: bold;
     color: $yellow;
 }

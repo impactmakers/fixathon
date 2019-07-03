@@ -6,25 +6,22 @@
     <h1 class="intro__title">
         The world's first online hackathon for makers to help fix the climate
     </h1>
- 
-    <div class="row text-center justify-content-center pt-5">
-      <div class="col-12 col-sm-4 col-lg-3 floating">
-        <img alt="Dates" src="{{asset('img/icons/calendar.png')}}" style='width:42px;'>
-        <h5 class='pt-2 mb-0'><strong>Dates</strong></h5>
-        <p>2nd Aug - 30th Aug </p>
-      </div>
-      <div class="col-12 col-sm-4 col-lg-3">
-        <img alt="Prizes" src="{{asset('img/icons/trophy.png')}}" style='width:42px;'>
-        <h5 class='pt-2 mb-0'><strong>Prizes</strong></h5>
-        <p>Thousands in cash to be won</p>
-      </div>
+    <ul class="intro__key">
+      <li class="intro__key-item">
+        🗓 2nd-30 August</li>
+      <li class="intro__key-item">
+        🏆 $15,000 in prizes</li>
+      <li class="intro__key-item">
+        🌎 Open to everyone 
+      </li>
+    </ul>
+    <a class="navbar-brand" href="/">
+      <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register</button>
+    </a>
 
-      <div class="col-12 col-sm-4 col-lg-3">
-        <img alt="Global" src="{{asset('img/icons/globe.png')}}" style='width:42px;'>
-        <h5 class='pt-2 mb-0'><strong>Global</strong></h5>
-        <p>Open to Everyone</p>
-      </div>
-    </div>
+
+
+
 
     <div id='register' class="container register-box" style="background-image:url('img/icons/cup_alpha.png');">
         <h3 class="event-date col-9">

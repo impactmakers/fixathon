@@ -1,119 +1,119 @@
 .footer__container {
-  background: $black;
-  color: $white;
+    background: $black;
+    color: $white;
 }
 
 .footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
-  @include pad-top-standard;
-  @include pad-bot-standard;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    @include pad-top-standard;
+    @include pad-bot-standard;
 }
 
 .footer__top {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-direction: column;
-  @include mq('tablet') {
-    flex-direction: row;
-  }
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
 }
 
 .footer__nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
-  @include mq('tablet') {
-    flex-direction: row;
-    max-width: 500px;
-  }
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    @include mq('tablet') {
+        flex-direction: row;
+        max-width: 500px;
+    }
 }
 
 .footer__nav-col {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25px;
-  &:first-child {
-    margin-top: 0;
-  }
-  @include mq('tablet') {
-    margin-top: 0;
-  }
-  ul {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    margin-top: 5px;
-  }
-  span {
-    margin-bottom: 2px;
-    @include mq('tablet') {
-      margin-bottom: 12px;
+    margin-top: 25px;
+    &:first-child {
+        margin-top: 0;
     }
-  }
-  @include links-on-light;
-  a {
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal;
-    color: $white;
-    text-decoration: none;
-    @include link-states;
-  }
+    @include mq('tablet') {
+        margin-top: 0;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-top: 5px;
+    }
+    span {
+        margin-bottom: 2px;
+        @include mq('tablet') {
+            margin-bottom: 12px;
+        }
+    }
+    @include links-on-light;
+    a {
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: $white;
+        text-decoration: none;
+        @include link-states;
+    }
 }
 
 .footer__cta {
-  margin-top: 22px;
-  @include mq('tablet') {
-    margin: 0;
-  }
+    margin-top: 22px;
+    @include mq('tablet') {
+        margin: 0;
+    }
 }
 
 .footer__social {
-  display: flex;
-  list-style-type: none;
-  margin: 25px 0 0;
-  padding: 0;
-  justify-content: space-between;
-  width: 95px;
-  img {
-    width: 34px;
-    height: 34px;
-  }
-  @include mq('tablet') {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
+    display: flex;
+    list-style-type: none;
+    margin: 25px 0 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 95px;
+    img {
+        width: 34px;
+        height: 34px;
+    }
+    @include mq('tablet') {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 .footer__social-link {
-  padding: 0;
-  margin: 0 15px 0 0;
-  a {
-  }
-  a:hover {
-  }
-  a:active {
-  }
+    padding: 0;
+    margin: 0 15px 0 0;
+    a {
+    }
+    a:hover {
+    }
+    a:active {
+    }
 }
 
 .footer__bottom {
-  @include font-size($text-xsmall);
-  color: $gray;
-  margin-top: 20px;
-  @include mq('tablet') {
-    margin-top: 40px;
-    max-width: 600px;
-  }
+    @include font-size($text-xs);
+    color: $gray;
+    margin-top: 20px;
+    @include mq('tablet') {
+        margin-top: 40px;
+        max-width: 600px;
+    }
 }
 
 //   label {

@@ -13,11 +13,36 @@
     flex-direction: column;
     align-items: center;
     max-width: 800px;
-    width: 100%;
     @include pad-top-large;
 }
 
 .intro__title {
     text-align: center;
     font-weight: normal;
+    @include font-size($text-xxl);
+}
+
+.intro__key {
+    @include pad-top-small;
+    @include pad-bot-standard;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
+}
+
+.intro__key-item {
+    @include font-size($text-md);
+    color: $gray;
+    @include mq('tablet') {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
