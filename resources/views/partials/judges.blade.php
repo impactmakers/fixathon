@@ -1,43 +1,38 @@
+
 <!-- JUDGES -->
-<section class="my-4 py-5 px-2" id='judges'>
-  <div class="container">
-    <div class="row text-center justify-content-center mb-3">
-      <div class="col-8">
-        <h2>Judges</h2>
-        <p class="lead">
-            Our panel of climate and tech experts will choose a winner and 2 runner ups for each challenge.
-        </p>
-      </div>
+
+<div class="border-img__top border-img__top--gray-light"></div>
+<section class="container judges__container" id="judges">
+  <div class="inner judges__inner">
+    <div class="judges__header">
+      <h1 class="brush__title brush__title--large judges__title">
+        Judges
+      </h1>
+      <p class="judges__intro">
+        Our panel of climate and tech experts will choose a winner and runner up for each challenge.
+      </p>
     </div>
-
-    <div class="row text-center mt-5 justify-content-center">
-      <div class="col-10 col-sm-6 col-md-4 col-lg-3 px-3 py-3">
-        <div class='min-height-100 card px-2 py-2 mb-3 shadow-md shadow-lg--hover' style=''>
-            <img alt="Simon" class="img-thumbnail rounded-circle judge-img" src="{{asset('img/people/simon.jpg')}}">
-            <h5><strong>Simon Collison</strong></h5>
-            <p class='px-2'>Designer, writer, occasional speaker. Director of New Adventures @naconf.</p>
-            <a href='https://twitter.com/colly' target='_blank' class=''>@colly</a>
-        </div>
-      </div>
-
-      <div class="col-10 col-sm-6 col-md-4 col-lg-3 px-3 py-3">
-        <div class='min-height-100 card px-2 py-2 mb-3 shadow-md shadow-lg--hover'>
-            <img alt="Michelle" class="img-thumbnail rounded-circle judge-img" src="{{asset('img/people/michelle.jpg')}}">
-            <h5><strong>Michelle Thorne</strong></h5>
-            <p class='px-2'>Senior Program Officer at the Mozilla Foundation. Currently interested in making the internet carbon-neutral.</p>
-            <a href='https://twitter.com/thornet' target='_blank' class=''>@thornet</a>
-        </div>
-      </div>
-
-      <div class="col-10 col-sm-6 col-md-4 col-lg-3 px-3 py-3">
-        <div class='min-height-100 card px-2 py-2 mb-3 shadow-md shadow-lg--hover'>
-            <img alt="Anne-Laure" class="img-thumbnail rounded-circle judge-img" src="{{asset('img/people/anne.jpg')}}">
-            <h5><strong>Anne-Laure Le Cunff</strong></h5>
-            <p class='px-2'>Founder @ness_labs • Running @makermag • msc #neuroscience candidate • scout @BackedVC • ex @google • creator of #diversity30.</p>
-            <a href='https://twitter.com/anthilemoon' target='_blank' class=''>@anthilemoon</a>
-        </div>
-      </div>
-    </div>
+    <ul class="judges__list">
+      <li class="judges__judge">
+        <img alt="Simon Collison" class="judge__img" src="{{asset('img/people/simon.jpg')}}">
+        <h3>Simon Collison</h3>
+        <p>Designer, writer, occasional speaker. Director of New Adventures @naconf.</p>
+        <a href='https://twitter.com/colly' target='_blank' class=''>@colly</a>  
+      </li>
+      <li class="judges__judge">
+        <img alt="Michelle Thorne" class="judge__img" src="{{asset('img/people/michelle.jpg')}}">
+        <h3>Michelle Thorne</h3>
+        <p>Senior Program Officer at the Mozilla Foundation. Currently interested in making the internet carbon-neutral.</p>
+        <a href='https://twitter.com/thornet' target='_blank' class=''>@thornet</a>
+      </li>
+      <li class="judges__judge">
+        <img alt="Anne-Laure Le Cunff" class="judge__img" src="{{asset('img/people/anne.jpg')}}">
+        <h3>Anne-Laure Le Cunff</h3>
+        <p>Founder @ness_labs • Running @makermag • msc #neuroscience candidate • scout @BackedVC • ex @google • creator of #diversity30.</p>
+        <a href='https://twitter.com/anthilemoon' target='_blank' class=''>@anthilemoon</a>
+      </li>  
+    </ul>
   </div>
 </section>
+<div class="border-img__bot border-img__bot--gray-light"></div>
 <!-- END JUDGES -->

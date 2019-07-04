@@ -1,10 +1,11 @@
 .judges__container {
+    background-color: $grayLight;
 }
 
 .judges__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    width: 100%;
     @include pad-top-large;
     @include pad-bot-large;
 }
@@ -13,5 +14,54 @@
     text-align: center;
     font-weight: normal;
     margin: 0;
+    color: $black;
     @include font-size($text-xxl);
+}
+
+.judges__header {
+}
+
+.judges__intro {
+}
+
+.judges__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 40px;
+    @include mq('mobile') {
+        grid-template-columns: 1fr;
+    }
+    @include mq('tablet') {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mq('desktop') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.judges__judge {
+    @include white-box;
+    img {
+    }
+    h3 {
+    }
+    p {
+    }
+    a {
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .judges__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .judges__judge {
+        width: 30%;
+        margin-bottom: 40px;
+    }
 }

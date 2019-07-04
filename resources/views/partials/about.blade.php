@@ -1,5 +1,5 @@
 
-<div class="border-img border-img__blue-top"></div>
+<div class="border-img__top border-img__top--blue"></div>
 <section class="container about__container" id="about">
   <div class="inner about__inner">
     <h1 class="brush__title brush__title--large about__title">
@@ -36,7 +36,7 @@
     </div>
   </div>
 </section>
-<div class="border-img border-img__blue-bot"></div>
+<div class="border-img__bot border-img__bot--blue"></div>
 
 <script>
   const second = 1000,

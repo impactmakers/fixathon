@@ -1659,24 +1659,62 @@ header.sticky {
   }
 }
 
-.border-img {
+.border-img__top {
   width: 100%;
   height: 13px;
   display: flex;
-}
-
-.border-img__blue-top {
-  background: url(/images/border-blue.svg?40f788b9031934573d489fdc9d296c15) repeat-x center bottom;
   margin-bottom: -3px;
 }
 
-.border-img__blue-bot {
-  background: url(/images/border-blue.svg?40f788b9031934573d489fdc9d296c15) repeat-x center bottom;
+.border-img__bot {
+  width: 100%;
+  height: 13px;
+  display: flex;
   margin-top: -3px;
   transform: scaleY(-1);
   -webkit-filter: FlipV;
           filter: FlipV;
   -ms-filter: "FlipV";
+}
+
+.border-img__top--blue {
+  background: url(/images/border-blue.svg?90bc27279067b0a1719408344f713a8b) repeat-x center bottom;
+}
+
+.border-img__bot--blue {
+  background: url(/images/border-blue.svg?90bc27279067b0a1719408344f713a8b) repeat-x center bottom;
+}
+
+.border-img__top--gray-light {
+  background: url(/images/border-gray-light.svg?5ba902c738e2f1777699f85fe32763c5) repeat-x center bottom;
+}
+
+.border-img__bot--gray-light {
+  background: url(/images/border-gray-light.svg?5ba902c738e2f1777699f85fe32763c5) repeat-x center bottom;
+}
+
+.border-img__top--gray {
+  background: url(/images/border-gray.svg?b6b8fe1dee4b55e5743ee1f4822985e5) repeat-x center bottom;
+}
+
+.border-img__bot--gray {
+  background: url(/images/border-gray.svg?b6b8fe1dee4b55e5743ee1f4822985e5) repeat-x center bottom;
+}
+
+.border-img__top--green {
+  background: url(/images/border-green.svg?80ae6121856a14c3753bbf4cc29a07b6) repeat-x center bottom;
+}
+
+.border-img__bot--green {
+  background: url(/images/border-green.svg?80ae6121856a14c3753bbf4cc29a07b6) repeat-x center bottom;
+}
+
+.border-img__top--black {
+  background: url(/images/border-black.svg?f0500d6da0021c2a7c883af80f342025) repeat-x center bottom;
+}
+
+.border-img__bot--black {
+  background: url(/images/border-black.svg?f0500d6da0021c2a7c883af80f342025) repeat-x center bottom;
 }
 
 .top__container {
@@ -2247,10 +2285,14 @@ header.sticky {
   }
 }
 
+.judges__container {
+  background-color: #ebecf4;
+}
+
 .judges__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -2283,6 +2325,7 @@ header.sticky {
   text-align: center;
   font-weight: normal;
   margin: 0;
+  color: #02124f;
   font-size: 32px;
   line-height: 39px;
 }
@@ -2312,6 +2355,51 @@ header.sticky {
   .judges__title {
     font-size: 50px;
     line-height: 62px;
+  }
+}
+
+.judges__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+  .judges__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .judges__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .judges__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.judges__judge {
+  background: #ffffff;
+  box-shadow: 0 10px 17px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .judges__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .judges__judge {
+    width: 30%;
+    margin-bottom: 40px;
   }
 }
 
