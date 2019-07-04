@@ -30,13 +30,3 @@
     margin-top: 0;
     @include font-size($text-lg);
 }
-
-.brush__title {
-    @include brush-font;
-}
-
-.brush__title--large {
-    @include font-size($text-xxxl);
-    transform: rotate(-6deg);
-    letter-spacing: 3.43px;
-}

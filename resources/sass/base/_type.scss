@@ -123,23 +123,23 @@ $text-xl: (
 
 $text-lg: (
     null: (
-        22px,
+        21px,
         30px
     ),
     mobile: (
-        22px,
+        21px,
         30px
     ),
     tablet: (
-        25px,
+        23px,
         34px
     ),
     desktop: (
-        29px,
+        26px,
         39px
     ),
     max: (
-        29px,
+        26px,
         39px
     )
 );
@@ -333,4 +333,14 @@ p {
     @include text-lg-uppercase;
     font-weight: bold;
     color: $yellow;
+}
+
+.brush__title {
+    @include brush-font;
+}
+
+.brush__title--large {
+    @include font-size($text-xxxl);
+    transform: rotate(-4deg);
+    letter-spacing: 3.43px;
 }

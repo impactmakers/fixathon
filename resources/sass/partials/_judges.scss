@@ -5,8 +5,11 @@
 .judges__inner {
     flex-direction: column;
     align-items: center;
-    width: 100%;
     @include pad-top-large;
+    @include pad-bot-large;
+}
+
+.judges__header {
     @include pad-bot-large;
 }
 
@@ -15,13 +18,15 @@
     font-weight: normal;
     margin: 0;
     color: $black;
-    @include font-size($text-xxl);
-}
-
-.judges__header {
+    @include font-size($text-xxxl);
 }
 
 .judges__intro {
+    max-width: 660px;
+    @include font-size($text-lg);
+    color: $gray;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .judges__list {
@@ -44,14 +49,42 @@
 }
 
 .judges__judge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
     @include white-box;
+    @include links-on-light;
     img {
+        width: 140px;
+        height: 142px;
     }
     h3 {
+        @include font-size($text-md);
+        margin-top: 30px;
     }
     p {
+        @include font-size($text-xs);
+        color: $grayDark;
+        margin-top: 0;
+        margin-bottom: 30px;
     }
     a {
+        display: flex;
+        align-items: center;
+        align-self: baseline center;
+        @include font-size($text-xs);
+        color: $twitter;
+        font-weight: bold;
+        text-decoration: none;
+        img {
+            width: 18px;
+            height: 18px;
+            margin-right: 4px;
+        }
     }
 }
 
