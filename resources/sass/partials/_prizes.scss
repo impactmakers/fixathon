@@ -1,17 +1,21 @@
 .prizes__container {
+    background-color: $white;
 }
 
 .prizes__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
     @include pad-top-large;
     @include pad-bot-large;
 }
 
+.prizes__header {
+}
+
 .prizes__title {
-    text-align: center;
-    font-weight: normal;
-    margin: 0;
-    @include font-size($text-xxl);
+    color: $black;
+}
+
+.prizes__intro {
+    color: $gray;
 }
