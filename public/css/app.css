@@ -1759,6 +1759,95 @@ header.sticky {
   background: url(/images/border-black.svg?f0500d6da0021c2a7c883af80f342025) repeat-x center bottom;
 }
 
+.twocol__inner {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1020px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .twocol__inner {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .twocol__inner {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .twocol__inner {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .twocol__inner {
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .twocol__inner {
+    flex-direction: row;
+  }
+}
+
+.twocol__text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.twocol__title {
+  text-align: left;
+  margin: 0;
+  max-width: 320px;
+}
+
+.about__title {
+  color: #ffffff;
+}
+
+.twocol__intro {
+  margin-top: 0;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .twocol__intro {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .twocol__intro {
+    font-size: 23px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .twocol__intro {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .twocol__intro {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
 .top__container {
   padding-top: 200px;
 }
@@ -1927,90 +2016,6 @@ header.sticky {
 .about__container {
   background: #052ab5;
   color: #ffffff;
-}
-
-.about__inner {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 1000px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .about__inner {
-    padding-top: 60px;
-  }
-}
-
-@media only screen and (min-width: 1040px) {
-  .about__inner {
-    padding-top: 120px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .about__inner {
-    padding-bottom: 60px;
-  }
-}
-
-@media only screen and (min-width: 1040px) {
-  .about__inner {
-    padding-bottom: 120px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .about__inner {
-    flex-direction: row;
-  }
-}
-
-.about__text {
-  max-width: 600px;
-}
-
-.about__title {
-  text-align: left;
-  margin: 0;
-  color: #ffffff;
-  max-width: 300px;
-}
-
-.about__intro {
-  margin-top: 0;
-  font-size: 21px;
-  line-height: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .about__intro {
-    font-size: 21px;
-    line-height: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about__intro {
-    font-size: 23px;
-    line-height: 34px;
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .about__intro {
-    font-size: 26px;
-    line-height: 39px;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .about__intro {
-    font-size: 26px;
-    line-height: 39px;
-  }
 }
 
 .categories__inner {
@@ -2872,6 +2877,91 @@ header.sticky {
   .takePart__title {
     font-size: 50px;
     line-height: 62px;
+  }
+}
+
+.takepart__text {
+  color: #535c69;
+}
+
+.takepart__sub-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.takepart__p--lead {
+  margin-top: 5px;
+}
+
+.takepart__cta {
+  text-decoration: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .takepart__cta {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .takepart__cta {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .takepart__cta {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .takepart__cta {
+    padding-top: 20px;
+  }
+}
+
+.takepart__sub-title {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.takepart__small-title {
+  color: #535c69;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .takepart__small-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .takepart__small-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .takepart__small-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .takepart__small-title {
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 

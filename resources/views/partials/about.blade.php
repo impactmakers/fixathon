@@ -1,12 +1,12 @@
 
 <div class="border-img__top border-img__top--blue"></div>
 <section class="container about__container" id="about">
-  <div class="inner about__inner">
-    <h1 class="brush__title brush__title--large about__title">
+  <div class="inner twocol__inner about__inner">
+    <h1 class="brush__title brush__title--large twocol__title about__title">
       What is a climate fixathon?
     </h1>
-    <div class="about__text">
-      <p class="about__intro">
+    <div class="twocol__text about__text">
+      <p class="twocol__intro about__intro">
         It’s a month-long hackathon for tech professionals to use their skills to help increase awareness of the climate change issue and people to take action.
       </p>
 
