@@ -52,6 +52,16 @@
 
 .intro__cta {
     text-decoration: none;
+    margin: 0;
     a {
+    }
+}
+
+.intro__secondary-cta {
+    @include links-on-light;
+    margin-top: 40px;
+    @include font-size($text-md);
+    @include mq('tablet') {
+        margin-top: 90px;
     }
 }

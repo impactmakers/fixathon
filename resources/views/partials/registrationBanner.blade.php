@@ -6,7 +6,7 @@
     <h1 class="regbanner__title">
       Have an idea that you like to enter? Join us!
     </h1>
-    <a class="regbanner__cta" href="/">
+    <a class="regbanner__cta" href="#register">
       <button type="submit" class="btn-simple btn-lg btn-white-blue btn-mobile">Register Now</button>
     </a>
   </div>

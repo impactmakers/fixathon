@@ -15,11 +15,14 @@
         🌎 Open to everyone 
       </li>
     </ul>
-    <a class="intro__cta" href="/">
-      <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register</button>
+    <a class="intro__cta" href="#register">
+      <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register Now</button>
     </a>
-
-
+    <div class="intro__secondary-cta">
+    <a href="#about">
+      Learn more
+    </a>
+</div>
   </div>
 </section>
 <!-- END INTRO -->

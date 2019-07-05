@@ -4,11 +4,11 @@
 <div class="border-img__top border-img__top--gray-light"></div>
 <section class="container judges__container" id="judges">
   <div class="inner judges__inner">
-    <div class="judges__header">
-      <h1 class="brush__title brush__title--large judges__title">
+    <div class="centered__header judges__header">
+      <h1 class="brush__title brush__title--large centered__title judges__title">
         Judges
       </h1>
-      <p class="judges__intro">
+      <p class="centered__intro judges__intro">
         Our panel of climate and tech experts will choose a winner and runner up for each challenge.
       </p>
     </div>

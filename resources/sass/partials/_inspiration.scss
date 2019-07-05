@@ -1,17 +1,21 @@
 .inspiration__container {
+    background-color: $grayLight;
 }
 
 .inspiration__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
     @include pad-top-large;
     @include pad-bot-large;
 }
 
+.inspiration__header {
+}
+
 .inspiration__title {
-    text-align: center;
-    font-weight: normal;
-    margin: 0;
-    @include font-size($text-xxl);
+    color: $black;
+}
+
+.inspiration__intro {
+    color: $gray;
 }
