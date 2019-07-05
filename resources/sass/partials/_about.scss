@@ -1,10 +1,126 @@
 .about__container {
-    background: $blue;
-    color: $white;
+    background-color: $blue;
 }
 
 .about__inner {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    @include pad-top-large;
+    @include pad-bot-large;
+}
+
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    color: $white;
 }
 
 .about__intro {
+    color: $white;
+}
+
+// About box
+
+.about {
+    display: flex;
+    flex-direction: column;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
+}
+
+.about__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+
+.about__info {
+    background: $white;
+    h2 {
+        color: $black;
+        text-align: left;
+    }
+    p {
+        color: $grayDark;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__info-inner {
+    @include pad-left-large;
+    @include pad-right-large;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    @include mq('tablet') {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.about__awards {
+    background: $black;
+}
+
+.about__awards-inner {
+    @include pad-left-large;
+    @include pad-right-large;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    @include mq('tablet') {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.about__award-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: $white;
+}
+
+.about__award {
+    display: flex;
+    flex-direction: row;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    border-top: 1px solid $white;
+    &:first-child {
+        padding-top: 0;
+        border: none;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+.about__award-icon {
+    text-align: center;
+    font-size: 55px;
+    margin-right: 15px;
+    @include mq('tablet') {
+        font-size: 70px;
+    }
+}
+.about__award-awareness {
+}
+.about__award-text {
+}
+.about__award-name {
+    color: $white;
+    margin: 0;
+}
+.about__award-p {
+    margin: 0;
 }

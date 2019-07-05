@@ -2166,8 +2166,291 @@ header.sticky {
 }
 
 .about__container {
-  background: #052ab5;
+  background-color: #052ab5;
+}
+
+.about__inner {
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__inner {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__inner {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__inner {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__inner {
+    padding-bottom: 120px;
+  }
+}
+
+.about__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__title {
   color: #ffffff;
+}
+
+.about__intro {
+  color: #ffffff;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    flex-direction: row;
+  }
+}
+
+.about__box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__box {
+    width: 50%;
+  }
+}
+
+.about__info {
+  background: #ffffff;
+}
+
+.about__info h2 {
+  color: #02124f;
+  text-align: left;
+}
+
+.about__info p {
+  color: #535c69;
+}
+
+.about__info p:last-child {
+  margin-bottom: 0;
+}
+
+.about__info-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__info-inner {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__info-inner {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__info-inner {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__info-inner {
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__info-inner {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__info-inner {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__info-inner {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__info-inner {
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__info-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__awards {
+  background: #02124f;
+}
+
+.about__awards-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__awards-inner {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__awards-inner {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__awards-inner {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__awards-inner {
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__awards-inner {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__awards-inner {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__awards-inner {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__awards-inner {
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__awards-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__award-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.about__award {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__award {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__award {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about__award {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .about__award {
+    padding-bottom: 40px;
+  }
+}
+
+.about__award:first-child {
+  padding-top: 0;
+  border: none;
+}
+
+.about__award:last-child {
+  padding-bottom: 0;
+}
+
+.about__award-icon {
+  text-align: center;
+  font-size: 55px;
+  margin-right: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about__award-icon {
+    font-size: 70px;
+  }
+}
+
+.about__award-name {
+  color: #ffffff;
+  margin: 0;
+}
+
+.about__award-p {
+  margin: 0;
 }
 
 .categories__inner {

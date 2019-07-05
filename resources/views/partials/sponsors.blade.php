@@ -6,10 +6,10 @@
   <div class="inner sponsors__inner">
     <div class="centered__header sponsors__header">
       <h1 class="brush__title brush__title--large centered__title sponsors__title">
-        Our Sponsors
+        Our Sponsors 🙌
       </h1>
       <p class="centered__intro sponsors__intro">
-        The Climate Fixathon prizes would not be possible without the support of the following companies and organisations:
+        The Climate Fixathon prizes would not be possible without the support of these awesome companies.
       </p>
     </div>
     <div class="sponsors">

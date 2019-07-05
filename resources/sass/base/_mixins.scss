@@ -120,6 +120,25 @@ $space-large-desktop: 120px;
 
 /* Spacing - Large */
 
+@mixin pad-left-large {
+    padding-left: $space-standard-mobile;
+    @include mq('tablet') {
+        padding-left: $space-large-mobile;
+    }
+    @include mq('desktop') {
+        padding-left: 80px;
+    }
+}
+@mixin pad-right-large {
+    padding-right: $space-standard-mobile;
+    @include mq('tablet') {
+        padding-right: $space-large-mobile;
+    }
+    @include mq('desktop') {
+        padding-right: 80px;
+    }
+}
+
 @mixin pad-top-large {
     padding-top: $space-large-mobile;
     @include mq('tablet') {
