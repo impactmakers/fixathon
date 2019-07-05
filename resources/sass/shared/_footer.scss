@@ -1,6 +1,5 @@
 .footer__container {
-    background: $black;
-    color: $white;
+    background: $white;
 }
 
 .footer__inner {
@@ -23,127 +22,116 @@
     }
 }
 
-.footer__nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column;
-    @include mq('tablet') {
-        flex-direction: row;
-        max-width: 500px;
-    }
+.footer__im {
 }
-
-.footer__nav-col {
+.footer__im-title {
+    @include font-size($text);
+    color: $black;
+}
+.footer__im-from {
     display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    &:first-child {
-        margin-top: 0;
-    }
-    @include mq('tablet') {
-        margin-top: 0;
-    }
-    ul {
-        list-style-type: none;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include links-on-light;
+    li a {
         display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    li {
-        margin-top: 5px;
-    }
-    span {
-        margin-bottom: 2px;
-        @include mq('tablet') {
-            margin-bottom: 12px;
+        align-items: center;
+        @include font-size($text-xs);
+        margin-right: 30px;
+        font-weight: bold;
+        img {
+            margin-right: 10px;
         }
     }
+}
+.footer__im-from-avatar {
+    width: 30px;
+    height: 30px;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.footer__im-p {
+    @include font-size($text-xs);
+    color: $grayDark;
+    max-width: 360px;
+}
+
+.footer__im-actions {
+    display: flex;
+}
+.footer__im-action {
+    text-decoration: none;
+}
+.footer__im-action--primary {
+    margin-right: 15px;
+}
+.footer__im-action {
+}
+
+.footer__nav {
+    margin: 30px 0 10px;
+    @include font-size($text);
     @include links-on-light;
-    a {
-        margin: 0;
-        font-size: 18px;
-        font-weight: normal;
-        color: $white;
-        text-decoration: none;
-        @include link-states;
-    }
-}
-
-.footer__cta {
-    margin-top: 22px;
-    @include mq('tablet') {
-        margin: 0;
-    }
-}
-
-.footer__social {
     display: flex;
     list-style-type: none;
-    margin: 25px 0 0;
     padding: 0;
     justify-content: space-between;
-    width: 95px;
-    img {
-        width: 34px;
-        height: 34px;
+    flex-direction: column;
+    font-weight: bold;
+    li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: $gray;
     }
     @include mq('tablet') {
-        margin-bottom: 0;
-        margin-top: 0;
+        margin: 0;
+        flex-direction: row;
+        li {
+            margin-right: 40px;
+            &:last-child {
+                margin: 0;
+            }
+        }
     }
 }
 
-.footer__social-link {
-    padding: 0;
-    margin: 0 15px 0 0;
+.footer__nav-twitter {
     a {
-    }
-    a:hover {
-    }
-    a:active {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        color: $twitter;
+        img {
+            margin-right: 3px;
+        }
     }
 }
 
-.footer__bottom {
+.footer__bot {
     @include font-size($text-xs);
-    color: $gray;
-    margin-top: 20px;
+    border-top: 1px solid $grayBorder;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $grayDark;
+    width: 100%;
+    @include links-on-light;
+    @include mar-top-standard;
+    padding-top: 20px;
     @include mq('tablet') {
-        margin-top: 40px;
-        max-width: 600px;
+        flex-direction: row;
     }
 }
 
-//   label {
-//     display: block;
-//     margin-bottom: 15px;
-//     font-size: 18px;
-//     font-weight: 700;
-//     color: rgba(255, 255, 255, 1);
-//   }
-//   button,
-//   input {
-//     display: inline-block;
-//     height: 60px;
-//     padding: 15px;
-//     border: none;
-//     font-size: 18px;
-//     line-height: 1.5;
-//   }
-//   input {
-//     width: 80%;
-//     background-color: #fff;
-//     background-clip: padding-box;
-//     border-radius: 4px 0 0 4px;
-//   }
-
-//   button {
-//     width: 20%;
-//     background: $primary-color;
-//     color: #fff;
-//     border-radius: 0 4px 4px 0;
-//     font-weight: 700;
-//   }
-// }
+.footer-with,
+.footer-statement {
+    @include font-size($text-xs);
+    color: $grayDark;
+    margin: 0;
+    padding: 0;
+}
