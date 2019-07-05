@@ -19,8 +19,14 @@
 }
 
 .border-img__top--blue {
-    background: url('../../../public/img/decorative/border-blue.svg') repeat-x
+    background: url('../../../public/img/decorative/border-blue-2.svg') repeat-x
         center bottom;
+}
+
+.border-img__top--blue-lightgray {
+    background: $grayLight
+        url('../../../public/img/decorative/border-blue-2.svg') repeat-x center
+        bottom;
 }
 
 .border-img__bot--blue {
@@ -29,8 +35,9 @@
 }
 
 .border-img__top--gray-light {
-    background: url('../../../public/img/decorative/border-gray-light.svg')
-        repeat-x center bottom;
+    background: $white
+        url('../../../public/img/decorative/border-gray-light.svg') repeat-x
+        center bottom;
 }
 
 .border-img__bot--gray-light {
@@ -123,4 +130,25 @@
     @include font-size($text-lg);
     text-align: center;
     margin-bottom: 0;
+}
+
+.tablet-hide {
+    display: flex;
+    @include mq('tablet') {
+        display: none;
+    }
+}
+
+.desktop-hide {
+    display: none;
+    @include mq('desktop') {
+        display: flex;
+    }
+}
+
+.mobile-hide {
+    display: none;
+    @include mq('tablet') {
+        display: flex;
+    }
 }

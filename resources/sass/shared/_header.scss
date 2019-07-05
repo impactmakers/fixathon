@@ -9,7 +9,7 @@
     background: url('../../../public/img/decorative/border-bottom-light-gray.svg')
         no-repeat center bottom;
     background-size: cover;
-    padding-top: 40px;
+    padding-top: 30px;
     // set animation
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -29,7 +29,7 @@ header.sticky {
 }
 
 .header__logo {
-    margin: 0 0 -50px 0;
+    margin: 0 0 -40px 0;
     line-height: 0;
     img {
         max-width: 200px;
@@ -37,7 +37,7 @@ header.sticky {
 }
 
 .header__logo.sticky {
-    margin-top: 15px;
+    margin-top: 11px;
     img {
         max-width: 90px;
     }
@@ -81,6 +81,7 @@ header.sticky {
     @include links-on-light;
     @include brush-font;
     @include font-size($text-lg);
+    transform: rotate(-1deg);
     a {
         text-decoration: none;
         color: $black;

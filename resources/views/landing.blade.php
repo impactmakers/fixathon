@@ -3,7 +3,6 @@
 @section('content')
 
     @include('partials.intro')
-    @include('partials.countdown')
     @include('partials.about')
     @include('partials.prizes')
     @include('partials.judges')

@@ -9,8 +9,11 @@
     justify-content: space-between;
     @include pad-top-standard;
     @include pad-bot-standard;
+
     @include mq('tablet') {
         flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 

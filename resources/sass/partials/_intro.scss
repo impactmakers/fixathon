@@ -1,5 +1,5 @@
 .top__container {
-    padding-top: 200px;
+    padding-top: 220px;
 }
 
 .top__container.sticky {
@@ -13,7 +13,7 @@
 .intro__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 760px;
     @include pad-top-large;
     @include pad-bot-large;
 }
@@ -28,9 +28,9 @@
 .intro__key {
     @include pad-top-small;
     @include pad-bot-standard;
-    margin: 0;
+    margin: 10px 0 20px;
     list-style-type: none;
-    display: flex;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -43,11 +43,16 @@
     @include font-size($text-md);
     color: $gray;
     @include mq('tablet') {
-        margin-right: 30px;
+        margin-right: 40px;
         &:last-child {
             margin-right: 0;
         }
     }
+}
+
+.intro__key-item--mobile {
+    text-align: center;
+    margin: 10px 0 20px 0;
 }
 
 .intro__cta {
