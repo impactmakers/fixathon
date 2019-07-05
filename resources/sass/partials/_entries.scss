@@ -1,16 +1,21 @@
 .entries__container {
+    background-color: $blue;
 }
+
 .entries__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
     @include pad-top-large;
     @include pad-bot-large;
 }
 
+.entries__header {
+}
+
 .entries__title {
-    text-align: center;
-    font-weight: normal;
-    margin: 0;
-    @include font-size($text-xxl);
+    color: $white;
+}
+
+.entries__intro {
+    color: $white;
 }

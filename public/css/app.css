@@ -2238,10 +2238,13 @@ header.sticky {
   }
 }
 
+.entries__container {
+  background-color: #052ab5;
+}
+
 .entries__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -2271,45 +2274,20 @@ header.sticky {
 }
 
 .entries__title {
-  text-align: center;
-  font-weight: normal;
-  margin: 0;
-  font-size: 32px;
-  line-height: 39px;
+  color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .entries__title {
-    font-size: 32px;
-    line-height: 39px;
-  }
+.entries__intro {
+  color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .entries__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .entries__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .entries__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
+.becomeSponsor__container {
+  background-color: #ffffff;
 }
 
 .becomeSponsor__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -2339,39 +2317,15 @@ header.sticky {
 }
 
 .becomeSponsor__title {
-  text-align: center;
-  font-weight: normal;
-  margin: 0;
-  font-size: 32px;
-  line-height: 39px;
+  color: #02124f;
 }
 
-@media screen and (min-width: 480px) {
-  .becomeSponsor__title {
-    font-size: 32px;
-    line-height: 39px;
-  }
+.becomeSponsor__intro {
+  color: #6a7586;
 }
 
-@media screen and (min-width: 768px) {
-  .becomeSponsor__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .becomeSponsor__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .becomeSponsor__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
+.becomeSponsor__cta {
+  text-decoration: none;
 }
 
 .inspiration__container {
@@ -2811,10 +2765,13 @@ header.sticky {
   text-decoration: none;
 }
 
+.sponsors__container {
+  background-color: #ffffff;
+}
+
 .sponsors__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -2844,39 +2801,11 @@ header.sticky {
 }
 
 .sponsors__title {
-  text-align: center;
-  font-weight: normal;
-  margin: 0;
-  font-size: 32px;
-  line-height: 39px;
+  color: #02124f;
 }
 
-@media screen and (min-width: 480px) {
-  .sponsors__title {
-    font-size: 32px;
-    line-height: 39px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sponsors__title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .sponsors__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
-}
-
-@media screen and (min-width: 1340px) {
-  .sponsors__title {
-    font-size: 50px;
-    line-height: 62px;
-  }
+.sponsors__intro {
+  color: #6a7586;
 }
 
 .takePart__inner {
