@@ -19,3 +19,106 @@
 .prizes__intro {
     color: $gray;
 }
+
+.prizes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
+}
+.prize {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    @include mq('tablet') {
+        width: 50%;
+    }
+}
+.prize__winner {
+    border-right: 1px solid $grayBorder;
+    margin-bottom: 25px;
+    @include mq('tablet') {
+        margin: 0;
+    }
+}
+.prize__runnerups {
+}
+.prize__title {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-3deg);
+    letter-spacing: 3.43px;
+    @include brush-font;
+}
+
+.prize__title--winner {
+    color: $gold;
+}
+.prize__title--runnerups {
+    color: $silver;
+}
+.prize__icon {
+    margin-right: 10px;
+}
+.prize__amount {
+    @include font-size($text-xxxl);
+    font-weight: bold;
+    margin: 0;
+}
+
+.prize__strapline {
+    @include font-size($text-xs);
+    font-weight: bold;
+}
+.prize__items {
+    @include mar-top-small;
+    @include font-size($text-xs);
+    color: $grayDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    @include links-on-light;
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+.prizes__cta-banner {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    @include mq('tablet') {
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.prizes__cta-title {
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    @include font-size($text-lg);
+    @include mq('tablet') {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+.prizes__cta {
+    text-decoration: none;
+}
