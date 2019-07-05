@@ -1,6 +1,6 @@
 <!-- TAKE PART -->
 
-<section class="container takepart__container" id="takepart">
+<section class="container takepart__container" id="register">
   <div class="inner twocol__inner takepart__inner">
     <h1 class="brush__title brush__title--large twocol__title takepart__title">
     Want to Take part?

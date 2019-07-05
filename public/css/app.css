@@ -702,7 +702,7 @@ p a:active {
 .brush__title--large {
   font-size: 38px;
   line-height: 43px;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
   letter-spacing: 3.43px;
 }
 
@@ -866,7 +866,7 @@ p a:active {
 
 .btn-simple.btn-lg,
 .btn-gradient.btn-lg {
-  padding: 19px 39px 21px;
+  padding: 20px 39px 20px;
   font-size: 24px;
   font-weight: bold;
   font-family: inherit;
@@ -1208,6 +1208,17 @@ p a:active {
   color: #038e0a;
 }
 
+.btn-white-blue {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #052ab5;
+}
+
+.btn-white-blue:hover {
+  opacity: 0.75;
+  color: #052ab5;
+}
+
 .btnBanner {
   background: #052ab5;
   border: 2px solid #052ab5;
@@ -1234,24 +1245,6 @@ p a:active {
   .btn-header {
     width: auto;
     height: auto;
-  }
-}
-
-.btn-earthy-share {
-  padding: 5px 0 !important;
-  width: 100%;
-  font-size: 13px !important;
-}
-
-.btn-news-item {
-  width: auto;
-  display: flex;
-}
-
-@media only screen and (min-width: 768px) {
-  .btn-news-item {
-    display: inline-flex;
-    width: auto;
   }
 }
 
@@ -1805,9 +1798,17 @@ header.sticky {
 }
 
 .twocol__title {
-  text-align: left;
-  margin: 0;
-  max-width: 320px;
+  text-align: center;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .twocol__title {
+    max-width: 320px;
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .about__title {
@@ -2676,72 +2677,94 @@ header.sticky {
   }
 }
 
-.registrationBanner__inner {
+.regbanner__container {
+  background: #052ab5;
+  color: #ffffff;
+}
+
+.regbanner__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .registrationBanner__inner {
-    padding-top: 60px;
+  .regbanner__inner {
+    padding-top: 30px;
   }
 }
 
 @media only screen and (min-width: 1040px) {
-  .registrationBanner__inner {
-    padding-top: 120px;
+  .regbanner__inner {
+    padding-top: 40px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .registrationBanner__inner {
-    padding-bottom: 60px;
+  .regbanner__inner {
+    padding-bottom: 30px;
   }
 }
 
 @media only screen and (min-width: 1040px) {
-  .registrationBanner__inner {
-    padding-bottom: 120px;
+  .regbanner__inner {
+    padding-bottom: 40px;
   }
 }
 
-.registrationBanner__title {
+@media only screen and (min-width: 768px) {
+  .regbanner__inner {
+    flex-direction: row;
+  }
+}
+
+.regbanner__title {
   text-align: center;
   font-weight: normal;
-  margin: 0;
-  font-size: 32px;
-  line-height: 39px;
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 480px) {
-  .registrationBanner__title {
-    font-size: 32px;
-    line-height: 39px;
+  .regbanner__title {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .registrationBanner__title {
-    font-size: 40px;
-    line-height: 48px;
+  .regbanner__title {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
 @media screen and (min-width: 1040px) {
-  .registrationBanner__title {
-    font-size: 50px;
-    line-height: 62px;
+  .regbanner__title {
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 1340px) {
-  .registrationBanner__title {
-    font-size: 50px;
-    line-height: 62px;
+  .regbanner__title {
+    font-size: 36px;
+    line-height: 50px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .regbanner__title {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.regbanner__cta {
+  text-decoration: none;
 }
 
 .sponsors__inner {

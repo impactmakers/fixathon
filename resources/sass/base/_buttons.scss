@@ -115,7 +115,7 @@
 }
 .btn-simple.btn-lg,
 .btn-gradient.btn-lg {
-    padding: 19px 39px 21px;
+    padding: 20px 39px 20px;
     font-size: 24px;
     font-weight: bold;
     font-family: inherit;
@@ -435,6 +435,16 @@
     color: $green;
 }
 
+.btn-white-blue {
+    background: $white;
+    border: 2px solid $white;
+    color: $blue;
+    &:hover {
+        opacity: 0.75;
+        color: $blue;
+    }
+}
+
 .btnBanner {
     background: $blue;
     border: 2px solid $blue;
@@ -455,20 +465,5 @@
     @include mq('tablet') {
         width: auto;
         height: auto;
-    }
-}
-
-.btn-earthy-share {
-    padding: 5px 0 !important;
-    width: 100%;
-    font-size: 13px !important;
-}
-
-.btn-news-item {
-    width: auto;
-    display: flex;
-    @include mq('tablet') {
-        display: inline-flex;
-        width: auto;
     }
 }

@@ -1,17 +1,30 @@
-.registrationBanner__container {
+.regbanner__container {
+    background: $blue;
+    color: $white;
 }
 
-.registrationBanner__inner {
+.regbanner__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
-    @include pad-top-large;
-    @include pad-bot-large;
+    justify-content: space-between;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
 }
 
-.registrationBanner__title {
+.regbanner__title {
     text-align: center;
     font-weight: normal;
-    margin: 0;
-    @include font-size($text-xxl);
+    margin: 0 0 20px 0;
+    @include font-size($text-xl);
+    @include mq('tablet') {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+.regbanner__cta {
+    text-decoration: none;
 }

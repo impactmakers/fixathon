@@ -341,6 +341,6 @@ p {
 
 .brush__title--large {
     @include font-size($text-xxxl);
-    transform: rotate(-4deg);
+    transform: rotate(-3deg);
     letter-spacing: 3.43px;
 }

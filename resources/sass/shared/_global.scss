@@ -86,9 +86,14 @@
 }
 
 .twocol__title {
-    text-align: left;
-    margin: 0;
-    max-width: 320px;
+    text-align: center;
+    margin: 0 0 20px;
+    width: 100%;
+    @include mq('tablet') {
+        max-width: 320px;
+        text-align: left;
+        margin: 0;
+    }
 }
 
 .about__title {
