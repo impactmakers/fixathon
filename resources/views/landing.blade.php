@@ -8,7 +8,7 @@
     @include('partials.judges')
     @include('partials.sponsors')
     @include('partials.becomeSponsor')
-    @include('partials.entries')
+    @include('partials.participants')
     @include('partials.takePart')
     @include('partials.inspiration')
     @include('partials.registrationBanner')
