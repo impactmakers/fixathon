@@ -63,7 +63,7 @@ header.sticky {
 
 .header__nav {
     padding: 0;
-    margin: 40px 0 0 0;
+    margin: 35px 0 0 0;
     height: 40px;
     align-items: center;
     justify-content: space-between;
@@ -76,7 +76,7 @@ header.sticky {
             border-top: none;
         }
         @include mq('tablet') {
-            margin-top: 40px;
+            margin-top: 35px;
             margin-left: 35px;
             width: auto;
         }
@@ -98,16 +98,21 @@ header.sticky {
 .header__nav-item {
     @include links-on-light;
     @include brush-font;
-    @include font-size($text-lg);
+    @include font-size($text-md);
     transform: rotate(-1deg);
     a {
         text-decoration: none;
         color: $black;
     }
+    @include mq('tablet') {
+        a {
+            @include font-size($text-lg);
+        }
+    }
 }
 
 .header__nav-item.sticky {
-    margin-top: 35px;
+    margin: 0;
     a {
         @include font-size($text-md);
     }
