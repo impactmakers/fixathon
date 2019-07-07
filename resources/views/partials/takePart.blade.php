@@ -7,14 +7,14 @@
     </h1>
     <div class="twocol__text takepart__text">
       <p class="twocol__intro takepart__intro">
-      Anyone from around the world can take part in the Climate Fixathon as part of a team or as an individual.
+      Anyone from around the world can join the Climate Fixathon as an individual or as part of a team.
       </p>
-      <h2 class="takepart__sub-title">How to register your interest</h2>
+      <h2 class="takepart__sub-title">How to register your entry</h2>
       <p class="takepart__p--lead">
         The Climate Fixathon will be hosted on <a href='https://makerlog.com' target='_blank'>Makerlog</a> - a platform for makers to develop and launch in the open.
       </p>
       <p class="takepart__p">  
-        To join you must create a user account on Makerlog and list your entry as a product on our Makerlog event page by 1st August 2019 at 12:00 GMT.
+        To take part you must create a user account on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
       </p>
       <a class="takepart__cta" href="/">
         <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
