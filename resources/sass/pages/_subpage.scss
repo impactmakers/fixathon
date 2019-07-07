@@ -1,0 +1,197 @@
+.subpage__container {
+    background: $white;
+}
+
+.subpage__inner {
+    flex-direction: column;
+    align-items: center;
+    @include pad-bot-standard;
+}
+
+.subpage__content {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subpage__title {
+    @include mar-top-large;
+    @include pad-top-standard;
+}
+
+.subpage__intro {
+    color: $gray;
+}
+
+.subpage__small-title {
+    color: $grayDark;
+    margin-bottom: 0;
+    @include font-size($text);
+}
+
+/* Content styling
+/* ---------------------------------------------------------- */
+
+.subpage__content {
+    ol,
+    ul {
+        @include links-on-light;
+        list-style: none;
+    }
+    blockquote,
+    q {
+        quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    b,
+    strong {
+        font-weight: bold;
+    }
+    i,
+    em,
+    dfn {
+        font-style: italic;
+    }
+
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+    img {
+        border: 0;
+    }
+    svg:not(:root) {
+        overflow: hidden;
+    }
+    mark {
+        background-color: #fdffb6;
+    }
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+    }
+
+    p,
+    ul,
+    ol,
+    dl,
+    blockquote {
+        margin: 0 0 1.5em 0;
+    }
+
+    ol,
+    ul {
+        padding-left: 1.3em;
+        padding-right: 1.5em;
+        margin: 0 0 1.5em 0;
+    }
+
+    ol ol,
+    ul ul,
+    ul ol,
+    ol ul {
+        margin: 0.5em 0 1em;
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    ul,
+    ol {
+        max-width: 100%;
+    }
+
+    li {
+        margin: 0.5em 0;
+        padding-left: 0;
+        @include font-size($text);
+        color: $grayDark;
+    }
+
+    dt {
+        float: left;
+        margin: 0 20px 0 0;
+        width: 120px;
+        font-weight: 500;
+        text-align: right;
+    }
+
+    dd {
+        margin: 0 0 5px 0;
+        text-align: left;
+    }
+
+    blockquote {
+        margin: 0.3em 0 1.8em;
+        padding: 0 1.6em 0 1.6em;
+        border-left: $green 4px solid;
+    }
+
+    blockquote p {
+        margin: 0.8em 0;
+        color: $green;
+        font-weight: bold;
+    }
+
+    blockquote small {
+        display: inline-block;
+        margin: 0.8em 0 0.8em 1.5em;
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+    /* Quotation marks */
+    blockquote small:before {
+        content: '\2014 \00A0';
+    }
+
+    blockquote cite {
+        font-weight: bold;
+    }
+    blockquote cite a {
+        font-weight: normal;
+    }
+
+    a {
+        @include links-on-light;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include links-on-light;
+        margin-top: 0;
+        color: $black;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1 {
+    }
+
+    h2 {
+        color: $black;
+        font-weight: bold;
+    }
+    h3 {
+        color: $green;
+    }
+}

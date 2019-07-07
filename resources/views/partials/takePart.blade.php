@@ -25,10 +25,7 @@
       <p class="takepart__p--lead">Join the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel.</p>
 
       <h3 class="takepart__small-title">Don't know what you're going to work on yet?</h3>
-      <p class="takepart__p--lead">No problem! We recommend adding a product to Makerlog under a codename for now. 😬</p>
-      <p class="takepart__p--lead">No problem! You could create the project when you want.</p>
-      <p class="takepart__p--lead">Need <a href='{{ route("ideas") }}'>ideas</a>? We have a lot!</p>
-
+      <p class="takepart__p--lead">No problem! Please still registered for the event. You can decide on your project later. Check out our <a href="#inspiration">Climate Emergency Causes Mind Map</a> to find problems to solve.</p>
     </div>
   </div>
 </section>

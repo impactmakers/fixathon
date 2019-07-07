@@ -1,9 +1,8 @@
 .top__container {
-    padding-top: 220px;
-}
-
-.top__container.sticky {
-    padding-top: 160px;
+    padding-top: 90px;
+    @include mq('tablet') {
+        padding-top: 190px;
+    }
 }
 
 .intro__container {

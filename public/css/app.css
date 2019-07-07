@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Breakpoints */
 
 /* Spacing - Standard */
@@ -1256,6 +1258,7 @@ p a:active {
   z-index: 1;
   width: 100%;
   display: flex;
+  padding: 0 !important;
   flex-direction: column;
   align-items: center;
   color: #02124f;
@@ -1265,6 +1268,16 @@ p a:active {
   transition: all 0.4s ease;
 }
 
+header {
+  height: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: auto;
+  }
+}
+
 header.sticky {
   height: 90px;
   padding-top: 0;
@@ -1272,19 +1285,36 @@ header.sticky {
 
 .header__inner {
   justify-content: center;
-  align-items: center;
+  display: flex;
   padding: 0;
   flex-direction: row;
   margin-top: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .header__inner {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .header__logo {
-  margin: 0 0 -40px 0;
-  line-height: 0;
+  margin-top: 11px;
 }
 
 .header__logo img {
-  max-width: 200px;
+  max-width: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__logo {
+    margin: 20px 0 -40px 0;
+    line-height: 0;
+  }
+
+  .header__logo img {
+    max-width: 200px;
+  }
 }
 
 .header__logo.sticky {
@@ -1296,9 +1326,8 @@ header.sticky {
 }
 
 .header__nav {
-  display: none;
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 40px 0 0 0;
   height: 40px;
   align-items: center;
   justify-content: space-between;
@@ -1317,6 +1346,7 @@ header.sticky {
 
 @media only screen and (min-width: 768px) {
   .header__nav li {
+    margin-top: 40px;
     margin-left: 35px;
     width: auto;
   }
@@ -2114,6 +2144,8 @@ header.sticky {
   line-height: 30px;
   text-align: center;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -2175,11 +2207,13 @@ header.sticky {
 }
 
 .top__container {
-  padding-top: 220px;
+  padding-top: 90px;
 }
 
-.top__container.sticky {
-  padding-top: 160px;
+@media only screen and (min-width: 768px) {
+  .top__container {
+    padding-top: 190px;
+  }
 }
 
 .intro__inner {
@@ -3900,6 +3934,390 @@ header.sticky {
 
 .home-banner {
   background: #ffd156;
+}
+
+.subpage__container {
+  background: #ffffff;
+}
+
+.subpage__inner {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__inner {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .subpage__inner {
+    padding-bottom: 40px;
+  }
+}
+
+.subpage__content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subpage__title {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__title {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .subpage__title {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__title {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .subpage__title {
+    padding-top: 40px;
+  }
+}
+
+.subpage__intro {
+  color: #6a7586;
+}
+
+.subpage__small-title {
+  color: #535c69;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .subpage__small-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subpage__small-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .subpage__small-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .subpage__small-title {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+/* Content styling
+/* ---------------------------------------------------------- */
+
+.subpage__content {
+  /* Quotation marks */
+}
+
+.subpage__content ol,
+.subpage__content ul {
+  list-style: none;
+}
+
+.subpage__content ol a,
+.subpage__content ul a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.subpage__content ol a,
+.subpage__content ul a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.subpage__content ol a:hover,
+.subpage__content ul a:hover {
+  color: #0636e7;
+  transition: top 0.04s ease-out;
+}
+
+.subpage__content ol a:active,
+.subpage__content ul a:active {
+  color: #0527a9;
+  position: relative;
+  top: 1px;
+}
+
+.subpage__content blockquote,
+.subpage__content q {
+  quotes: none;
+}
+
+.subpage__content blockquote:before,
+.subpage__content blockquote:after,
+.subpage__content q:before,
+.subpage__content q:after {
+  content: "";
+  content: none;
+}
+
+.subpage__content b,
+.subpage__content strong {
+  font-weight: bold;
+}
+
+.subpage__content i,
+.subpage__content em,
+.subpage__content dfn {
+  font-style: italic;
+}
+
+.subpage__content sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.subpage__content img {
+  border: 0;
+}
+
+.subpage__content svg:not(:root) {
+  overflow: hidden;
+}
+
+.subpage__content mark {
+  background-color: #fdffb6;
+}
+
+.subpage__content code,
+.subpage__content kbd,
+.subpage__content pre,
+.subpage__content samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.subpage__content p,
+.subpage__content ul,
+.subpage__content ol,
+.subpage__content dl,
+.subpage__content blockquote {
+  margin: 0 0 1.5em 0;
+}
+
+.subpage__content ol,
+.subpage__content ul {
+  padding-left: 1.3em;
+  padding-right: 1.5em;
+  margin: 0 0 1.5em 0;
+}
+
+.subpage__content ol ol,
+.subpage__content ul ul,
+.subpage__content ul ol,
+.subpage__content ol ul {
+  margin: 0.5em 0 1em;
+}
+
+.subpage__content ul {
+  list-style: disc;
+}
+
+.subpage__content ol {
+  list-style: decimal;
+}
+
+.subpage__content ul,
+.subpage__content ol {
+  max-width: 100%;
+}
+
+.subpage__content li {
+  margin: 0.5em 0;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535c69;
+}
+
+@media screen and (min-width: 480px) {
+  .subpage__content li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subpage__content li {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .subpage__content li {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .subpage__content li {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+.subpage__content dt {
+  float: left;
+  margin: 0 20px 0 0;
+  width: 120px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.subpage__content dd {
+  margin: 0 0 5px 0;
+  text-align: left;
+}
+
+.subpage__content blockquote {
+  margin: 0.3em 0 1.8em;
+  padding: 0 1.6em 0 1.6em;
+  border-left: #038e0a 4px solid;
+}
+
+.subpage__content blockquote p {
+  margin: 0.8em 0;
+  color: #038e0a;
+  font-weight: bold;
+}
+
+.subpage__content blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.subpage__content blockquote small:before {
+  content: "\2014\A0";
+}
+
+.subpage__content blockquote cite {
+  font-weight: bold;
+}
+
+.subpage__content blockquote cite a {
+  font-weight: normal;
+}
+
+.subpage__content a a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.subpage__content a a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.subpage__content a a:hover {
+  color: #0636e7;
+  transition: top 0.04s ease-out;
+}
+
+.subpage__content a a:active {
+  color: #0527a9;
+  position: relative;
+  top: 1px;
+}
+
+.subpage__content h1,
+.subpage__content h2,
+.subpage__content h3,
+.subpage__content h4,
+.subpage__content h5,
+.subpage__content h6 {
+  margin-top: 0;
+  color: #02124f;
+  text-rendering: optimizeLegibility;
+}
+
+.subpage__content h1 a,
+.subpage__content h2 a,
+.subpage__content h3 a,
+.subpage__content h4 a,
+.subpage__content h5 a,
+.subpage__content h6 a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.subpage__content h1 a,
+.subpage__content h2 a,
+.subpage__content h3 a,
+.subpage__content h4 a,
+.subpage__content h5 a,
+.subpage__content h6 a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.subpage__content h1 a:hover,
+.subpage__content h2 a:hover,
+.subpage__content h3 a:hover,
+.subpage__content h4 a:hover,
+.subpage__content h5 a:hover,
+.subpage__content h6 a:hover {
+  color: #0636e7;
+  transition: top 0.04s ease-out;
+}
+
+.subpage__content h1 a:active,
+.subpage__content h2 a:active,
+.subpage__content h3 a:active,
+.subpage__content h4 a:active,
+.subpage__content h5 a:active,
+.subpage__content h6 a:active {
+  color: #0527a9;
+  position: relative;
+  top: 1px;
+}
+
+.subpage__content h2 {
+  color: #02124f;
+  font-weight: bold;
+}
+
+.subpage__content h3 {
+  color: #038e0a;
 }
 
 html {
