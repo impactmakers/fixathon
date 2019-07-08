@@ -28,6 +28,20 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('makerlog')->user();
         dd($user);
+
+
         // $user->token;
+    }
+
+    public function registerToEvent($token){
+        $base_uri = env('MAKERLOG_URL');
+        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/join';
+        
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('POST', $base_uri.$endpoint,[
+        'headers' => [
+                'Authorization' => 'Token '.$token
+            ]
+        ]);
     }
 }

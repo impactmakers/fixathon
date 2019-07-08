@@ -1771,6 +1771,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1782,9 +1793,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    //console.log('Loading participants...');
     axios.get('participants').then(function (resp) {
-      console.log(resp);
       _this.participants = resp.data.results;
       _this.totalParticipants = resp.data.count;
     })["catch"](function (resp) {
@@ -37120,37 +37129,68 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "ul",
-      { staticClass: "participants__list" },
-      _vm._l(_vm.participants, function(user) {
-        return _c("li", { staticClass: "participant" }, [
-          _c("a", { attrs: { href: "#", target: "_blank" } }, [
-            _c("img", {
-              staticClass: "partcipant__avatar",
-              attrs: { alt: "user.username", src: "user.avatar" }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "participant__info" }, [
-              _c("p", [_vm._v(_vm._s(user.username))])
-            ])
-          ])
-        ])
-      }),
-      0
-    ),
-    _vm._v(" "),
-    _vm.totalParticipants === 0
-      ? _c("div", { staticClass: "centered__intro participants__intro" }, [
-          _vm._v("\n    No participants yet. Be the first one! "),
-          _c("br"),
-          _c("br"),
+  return _c(
+    "section",
+    {
+      staticClass: "container participants__container",
+      attrs: { id: "participants" }
+    },
+    [
+      _c("div", { staticClass: "inner twocol__inner participants__inner" }, [
+        _c("div", { staticClass: "centered__header participants__header" }, [
+          _c(
+            "h1",
+            {
+              staticClass:
+                "brush__title brush__title--large centered__title participants__title"
+            },
+            [
+              _vm.totalParticipants !== 0
+                ? _c("span", [_vm._v(_vm._s(_vm.totalParticipants))])
+                : _vm._e(),
+              _vm._v(" Participants\n      ")
+            ]
+          ),
           _vm._v(" "),
-          _vm._m(0)
-        ])
-      : _vm._e()
-  ])
+          _c("p", { staticClass: "centered__intro participants__intro" }, [
+            _vm._v(
+              "\n        Discover the developers, designers and techies participating in the Climate Fixathon.\n      "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "ul",
+          { staticClass: "participants__list" },
+          _vm._l(_vm.participants, function(user) {
+            return _c("li", { staticClass: "participant" }, [
+              _c("a", { attrs: { href: "#", target: "_blank" } }, [
+                _c("img", {
+                  staticClass: "partcipant__avatar",
+                  attrs: { alt: "user.username", src: user.avatar }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "participant__info" }, [
+                  _c("p", [_vm._v(_vm._s(user.username))])
+                ])
+              ])
+            ])
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _vm.totalParticipants === 0
+          ? _c("div", { staticClass: "centered__intro participants__intro" }, [
+              _vm._v("\n      No participants yet. Be the first one! "),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
+              _vm._m(0)
+            ])
+          : _vm._e()
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
