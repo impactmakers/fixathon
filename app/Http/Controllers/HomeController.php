@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function event(){
+        $url = '/events/the-climate-fixathon/';
+        
+    }
+
+    public function participants(){
+
+    }
 }
