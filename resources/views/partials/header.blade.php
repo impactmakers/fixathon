@@ -4,10 +4,10 @@
   <div class="inner header__inner">
     <ul class="header__nav header__nav--left">
       <li class="header__nav-item">
-        <a class="header__nav-link" href="#about">What is it?</a>
+        <a class="header__nav-link" href="/#about">What is it?</a>
       </li>
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="#prizes">Prizes</a>
+        <a class="header__nav-link" href="/#prizes">Prizes</a>
       </li>
 
     </ul>
@@ -17,10 +17,10 @@
     <ul class="header__nav header__nav--right">
 
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="#sponsors">Sponsors</a>
+        <a class="header__nav-link" href="/#sponsors">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="#register">Register</a>
+        <a class="header__nav-link" href="/#register">Register</a>
       </li>
     </ul>
   </div>

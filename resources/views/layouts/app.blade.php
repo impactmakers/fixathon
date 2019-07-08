@@ -14,20 +14,19 @@
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@fixathon">
-    <meta name="twitter:title" content="Fixathon - Global hackathon for Climate Change">
-    <meta name="twitter:description" content="Global hackathon for tech makers to help prevent climate breakdown">
+    <meta name="twitter:title" content="The Climate Fixathon">
+    <meta name="twitter:description" content="The world's first online hackathon for makers to help fix the climate">
     <meta name="twitter:creator" content="@fixathon">
     <meta name="twitter:image:src" content="{{asset('img/logo_sm.png')}}">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Fixathon - Global hackathon for Climate Change" />
+    <meta property="og:title" content="The Climate Fixathon" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://fixathon.io" />
+    <meta property="og:url" content="https://fixathon.io" />
     <meta property="og:image" content="{{asset('img/logo_sm.png')}}" />
-    <meta property="og:description" content="Global hackathon for tech makers to help prevent climate breakdown" />
-    <meta name="theme-color" content="#325d42"/>
+    <meta property="og:description" content="The world's first online hackathon for makers to help fix the climate" />
+    <meta name="theme-color" content="#052AB5"/>
     
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script type="text/javascript" src="//fast.fonts.net/jsapi/608430df-03a7-475c-88dd-670405b8a199.js"></script>
