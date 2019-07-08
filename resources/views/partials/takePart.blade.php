@@ -16,7 +16,7 @@
       <p class="takepart__p">  
         To take part you must create a user account on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
       </p>
-      <a class="takepart__cta" href="/">
+      <a class="takepart__cta" href="{{ url('login/makerlog') }}" target="_blank">
         <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
       </a>
 

@@ -43,5 +43,10 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
+    'makerlog' => [
+        'client_id' => env('MAKERLOG_CLIENT_ID'),
+        'client_secret' => env('MAKERLOG_CLIENT_SECRET'),
+        'redirect' => env('MAKERLOG_REDIRECT_URI'),
+    ],
 
 ];

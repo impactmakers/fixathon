@@ -6,32 +6,38 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
         return view('home');
     }
 
     public function event(){
-        $url = '/events/the-climate-fixathon/';
+        $base_uri = env('MAKERLOG_URL');
+        $endpoint = '/events/'.env('MAKERLOG_EVENT');
         
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', $base_uri.$endpoint);
+
+        echo $response->getStatusCode();
+        echo $response->getHeaderLine('content-type');
+        echo $response->getBody();
     }
 
     public function participants(){
+        $base_uri = env('MAKERLOG_URL');
+        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/participants';
+        
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', $base_uri.$endpoint);
 
+        echo $response->getStatusCode();
+        echo $response->getHeaderLine('content-type');
+        echo $response->getBody();
     }
 }

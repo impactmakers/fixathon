@@ -1,15 +1,22 @@
-<template>
-    <div class="row text-center pt-2 justify-content-center">
-        <div v-for='participant in participants' class='col-4 col-sm-3 col-md-4 col-lg-2 mb-3 min-height-100'>
-            <div class='card text-center p-3 shadow-sm shadow-lg--hover min-height-100' style='min-height: 150px;'>
-                <p class='my-auto'>{{participant}}</p>
-            </div>
-        </div>
-    </div>
+<template>    
+    <li class="participant" v-for='user in users'>
+        <a href='#' target='_blank'>
+          <img alt="Simon Collison" class="partcipant__avatar" src="{{asset('img/people/steven.jpg')}}">
+          <div class="participant__info">
+            <h3>Steven Hylands</h3>
+            <p>This is a short bio from Makerlog which is max 50</p>
+            <p>{{user}}</p>
+          </div>
+        </a>
+    </li>
 </template>
 
 <script>
     export default {
-        props: [ 'participants' ]
+        //name: 'participants',
+        props: [ 'users' ],
+        mounted() {
+          console.log('component participants');
+        }
     }
 </script>

@@ -11,28 +11,35 @@
       </p>
     </div>
     <ul class="participants__list">
-      <li class="participant">
-        <a href='#' target='_blank'>
-          <img alt="Simon Collison" class="partcipant__avatar" src="{{asset('img/people/steven.jpg')}}">
-          <div class="participant__info">
-            <h3>Steven Hylands</h3>
-            <p>This is a short bio from Makerlog which is max 50</p>
-          </div>
-        </a>
-      </li>
+      <participants-component users='participants'></participants-component>
     </ul>
     
   </div>
 </section>
 <div class="border-img__bot border-img__bot--blue"></div>
 
-
-
-
-  
-
-
-
-
-
 <!-- END participants -->
+
+<script type="module">
+  export default {
+    data() {
+      return {
+        participants: [],
+        totalParticipants: 0
+      }
+    },
+    methods: {      
+    },
+    mounted() {
+      console.log('Loading participants...');
+      axios.get('participants')
+      .then(resp => {
+          console.log(resp);
+          this.participants = resp.data;
+      })
+      .catch(resp => {
+          console.log('Could not load participants');
+      });
+    }
+  }
+</script>
