@@ -1,0 +1,25 @@
+/* Breakpoints */
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1040px;
+$max: 1340px;
+$sub: 760px;
+
+$breakpoints: (
+    'mobile': $mobile,
+    'tablet': $tablet,
+    'desktop': $desktop,
+    'max': $max
+);
+
+$borderRadius: 4px;
+
+// OLD
+
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;

@@ -1,0 +1,21 @@
+.sponsors__container {
+    background-color: $white;
+}
+
+.sponsors__inner {
+    flex-direction: column;
+    align-items: center;
+    @include pad-top-large;
+    @include pad-bot-large;
+}
+
+.sponsors__header {
+}
+
+.sponsors__title {
+    color: $black;
+}
+
+.sponsors__intro {
+    color: $gray;
+}

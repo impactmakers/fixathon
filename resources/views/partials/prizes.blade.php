@@ -1,27 +1,53 @@
 <!-- PRICES -->
-<section class="bg-light my-5 py-5" id='prizes'>
-  <div class="container py-3">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <h1>Prizes</h1>
-        <p class="lead">Our panel of climate and tech experts will chose a winner and runner up for each of the categories</p>
+
+<section class="container prizes__container" id="prizes">
+  <div class="inner prizes__inner">
+    <div class="centered__header prizes__header">
+      <h1 class="brush__title brush__title--large centered__title prizes__title">
+        What can I win?
+      </h1>
+      <p class="centered__intro prizes__intro">
+      If your project is selected as the winner of our <strong>Action</strong>, <strong>Awareness</strong> or <strong>Facilitation</strong> award you’ll receive:
+      </p>
+    </div>
+    <div class="prizes">
+      <div class="prize prize__winner">
+        <h3 class="prize__title prize__title--winner">
+          <img alt="Winners" class="prize__icon" src="{{asset('img/icons/winners.svg')}}">
+          Winners
+        </h3>
+        <h2 class="prize__amount">$1,000</h2>
+        <span class="prize__strapline">Cash for your team to spend</span>
+        <ul class="prize__items">
+          <li>+ Free <a href='https://sketchapp.com' target='_blank'>Sketch</a> licenses</li>
+          <li>+ Free <a href='https://egghead.io' target='_blank'>Egghead.io</a> licenses</li>
+          <li>+ Free <a href='https://getkirby.com' target='_blank'>Kirby</a> licenses</li>
+          <li>+ Free <a href='https://drawkit.io' target='_blank'>Drawkit</a> illustrations</li>
+
+          <li>+ 200 trees planted by <a href='https://offset.earth' target='_blank'>Offset Earth</a></li>
+        </ul>
+      </div>
+      <div class="prize prize__runnerups">
+        <h3 class="prize__title prize__title--runnerups">
+          <img alt="Runner ups" class="prize__icon" src="{{asset('img/icons/runnerups.svg')}}">
+          Runner ups
+        </h3>
+        <h2 class="prize__amount">$250</h2>
+        <span class="prize__strapline">Cash for your team to spend</span>
+        <ul class="prize__items">
+          <li>+ 50 trees planted by <a href='https://offset.earth' target='_blank'>Offset Earth</a></li>
+        </ul>
       </div>
     </div>
-
-    <div class="row text-center pt-5  justify-content-center">
-      <div class="col-12 col-sm-6 col-md-3">
-        <img alt="medal" src="{{asset('img/icons/medal.png')}}" class="img-fluid rounded m-auto mb-4" width="64">
-        <h5 class='mt-3'><strong>Winner</strong></h5>
-        <p class='display-4'><strong>$400</strong></p>
-        <p class='lead'> +Benefit 1</p>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-sm-0">
-        <img alt="runner up" src="{{asset('img/icons/runnerup.png')}}" class="img-fluid rounded m-auto mb-4" width="64">
-        <h5 class='mt-3'><strong>Runners up</strong></h5>
-        <p class='display-4'>$100</p>
-      </div>
+    <div class="prizes__cta-banner">
+      <h1 class="prizes__cta-title">
+      Want to take part in the Climate Fixathon?
+      </h1>
+      <a class="prizes__cta" href="#register">
+        <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register Now</button>
+      </a>
     </div>
   </div>
 </section>
+
 <!-- END PRICES -->

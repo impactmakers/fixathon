@@ -1,0 +1,21 @@
+//setup
+@charset 'utf-8';
+
+@import 'styles/base/variables';
+@import 'styles/base/mixins';
+@import 'styles/base/normalize';
+@import 'styles/base/scaffolding';
+@import 'styles/base/type';
+@import 'styles/base/buttons';
+@import 'styles/base/colors';
+@import 'styles/shared/global';
+@import 'styles/shared/header';
+@import 'styles/shared/footer';
+@import 'styles/shared/room-list';
+@import 'styles/shared/subpage';
+@import 'styles/shared/subscribe-banner';
+
+@import 'styles/pages/home';
+@import 'styles/pages/room-detail';
+@import 'styles/pages/location';
+@import 'styles/pages/blog';

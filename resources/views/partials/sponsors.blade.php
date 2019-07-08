@@ -1,49 +1,19 @@
+
+
 <!-- SPONSORS -->
-<section class="my-4 py-5 px-2" id='sponsors'>
-  <div class="container">
-    <div class="row text-center justify-content-center mb-3">
-      <div class="col-8">
-        <h2>Sponsors</h2>
-        <p class="lead">
-            The Climate Fixathon prizes would not be possible without the support of the following companies and organisations.
-        </p>
-      </div>
+
+<section class="container sponsors__container" id="sponsors">
+  <div class="inner sponsors__inner">
+    <div class="centered__header sponsors__header">
+      <h1 class="brush__title brush__title--large centered__title sponsors__title">
+        Our Sponsors 🙌
+      </h1>
+      <p class="centered__intro sponsors__intro">
+        The Climate Fixathon prizes would not be possible without the support of these awesome companies.
+      </p>
     </div>
-
-    <div class="row-70"></div>
-
-    <div class="row text-center justify-content-center">
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/1.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/6.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/5.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/8.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/3.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/9.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/7.png')}}">
-      </div>
-
-      <div class="col-6 col-sm-4 col-md-3 m-sm-auto mb-2 mb-sm-5">
-        <img alt="image" class="rounded-circle img-center img-fluid shadow-lg--hover p-2" src="{{asset('img/sponsors/2.png')}}">
-      </div>
+    <div class="sponsors">
+      <img alt="image" class="" src="{{asset('img/sponsors/1.png')}}">
     </div>
   </div>
 </section>

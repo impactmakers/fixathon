@@ -1,0 +1,346 @@
+// Fonts
+$sans: 'Neue Helvetica W05', sans-serif;
+$brush: 'Poster Brush W05', serif;
+
+// Responsive Typography Resizer
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            @include make-font-size($fs-font-size);
+        } @else {
+            // If $fs-font-size is a key that exists in
+            // $fs-breakpoints, use the value
+            @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+                $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+            }
+            @media screen and (min-width: $fs-breakpoint) {
+                @include make-font-size($fs-font-size);
+            }
+        }
+    }
+}
+
+// Utility function for mixin font-size
+@mixin make-font-size($fs-font-size) {
+    // If $fs-font-size is a list, include
+    // both font-size and line-height
+    @if type-of($fs-font-size) == 'list' {
+        font-size: nth($fs-font-size, 1);
+        @if (length($fs-font-size) > 1) {
+            line-height: nth($fs-font-size, 2);
+        }
+    } @else {
+        font-size: $fs-font-size;
+    }
+}
+
+// Text Styles
+
+$text-xxxl: (
+    null: (
+        38px,
+        43px
+    ),
+    mobile: (
+        38px,
+        43px
+    ),
+    tablet: (
+        50px,
+        56px
+    ),
+    desktop: (
+        72px,
+        82px
+    ),
+    max: (
+        72px,
+        82px
+    )
+);
+
+@mixin text-xxxl {
+    @include font-size($text-xl);
+    font-family: $sans;
+    font-weight: bold;
+    color: $black;
+    letter-spacing: -0.24px;
+}
+
+$text-xxl: (
+    null: (
+        32px,
+        41px
+    ),
+    mobile: (
+        32px,
+        41px
+    ),
+    tablet: (
+        40px,
+        50px
+    ),
+    desktop: (
+        50px,
+        66px
+    ),
+    max: (
+        50px,
+        66px
+    )
+);
+
+@mixin text-xxl {
+    font-family: $sans;
+    @include font-size($text-lg);
+    font-weight: bold;
+    color: $black;
+}
+
+$text-xl: (
+    null: (
+        24px,
+        30px
+    ),
+    mobile: (
+        24px,
+        30px
+    ),
+    tablet: (
+        30px,
+        37px
+    ),
+    desktop: (
+        36px,
+        50px
+    ),
+    max: (
+        36px,
+        50px
+    )
+);
+
+$text-lg: (
+    null: (
+        21px,
+        30px
+    ),
+    mobile: (
+        21px,
+        30px
+    ),
+    tablet: (
+        23px,
+        34px
+    ),
+    desktop: (
+        26px,
+        39px
+    ),
+    max: (
+        26px,
+        39px
+    )
+);
+
+$text-md: (
+    null: (
+        18px,
+        27px
+    ),
+    mobile: (
+        18,
+        27px
+    ),
+    tablet: (
+        20px,
+        30px
+    ),
+    desktop: (
+        21px,
+        32px
+    ),
+    max: (
+        21px,
+        32px
+    )
+);
+
+$text: (
+    null: (
+        16px,
+        24px
+    ),
+    mobile: (
+        16px,
+        24px
+    ),
+    tablet: (
+        18px,
+        28px
+    ),
+    desktop: (
+        19px,
+        30px
+    ),
+    max: (
+        19px,
+        30px
+    )
+);
+
+$text-sm: (
+    null: (
+        16px,
+        27px
+    ),
+    mobile: (
+        16px,
+        27px
+    ),
+    tablet: (
+        16px,
+        27px
+    ),
+    desktop: (
+        18px,
+        30px
+    ),
+    max: (
+        18px,
+        30px
+    )
+);
+
+$text-xs: (
+    null: (
+        14px,
+        22px
+    ),
+    mobile: (
+        14px,
+        22px
+    ),
+    tablet: (
+        14px,
+        22px
+    ),
+    desktop: (
+        15px,
+        22px
+    ),
+    max: (
+        15px,
+        22px
+    )
+);
+
+@mixin text-sm {
+    @include font-size($text-sm);
+}
+
+@mixin text {
+    @include font-size($text);
+}
+
+@mixin text-xl {
+    @include font-size($text-xl);
+    font-weight: bold;
+}
+
+@mixin text-lg {
+    @include font-size($text);
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+@mixin title-uppercase-small {
+    @include font-size($text-sm);
+    letter-spacing: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin black-title {
+    @include font-size($text-lg);
+    font-weight: normal;
+    color: $black;
+}
+
+@mixin brush-font {
+    font-family: $brush;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+// Text Style Application
+
+h1 {
+    @include text-xl;
+}
+
+h2 {
+    margin: 0.5em 0 0.5em 0;
+    @include black-title;
+}
+
+h3 {
+    margin: 0 0 0.5em 0;
+    @include font-size($text-md);
+    color: $black;
+}
+
+h4 {
+    @include font-size($text-md);
+    margin: 0 0 0.5em 0;
+    color: $black;
+}
+
+h5,
+h6 {
+    margin: 0.5em 0 0.5em 0;
+    @include title-uppercase-small;
+    color: $black;
+}
+
+p {
+    @include text;
+    @include links-on-light;
+}
+
+@mixin text-lg-uppercase {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+.gray-text-lg {
+    @include text-lg-uppercase;
+    font-weight: normal;
+    color: #7e7e7e;
+}
+
+.black-text-lg {
+    @include text-lg-uppercase;
+    font-weight: bold;
+    color: $black;
+}
+
+.yellow-text-lg {
+    @include text-lg-uppercase;
+    font-weight: bold;
+    color: $yellow;
+}
+
+.brush__title {
+    @include brush-font;
+}
+
+.brush__title--large {
+    @include font-size($text-xxxl);
+    transform: rotate(-3deg);
+    letter-spacing: 3.43px;
+}

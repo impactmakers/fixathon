@@ -1,0 +1,41 @@
+.takepart__container {
+    background: $white;
+}
+
+.takepart__inner {
+}
+
+.takepart__title {
+}
+
+.takepart__text {
+    color: $grayDark;
+}
+
+.takepart__sub-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.takepart__p--lead {
+    margin-top: 5px;
+}
+
+.takepart__cta {
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0;
+    @include mar-bot-standard;
+    @include pad-bot-small;
+}
+
+.takepart__sub-title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.takepart__small-title {
+    color: $grayDark;
+    margin-bottom: 0;
+    @include font-size($text);
+}

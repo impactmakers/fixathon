@@ -1,0 +1,71 @@
+.top__container {
+    padding-top: 90px;
+    @include mq('tablet') {
+        padding-top: 190px;
+    }
+}
+
+.intro__container {
+    // background: $gray;
+}
+
+.intro__inner {
+    flex-direction: column;
+    align-items: center;
+    max-width: 760px;
+    @include pad-top-large;
+    @include pad-bot-large;
+}
+
+.intro__title {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    @include font-size($text-xxl);
+}
+
+.intro__key {
+    @include pad-top-small;
+    @include pad-bot-standard;
+    margin: 10px 0 20px;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
+}
+
+.intro__key-item {
+    @include font-size($text-md);
+    color: $gray;
+    @include mq('tablet') {
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.intro__key-item--mobile {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.intro__cta {
+    text-decoration: none;
+    margin: 0;
+    a {
+    }
+}
+
+.intro__secondary-cta {
+    @include links-on-light;
+    margin-top: 40px;
+    @include font-size($text-md);
+    @include mq('tablet') {
+        margin-top: 90px;
+    }
+}

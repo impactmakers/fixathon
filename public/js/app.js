@@ -1384,7 +1384,7 @@ module.exports = function spread(callback) {
 
 
 var bind = __webpack_require__(/*! ./helpers/bind */ "./node_modules/axios/lib/helpers/bind.js");
-var isBuffer = __webpack_require__(/*! is-buffer */ "./node_modules/axios/node_modules/is-buffer/index.js");
+var isBuffer = __webpack_require__(/*! is-buffer */ "./node_modules/is-buffer/index.js");
 
 /*global toString:true*/
 
@@ -1684,28 +1684,6 @@ module.exports = {
   extend: extend,
   trim: trim
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/axios/node_modules/is-buffer/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/axios/node_modules/is-buffer/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-module.exports = function isBuffer (obj) {
-  return obj != null && obj.constructor != null &&
-    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
 
 
 /***/ }),
@@ -6213,6 +6191,28 @@ __webpack_require__.r(__webpack_exports__);
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/is-buffer/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/is-buffer/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+module.exports = function isBuffer (obj) {
+  return obj != null && obj.constructor != null &&
+    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
 
 
 /***/ }),
@@ -49266,6 +49266,8 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./header */ "./resources/js/header.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -49474,6 +49476,44 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/header.js":
+/*!********************************!*\
+  !*** ./resources/js/header.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $('header').addClass('sticky');
+  } else {
+    $('header').removeClass('sticky');
+  }
+});
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $('.header__logo').addClass('sticky');
+  } else {
+    $('.header__logo').removeClass('sticky');
+  }
+});
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $('.header__nav-item').addClass('sticky');
+  } else {
+    $('.header__nav-item').removeClass('sticky');
+  }
+});
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 150) {
+    $('.intro__container').addClass('sticky');
+  } else {
+    $('.intro__container').removeClass('sticky');
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49492,8 +49532,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/saveEarth/fixathon/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/saveEarth/fixathon/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/shylands/dev/fixathon/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/shylands/dev/fixathon/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

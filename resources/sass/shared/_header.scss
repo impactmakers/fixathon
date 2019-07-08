@@ -1,0 +1,141 @@
+.header__container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column;
+    align-items: center;
+    color: $black;
+    background: url('../../../public/img/decorative/border-bottom-light-gray.svg')
+        no-repeat center bottom;
+    background-size: cover;
+    padding-top: 30px;
+    // set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+header {
+    height: 90px;
+    @include mq('tablet') {
+        height: auto;
+    }
+}
+
+header.sticky {
+    height: 90px;
+    padding-top: 0;
+}
+
+.header__inner {
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    margin-top: 0;
+    @include mq('tablet') {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.header__logo {
+    margin-top: 11px;
+    img {
+        max-width: 90px;
+    }
+    @include mq('tablet') {
+        margin: 20px 0 -40px 0;
+        line-height: 0;
+        img {
+            max-width: 200px;
+        }
+    }
+}
+
+.header__logo.sticky {
+    margin-top: 11px;
+    img {
+        max-width: 90px;
+    }
+}
+
+.header__nav {
+    padding: 0;
+    margin: 35px 0 0 0;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style-type: none;
+    li {
+        width: 100%;
+        &:first-child {
+            margin-left: 0;
+            border-top: none;
+        }
+        @include mq('tablet') {
+            margin-top: 35px;
+            margin-left: 35px;
+            width: auto;
+        }
+    }
+    @include mq('tablet') {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.header__nav--left {
+    margin-right: 7.5%;
+}
+.header__nav--right {
+    margin-left: 7.5%;
+}
+.header__nav-item {
+    @include links-on-light;
+    @include brush-font;
+    @include font-size($text-md);
+    transform: rotate(-1deg);
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+    @include mq('tablet') {
+        a {
+            @include font-size($text-lg);
+        }
+    }
+}
+
+.header__nav-item.sticky {
+    margin: 0;
+    a {
+        @include font-size($text-md);
+    }
+}
+
+.header__nav-link {
+    text-align: center;
+    display: block;
+    margin: 0;
+    a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-weight: normal;
+        text-decoration: none;
+    }
+    @include mq('tablet') {
+        border: none;
+        display: flex;
+        width: auto;
+        a {
+            display: flex;
+            width: auto;
+        }
+    }
+}

@@ -1,23 +1,47 @@
 // Fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@import 'variables';
-@import '~bootstrap/scss/bootstrap';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/scaffolding';
+@import 'base/type';
+@import 'base/buttons';
+@import 'base/colors';
+@import 'shared/header';
+@import 'shared/footer';
+@import 'shared/global';
+@import 'partials/intro';
+@import 'partials/about';
+@import 'partials/countdown';
+@import 'partials/entries';
+@import 'partials/participants';
+@import 'partials/becomeSponsor';
+@import 'partials/inspiration';
+@import 'partials/judges';
+@import 'partials/prizes';
+@import 'partials/registrationBanner';
+@import 'partials/sponsors';
+@import 'partials/takePart';
+@import 'pages/home';
+@import 'pages/subpage';
 
-html{
-	min-width: 350px;
+//@import '~bootstrap/scss/bootstrap';
+
+html {
+    min-width: 350px;
 }
 
-.nav-item{
-	font-size: 0.8rem;
+.nav-item {
+    font-size: 0.8rem;
 }
 
 @media (min-width: 992px) {
-	.nav-item{
-		font-size: 1rem;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
+    .nav-item {
+        font-size: 1rem;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 }
 
 .floating {
@@ -33,67 +57,67 @@ html{
     animation: floating-sm 3s ease infinite;
 }
 
-
 .bg-gradient-success {
     background: linear-gradient(87deg, #2dce89 0, #2dcecc 100%) !important;
 }
-
 
 .btn-white {
     color: #3f9865;
     border-color: #fff;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .btn-white:hover {
     color: #3f9865;
-    border-color: white; 
+    border-color: white;
     background-color: white;
 }
 .btn-white:focus,
 .btn-white.focus {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08), 0 0 0 0 rgba(255, 255, 255, .5);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08),
+        0 0 0 0 rgba(255, 255, 255, 0.5);
 }
 
-[class*='shadow']{
-    transition: all .15s ease;
+[class*='shadow'] {
+    transition: all 0.15s ease;
 }
 
 .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .shadow,
-.profile-page .card-profile .card-profile-image img
-{
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+.profile-page .card-profile .card-profile-image img {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07) !important;
 }
 
 .shadow-md {
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .175) !important;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .shadow-none {
     box-shadow: none !important;
 }
 
-.shadow-sm--hover:hover{
-    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+.shadow-sm--hover:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow--hover:hover{
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+.shadow--hover:hover {
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        0 5px 15px rgba(0, 0, 0, 0.07) !important;
 }
 
-.shadow-lg--hover:hover{
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+.shadow-lg--hover:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-.shadow-none--hover:hover{
+.shadow-none--hover:hover {
     box-shadow: none !important;
 }
 
@@ -106,74 +130,74 @@ html{
     height: 1.1em;
 }
 
-.timer{
-	display:inline-block;
-	font-size:1em;
-	padding:1em;
-	text-transform:uppercase;
-	list-style-type:none;
+.timer {
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em;
+    text-transform: uppercase;
+    list-style-type: none;
 }
 
-.timer span{
-	font-size:2em;
-	display:block;
+.timer span {
+    font-size: 2em;
+    display: block;
 }
 
-.min-height-100{
-	min-height: 100%;
+.min-height-100 {
+    min-height: 100%;
 }
-.judge-img{
-	width:50%;
-	margin:10px auto;
-	max-width:150px;
-}
-
-.become-donor{
-	text-align:center;
-	margin-top:10px;
+.judge-img {
+    width: 50%;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
-.register-box{
-	text-align:center;
-	background-size: contain;
-	height:300px;
-	padding-top:140px;
-	background-repeat:no-repeat;
-	background-position:center;
+.become-donor {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.event-date{
-	text-align:left;
-	font-size:16px;
-	margin:0px auto;
-	padding-left:0px;
-	padding-right:10px;
+.register-box {
+    text-align: center;
+    background-size: contain;
+    height: 300px;
+    padding-top: 140px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.event-date span{
-	font-size:12px;
-	line-height:18px;
-	float:right
+.event-date {
+    text-align: left;
+    font-size: 16px;
+    margin: 0px auto;
+    padding-left: 0px;
+    padding-right: 10px;
 }
 
-h1 strong{
-	font-weight:600;
+.event-date span {
+    font-size: 12px;
+    line-height: 18px;
+    float: right;
 }
 
-.nav-item:hover{
-	text-decoration: underline;
+h1 strong {
+    font-weight: 600;
 }
 
-.icon-action:hover span{
-	filter:none;
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.icon-action:hover span {
+    filter: none;
 }
 
 /* avatars */
 
-.avatar{
+.avatar {
     font-size: 1rem;
     display: inline-flex;
-    width: 48px; 
+    width: 48px;
     height: 48px;
     color: #fff;
     border-radius: 50%;
@@ -182,7 +206,7 @@ h1 strong{
     justify-content: center;
 }
 
-.avatar img{
+.avatar img {
     width: 100%;
 
     border-radius: 50%;
@@ -190,25 +214,25 @@ h1 strong{
 
 .avatar + .avatar-content {
     display: inline-block;
-    margin-left: .75rem;
+    margin-left: 0.75rem;
 }
 
 .avatar-lg {
-    font-size: .875rem; 
+    font-size: 0.875rem;
     width: 58px;
     height: 58px;
 }
 
 .avatar-sm {
-    font-size: .875rem; 
+    font-size: 0.875rem;
     width: 38px;
     height: 38px;
 }
 
 .avatar-xs {
-    font-size: .5rem;
-    width:20px;
-    height:20px;
+    font-size: 0.5rem;
+    width: 20px;
+    height: 20px;
 }
 
 .avatar-group .avatar {
@@ -217,7 +241,7 @@ h1 strong{
     border: 2px solid #fff;
 }
 
-.avatar-group .avatar:hover{
+.avatar-group .avatar:hover {
     z-index: 3;
 }
 

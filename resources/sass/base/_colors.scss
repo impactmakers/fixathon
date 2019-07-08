@@ -1,0 +1,40 @@
+/* Colors */
+$black: #02124f;
+$white: #ffffff;
+$orangeOnDark: #dc8c01;
+$orange: #cf8300;
+$orangeLight: #ffb637;
+
+$blue: #052ab5;
+$blueSky: #74c9e6;
+$green: #038e0a;
+$greenDark: #009454;
+$pink: #f281ac;
+$red: #ca2727;
+$yellow: #ffd156;
+$yellowLight: #ffe1b2;
+$cream: #fff4dd;
+$greenLight: #e5fff3;
+$blueLight: #e9effa;
+$gold: #cc8900;
+$silver: #a6a6a6;
+
+$indigo: #6574cd;
+$purple: #9561e2;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$whiteFaded: rgba($white, 0.7);
+
+$gray: #6a7586;
+$grayDark: #535c69;
+$grayLight: #ebecf4;
+$grayLightest: #f8f8f8;
+$grayBorder: #dde0e5;
+
+// Links
+$link: $blue;
+$linkHover: lighten($link, 10%);
+$linkActive: darken($link, 2.5%);
+
+$twitter: #3ea3ee;
