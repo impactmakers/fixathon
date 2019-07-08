@@ -22,10 +22,14 @@
       <div class="subpage__divider"></div>
       <h2>📝 How do I submit my project?</h2>
       <p>  
-        To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 12:00 GMT on Friday 30th August.
+        To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 12:00 GMT on Friday 30th August. 
+      </p>
+      <p>  
+        Please ensure that all team members who worked on the project are added to it on Makerlog.
       </p>
 
       <div class="subpage__divider"></div>
+      
 
       <h2>👥 Is there a maximum team size?</h2>
       <p>Teams can be any size. Please note that we may not be able to provide some prizes to teams of more than 4 people.</p>
@@ -35,6 +39,8 @@
       <h2>🔍 How do I find team members?</h2>
       <p>Ask for collaborators in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>
   
+        <div class="subpage__divider"></div>
+
 
       <div class="subpage__divider"></div>
 
