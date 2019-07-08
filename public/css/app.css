@@ -1962,6 +1962,10 @@ header.sticky {
   }
 }
 
+#app {
+  background: #ffffff;
+}
+
 .border-img__top {
   width: 100%;
   height: 13px;
@@ -1981,11 +1985,11 @@ header.sticky {
 }
 
 .border-img__top--blue {
-  background: url(/images/border-blue-2.svg?86abda656133014b4c8eaad9aa061677) repeat-x center bottom;
+  background: url(/images/border-blue-2.svg?c79109aa5680458d1d7dce670cca5ba9) repeat-x center bottom;
 }
 
 .border-img__top--blue-lightgray {
-  background: #ebecf4 url(/images/border-blue-2.svg?86abda656133014b4c8eaad9aa061677) repeat-x center bottom;
+  background: #ebecf4 url(/images/border-blue-2.svg?c79109aa5680458d1d7dce670cca5ba9) repeat-x center bottom;
 }
 
 .border-img__bot--blue {
@@ -3122,7 +3126,8 @@ header.sticky {
 }
 
 .inspiration__container {
-  background-color: #ebecf4;
+  background: #ebecf4;
+  background: linear-gradient(180deg, #ebecf4 0%, white 100%);
 }
 
 .inspiration__inner {
@@ -3933,7 +3938,7 @@ header.sticky {
 }
 
 .takepart__small-title {
-  color: #535c69;
+  color: #02124f;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
@@ -4002,6 +4007,7 @@ header.sticky {
 .subpage__title {
   margin-top: 40px;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4025,6 +4031,18 @@ header.sticky {
 @media only screen and (min-width: 1040px) {
   .subpage__title {
     padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .subpage__title {
+    margin-bottom: 40px;
   }
 }
 
@@ -4064,6 +4082,22 @@ header.sticky {
   .subpage__small-title {
     font-size: 19px;
     line-height: 30px;
+  }
+}
+
+.subpage__divider {
+  height: 1px;
+  background-color: #dde0e5;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  padding: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__divider {
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -4347,8 +4381,21 @@ header.sticky {
 }
 
 .subpage__content h2 {
-  color: #02124f;
+  color: #038e0a;
   font-weight: bold;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subpage__content h2 {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .subpage__content h2 {
+    padding-top: 20px;
+  }
 }
 
 .subpage__content h3 {

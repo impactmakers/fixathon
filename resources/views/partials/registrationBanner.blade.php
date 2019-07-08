@@ -1,6 +1,6 @@
 <!-- REGISTER SECTION -->
 
-<div class="border-img__top border-img__top--blue-lightgray"></div>
+<div class="border-img__top border-img__top--blue"></div>
 <section class="container regbanner__container" id="register-banner">
   <div class="inner regbanner__inner">
     <h1 class="regbanner__title">
