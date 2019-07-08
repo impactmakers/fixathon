@@ -34,7 +34,7 @@ $grayBorder: #dde0e5;
 
 // Links
 $link: $blue;
-$linkHover: lighten($link, 10%);
-$linkActive: darken($link, 2.5%);
+$linkHover: $green;
+$linkActive: darken($green, 2.5%);
 
 $twitter: #3ea3ee;

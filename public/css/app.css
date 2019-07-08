@@ -35,6 +35,7 @@ html {
 body {
   font-family: "Helvetica Now Text W05", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
@@ -660,12 +661,12 @@ p a {
 }
 
 p a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 p a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -985,8 +986,8 @@ p a:active {
 
 .btn-bordered:hover,
 .btn-bordered:focus {
-  border-color: #0636e7;
-  color: #0636e7;
+  border-color: #038e0a;
+  color: #038e0a;
   background: none;
   text-decoration: none !important;
 }
@@ -1391,12 +1392,12 @@ header.sticky {
 }
 
 .header__nav-item a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .header__nav-item a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -1638,12 +1639,12 @@ header.sticky {
 }
 
 .footer__im-from a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .footer__im-from a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -1798,12 +1799,12 @@ header.sticky {
 }
 
 .footer__nav a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .footer__nav a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -1893,12 +1894,12 @@ header.sticky {
 }
 
 .footer__bot a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .footer__bot a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -2258,7 +2259,7 @@ header.sticky {
 .intro__inner {
   flex-direction: column;
   align-items: center;
-  max-width: 760px;
+  max-width: 780px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -2326,7 +2327,7 @@ header.sticky {
 .intro__key {
   padding-top: 10px;
   padding-bottom: 20px;
-  margin: 10px 0 20px;
+  margin: 0 0 10px;
   list-style-type: none;
   padding: 0;
   flex-direction: column;
@@ -2436,12 +2437,12 @@ header.sticky {
 }
 
 .intro__secondary-cta a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .intro__secondary-cta a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -2476,7 +2477,7 @@ header.sticky {
 
 @media only screen and (min-width: 768px) {
   .intro__secondary-cta {
-    margin-top: 90px;
+    margin-top: 50px;
   }
 }
 
@@ -2989,12 +2990,12 @@ header.sticky {
 }
 
 .participant h3 a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .participant h3 a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -3263,12 +3264,12 @@ header.sticky {
 }
 
 .judges__judge a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .judges__judge a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -3581,6 +3582,7 @@ header.sticky {
 
 .prize__items {
   margin-top: 10px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 22px;
   color: #535c69;
@@ -3644,18 +3646,22 @@ header.sticky {
 }
 
 .prize__items a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .prize__items a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
 
 .prize__items li {
   margin-bottom: 5px;
+}
+
+.prize__items li:last-child {
+  margin-bottom: 0;
 }
 
 .prizes__cta-banner {
@@ -4128,13 +4134,13 @@ header.sticky {
 
 .subpage__content ol a:hover,
 .subpage__content ul a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .subpage__content ol a:active,
 .subpage__content ul a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -4317,12 +4323,12 @@ header.sticky {
 }
 
 .subpage__content a a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
 .subpage__content a a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
@@ -4365,7 +4371,7 @@ header.sticky {
 .subpage__content h4 a:hover,
 .subpage__content h5 a:hover,
 .subpage__content h6 a:hover {
-  color: #0636e7;
+  color: #038e0a;
   transition: top 0.04s ease-out;
 }
 
@@ -4375,7 +4381,7 @@ header.sticky {
 .subpage__content h4 a:active,
 .subpage__content h5 a:active,
 .subpage__content h6 a:active {
-  color: #0527a9;
+  color: #038209;
   position: relative;
   top: 1px;
 }
