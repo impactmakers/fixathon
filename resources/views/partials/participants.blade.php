@@ -10,36 +10,10 @@
         Discover the developers, designers and techies participating in the Climate Fixathon.
       </p>
     </div>
-    <ul class="participants__list">
-      <participants-component users='participants'></participants-component>
-    </ul>
     
+    <participants-component></participants-component>
   </div>
 </section>
 <div class="border-img__bot border-img__bot--blue"></div>
 
 <!-- END participants -->
-
-<script type="module">
-  export default {
-    data() {
-      return {
-        participants: [],
-        totalParticipants: 0
-      }
-    },
-    methods: {      
-    },
-    mounted() {
-      console.log('Loading participants...');
-      axios.get('participants')
-      .then(resp => {
-          console.log(resp);
-          this.participants = resp.data;
-      })
-      .catch(resp => {
-          console.log('Could not load participants');
-      });
-    }
-  }
-</script>

@@ -9,7 +9,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     public function index()
@@ -22,11 +22,20 @@ class HomeController extends Controller
         $endpoint = '/events/'.env('MAKERLOG_EVENT');
         
         $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', $base_uri.$endpoint);
+        $response = $client->request('GET', $base_uri.$endpoint,[
+        'headers' => [
+                'Authorization' => 'Token '.env('MAKERLOG_TOKEN')
+            ]
+        ]);
 
-        echo $response->getStatusCode();
-        echo $response->getHeaderLine('content-type');
         echo $response->getBody();
+
+        /*
+        return response()->json([
+            'data' => $response->getBody(),
+            'status' => $response->getStatusCode()
+        ]);
+        */
     }
 
     public function participants(){
@@ -34,10 +43,12 @@ class HomeController extends Controller
         $endpoint = '/events/'.env('MAKERLOG_EVENT').'/participants';
         
         $client = new \GuzzleHttp\Client();
-        $response = $client->request('GET', $base_uri.$endpoint);
-
-        echo $response->getStatusCode();
-        echo $response->getHeaderLine('content-type');
+        $response = $client->request('GET', $base_uri.$endpoint,[
+        'headers' => [
+                'Authorization' => 'Token '.env('MAKERLOG_TOKEN')
+            ]
+        ]);
+        
         echo $response->getBody();
     }
 }

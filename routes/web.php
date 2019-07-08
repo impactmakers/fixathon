@@ -2,6 +2,10 @@
 
 Route::get('/', function () { return view('landing'); })->name('landing');
 
+//Requests
+Route::get('/participants', 'HomeController@participants')->name('participants');
+Route::get('/event', 'HomeController@event')->name('event');
+
 
 // Auth routes the login, register, remember password
 Auth::routes();
@@ -11,11 +15,6 @@ Auth::routes();
 Route::view('/ideas', 'ideas')->name('ideas');
 Route::view('/codeOfConduct', 'coc')->name('coc');
 Route::view('/faq', 'faq')->name('faq');
-
-
-//Requests
-Route::get('/participants', 'HomeController@participants')->name('participants');
-Route::get('/event', 'HomeController@event')->name('event');
 
 
 //Login/Register
