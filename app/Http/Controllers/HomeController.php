@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,15 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home');
+        return view('landing');
+    }
+
+    public function welcome(Request $request){
+        if(!$request->session()->has('logged_in')){
+            return redirect()->to('/#register');
+        }
+
+        return view('welcome');
     }
 
     public function event(){

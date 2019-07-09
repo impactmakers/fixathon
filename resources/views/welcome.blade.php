@@ -3,14 +3,13 @@
 @section('content')
 
     @include('partials.intro')
+    @include('partials.spread')
+    @include('partials.faqContent')
+    @include('partials.inspiration')
     @include('partials.about')
     @include('partials.prizes')
     @include('partials.judges')
-    @include('partials.sponsors')
-    @include('partials.becomeSponsor')
     @include('partials.participants')
     @include('partials.takePart')
-    @include('partials.inspiration')
-    @include('partials.registrationBanner')
 
 @endsection

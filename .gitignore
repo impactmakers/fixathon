@@ -3,6 +3,8 @@
 /public/storage
 /public/theBlog
 /public/assets
+/public/css/app.css
+/public/js/app.js
 /storage/*.key
 /vendor
 .env

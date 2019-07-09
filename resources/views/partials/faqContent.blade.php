@@ -1,11 +1,21 @@
-
+@if(!session()->has('logged_in'))
 <section class="container top__container subpage__container" id="register">
+@else
+<section class="container subpage__container" id="register">
+@endif
   <div class="inner subpage__inner">
 
     <div class="subpage__content">
+      @if(!session()->has('logged_in'))
       <h1 class="brush__title brush__title--large subpage__title">
         FAQs
       </h1>
+      @else
+      <h1 class="brush__title brush__title--large subpage__title">
+        How it Works?
+      </h1>
+      @endif
+
       <h2>🗓 What is the event schedule?</h2>
       <p>The Fixathon will officially <b>begin at 12:00 GMT on Friday 2nd August</b> and <b>end at 12:00 GMT on Friday 30th August</b>. Use a <a href="https://www.worldtimebuddy.com/">timezone converter</a> to find the start and end times in your local timezone. </p>
 
@@ -13,11 +23,13 @@
 
       <p>Winners will be announced on Thursday 5th September.</p>
 
+      @if(!session()->has('logged_in'))
       <div class="subpage__divider"></div>
       <h2>✅ How do I register?</h2>
       <p>  
         To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 12:00 GMT on August 1st 2019.
       </p>
+      @endif
 
       <div class="subpage__divider"></div>
       <h2>📝 How do I submit my project?</h2>
@@ -70,9 +82,6 @@
       <h2>💬 Where can I chat to others about the Fixathon?</h2>
       <p>If you'd like to chat about the Fixathon, get feedback on your project or find team members join the <a href="https://techimpactmakers.com/">Impact Makers</a> Slack group.</p>
       <p>If you have a question about the event email <a href="mailto:hi@fixathon.io">hi@fixathon.io</a></p>
-
-
-
 
     </div>
   </div>

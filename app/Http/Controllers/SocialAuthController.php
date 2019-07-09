@@ -11,42 +11,22 @@ use Socialite;
 class SocialAuthController extends Controller
 {
     public function redirect($service) {
-        return Socialite::driver ( $service )->redirect ();
+        return Socialite::driver ( $service )->stateless()->redirect ();
     }
 
     public function callback(SocialAccountService $service, $provider) {
-    	/*
-        $token = $user->token;        
-        echo "Token: ".$token;
-        echo "<pre>User:";var_dump($user);echo "</pre>";
-        $user = Socialite::driver('makerlog')->userFromToken($user->token);
-        */
 
-        $code = $_GET['code'];
-
-		$base_uri = env('MAKERLOG_URL');
-        $endpoint = '/oauth/token/';
-        $params = 'grant_type=authorization_code&code='.$code.'&redirect_uri='.env("MAKERLOG_REDIRECT_URI");
-
-        //&client_id='.env("MAKERLOG_CLIENT_ID").'&client_secret='.env("MAKERLOG_CLIENT_SECRET")
-        $credentials = base64_encode(env("MAKERLOG_CLIENT_ID").':'.env("MAKERLOG_CLIENT_SECRET"));
-
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('POST', $base_uri.$endpoint.$params,[
-        	'headers' => [
-            	'Authorization' => "Basic $credentials"
-        	]
-    	]);
-
-
-        echo $response->getBody();
-
-        dd(true);
-
-    	$user = Socialite::driver('makerlog',$config)->user();
-        dd($user);
+    	$user = Socialite::driver('makerlog')->stateless()->user();
+        $this->registerToEvent($user->token);
         
-        return view ( 'landing' )->withDetails ( $user )->withService ( 'makerlog' );
+        Session::put('logged_in', true);
+        Session::put('username',$user->getNickname());
+        Session::put('avatar', $user->getAvatar());
+        Session::put('user', $user);
+                
+        return view ( 'welcome', [
+        	'user' => $user, 
+        ]);
     	
     	/*
     	$user = $service->createOrGetUser(Socialite::driver($provider));
