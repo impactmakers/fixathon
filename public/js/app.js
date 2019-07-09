@@ -1749,6 +1749,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1760,11 +1766,11 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('participants').then(function (resp) {
+    axios.get("participants").then(function (resp) {
       _this.participants = resp.data.results;
       _this.totalParticipants = resp.data.count;
     })["catch"](function (resp) {
-      console.log('Could not load participants');
+      console.log("Could not load participants");
     });
   }
 });
@@ -37112,14 +37118,16 @@ var render = function() {
           { staticClass: "participants__list" },
           _vm._l(_vm.participants, function(user) {
             return _c("li", { staticClass: "participant" }, [
-              _c("a", { attrs: { href: "#", target: "_blank" } }, [
+              _c("a", { attrs: { href: "user.username", target: "_blank" } }, [
                 _c("img", {
                   staticClass: "partcipant__avatar",
                   attrs: { alt: "user.username", src: user.avatar }
                 }),
                 _vm._v(" "),
                 _c("div", { staticClass: "participant__info" }, [
-                  _c("p", [_vm._v(_vm._s(user.username))])
+                  _c("h3", [_vm._v(_vm._s(user.username))]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("To add. Description goes here")])
                 ])
               ])
             ])
@@ -37130,8 +37138,10 @@ var render = function() {
     _vm._v(" "),
     _vm.totalParticipants === 0
       ? _c("div", { staticClass: "centered__intro participants__intro" }, [
-          _vm._v("\n    No participants yet. Be the first one! "),
+          _c("b", [_vm._v("No participants yet. Be the first one!")]),
+          _vm._v(" "),
           _c("br"),
+          _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _vm._m(0)
@@ -37152,7 +37162,7 @@ var staticRenderFns = [
           "button",
           {
             staticClass:
-              "btn-simple btn-lg btn-green btn-mobile centered__intro",
+              "btn-simple btn-lg btn-white-blue btn-mobile centered__intro",
             attrs: { type: "submit" }
           },
           [_vm._v("Register Now")]
