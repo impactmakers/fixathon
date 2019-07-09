@@ -24,7 +24,7 @@
       <li class="judges__judge">
         <img alt="Anne-Laure Le Cunff" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/anne.jpg')}}">
         <h3>Anne-Laure Le Cunff</h3>
-        <p>Founder @ness_labs • Running @makermag • ex @google • creator of #diversity30.</p>
+        <p>Founder Ness Labs, running MakerMag, ex Google and creator of #diversity30.</p>
         <a href='https://twitter.com/anthilemoon' target='_blank' class='judge__link'>
           <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @anthilemoon</a>
@@ -42,7 +42,7 @@
       <li class="judges__judge">
         <img alt="Veni Kunche" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/veni.jpg')}}">
         <h3>Veni Kunche</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>Founder or Diversify Tech  and Code With Veni. Sr. Software Engineer at USGS.</p>
         <a href='https://twitter.com/venikunche' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @venikunche</a>
@@ -50,7 +50,7 @@
       <li class="judges__judge">
         <img alt="Cennydd Bowles" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/cennydd.jpg')}}">
         <h3>Cennydd Bowles</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>Design, ethics, futures · Author of Future Ethics.</p>
         <a href='https://twitter.com/cennydd' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @cennydd</a>
@@ -58,7 +58,7 @@
       <li class="judges__judge">
         <img alt="Charli Prangley" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/charli-prangley.jpg')}}">
         <h3>Charli Prangley</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>Designer at ConvertKit. Co-host of the Design Life Podcast.</p>
         <a href='https://twitter.com/charliprangley' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @charliprangley</a>
@@ -66,7 +66,7 @@
       <li class="judges__judge">
         <img alt="James Singleton" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/james.jpg')}}">
         <h3>James Singleton</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>James is the author of ASP.NET Core 2 High Performance and he blogs at unop.uk.</p>
         <a href='https://twitter.com/shutdownscanner' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @shutdownscanner</a>
@@ -82,7 +82,7 @@
       <li class="judges__judge">
         <img alt="Fajar Siddiq" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/fajar.jpg')}}">
         <h3>Fajar Siddiq</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>Serial Entrepreneur + Indie-Maker + Producer + Professional Yo-Yo Player. </p>
         <a href='https://twitter.com/fajarsiddiqfs' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @fajarsiddiqfs</a>
@@ -90,7 +90,7 @@
       <li class="judges__judge">
         <img alt="Charlie Gerard" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/charlie-gerard.jpg')}}">
         <h3>Charlie Gerard</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>Front-end dev at Atlassian. Google Dev Expert in Web Tech and Mozilla Tech Speaker.</p>
         <a href='https://twitter.com/devdevcharlie' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @devdevcharlie</a>
@@ -98,7 +98,7 @@
       <li class="judges__judge">
         <img alt="Catherine Friend" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/catherine.jpg')}}">
         <h3>Catherine Friend</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>1password growth manager and ocean advocate.</p>
         <a href='https://twitter.com/1password' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @1password</a>

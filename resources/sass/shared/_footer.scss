@@ -83,11 +83,18 @@
     justify-content: space-between;
     flex-direction: column;
     font-weight: bold;
-    li a {
-        font-weight: bold;
-        text-decoration: none;
-        color: $gray;
+    li {
+        margin-bottom: 8px;
+        &:last-child {
+            margin: 0;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: $gray;
+        }
     }
+
     @include mq('tablet') {
         margin: 0;
         flex-direction: row;
