@@ -13,7 +13,7 @@
     <div class="prizes">
       <div class="prize prize__winner">
         <h3 class="prize__title prize__title--winner">
-          <img alt="Winners" class="prize__icon" src="{{asset('img/icons/winners.svg')}}">
+          <img alt="Winners" class="prize__icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/winners.svg')}}">
           Winners
         </h3>
         <h2 class="prize__amount">$1,000</h2>
@@ -29,7 +29,7 @@
       </div>
       <div class="prize prize__runnerups">
         <h3 class="prize__title prize__title--runnerups">
-          <img alt="Runner ups" class="prize__icon" src="{{asset('img/icons/runnerups.svg')}}">
+          <img alt="Runner ups" class="prize__icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/runnerups.svg')}}">
           Runner ups
         </h3>
         <h2 class="prize__amount">$250</h2>

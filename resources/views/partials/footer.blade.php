@@ -6,8 +6,8 @@
       <div class="footer__im">
         <h3 class="footer__im-title">An Impact Makers project from:</h3>
         <ul class="footer__im-from">
-          <li><a href="https://twitter.com/shylands" target='_blank'>        <img alt="Follow @shylands Twitter" class="footer__im-from-avatar" src="{{asset('img/people/steven.jpg')}}"> @shylands</a></li>
-          <li><a href="https://twitter.com/jp_aulet" target='_blank'>        <img alt="Follow @jp_aulet Twitter" class="footer__im-from-avatar" src="{{asset('img/people/jp.jpg')}}"> @jp_aulet</a></li>
+          <li><a href="https://twitter.com/shylands" target='_blank'>        <img alt="Follow @shylands Twitter" class="footer__im-from-avatar" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/steven.jpg')}}"> @shylands</a></li>
+          <li><a href="https://twitter.com/jp_aulet" target='_blank'>        <img alt="Follow @jp_aulet Twitter" class="footer__im-from-avatar" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/jp.jpg')}}"> @jp_aulet</a></li>
         </ul>
         <p class="footer__im-p">Impact Makers is a community of tech people who want to help fix the climate.</p>
         <div class="footer__im-actions">
@@ -22,7 +22,7 @@
       <ul class="footer__nav">
         <li><a href="/faq" title="FAQs">FAQs</a></li>
         <li><a href="mailto:hi@fixathon.io">Email us</a></li>
-        <li class="footer__nav-twitter"><a href="https://twitter.com/fixathon" target='_blank'>        <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}"> @fixathon</a></li>
+        <li class="footer__nav-twitter"><a href="https://twitter.com/fixathon" target='_blank'>        <img alt="Follow on Twitter" class="judge__twitter-icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/twitter.svg')}}"> @fixathon</a></li>
       </ul>
     </div>
     <div class="footer__bot">
