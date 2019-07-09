@@ -26,11 +26,17 @@ class LoginController extends Controller
 
     public function handleProviderCallback()
     {
-        $user = Socialite::driver('makerlog')->user();
+        $user = Socialite::driver('makerlog')->stateless()->user();
+        $token = $user->token;
+        
+        echo "Token: ".$token;
+        echo "<pre>User:";var_dump($user);echo "</pre>";
+
+        //$user = Socialite::driver('makerlog')->userFromToken($token);
         dd($user);
+        
 
-
-        // $user->token;
+        return view ( 'landing' )->withDetails ( $user )->withService ( 'makerlog' );
     }
 
     public function registerToEvent($token){

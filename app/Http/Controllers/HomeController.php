@@ -29,13 +29,6 @@ class HomeController extends Controller
         ]);
 
         echo $response->getBody();
-
-        /*
-        return response()->json([
-            'data' => $response->getBody(),
-            'status' => $response->getStatusCode()
-        ]);
-        */
     }
 
     public function participants(){
@@ -48,7 +41,7 @@ class HomeController extends Controller
                 'Authorization' => 'Token '.env('MAKERLOG_TOKEN')
             ]
         ]);
-        
+
         echo $response->getBody();
     }
 }

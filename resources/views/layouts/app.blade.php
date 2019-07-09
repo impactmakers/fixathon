@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Fixathon') }}</title>
+    <title>{{ config('app.name', 'The Climate Fixathon') }} - The world's first online hackathon to help fix the climate</title>
     <meta name="description" content="Global hackathon for tech makers to help prevent climate breakdown">
     <meta name="keywords" content="hackathon,tech,climate change,climate emergency,climate breakdown,programmers,climate,event,global,makers,products">
     <meta name="Distribution" content="global"/>
@@ -41,8 +41,6 @@
         </main>
         @include('partials.footer')
     </div>
-
-    @push('scripts')
 </body>
 <script src="{{ asset('js/app.js') }}" defer></script>
 </html>
