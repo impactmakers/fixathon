@@ -2,11 +2,11 @@
   <div>
     <ul class="participants__list" v-if="totalParticipants !== 0">
       <li class="participant" v-for="user in participants">
-        <a href="user.username" target="_blank">
+        <a :href="'https://getmakerlog.com/@'+user.username" target="_blank">
           <img alt="user.username" class="partcipant__avatar" :src="user.avatar" />
           <div class="participant__info">
             <h3>{{user.username}}</h3>
-            <p>To add. Description goes here</p>
+            <p>{{user.description}}</p>
           </div>
         </a>
       </li>

@@ -4,7 +4,7 @@
   <div class="inner intro__inner">
     
     <h1 class="intro__title">
-        @if(!session()->has('logged_in'))
+        @if(session()->has('logged_in') || Request::path() === 'welcome')
           Congratulations! You <strong>joined</strong> the
         @else
           The
@@ -26,7 +26,7 @@
       </li>
     </ul>   
 
-    @if(!session()->has('logged_in'))
+    @if(!session()->has('logged_in') && Request::path() !== 'welcome')
       <a class="intro__cta" href="#register">
         <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register Now</button>
       </a>

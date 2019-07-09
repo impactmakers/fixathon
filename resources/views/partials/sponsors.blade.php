@@ -16,21 +16,21 @@
       <ul class="sponsors__silver">
         <li class="sponsor__silver">
           <a href='https://1password.com' title='1Password' target='_blank'>
-            <img alt="1Password" src="{{asset('img/sponsors/1password.png')}}">
+            <img alt="1Password" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/1password.png')}}">
           </a>
           <p>The best way to keep you and your family, team, and business safe online. Go ahead. Forget your passwords.</p>
           <a href='https://1password.com' title='1Password' target='_blank'>1password.com</a>  
         </li>
         <li class="sponsor__silver">
           <a href='https://sketch.com' title='Sketch' target='_blank'>
-            <img alt="Sketch" src="{{asset('img/sponsors/sketch.png')}}">
+            <img alt="Sketch" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/sketch.png')}}">
           </a>
           <p>Over one million designers use Sketch to transform their ideas into incredible products, every day.</p>
           <a href='https://sketch.com' title='Sketch' target='_blank'>sketch.com</a>  
         </li>
         <li class="sponsor__silver">
           <a href='https://egghead.io' title='Egghead.io' target='_blank'>
-            <img alt="Egghead.io" src="{{asset('img/sponsors/egghead.png')}}">
+            <img alt="Egghead.io" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/egghead.png')}}">
           </a>
           <p>High quality, concise web development screencasts. Coding with expert open-source contributors.</p>
           <a href='https://egghead.io' title='Egghead.io' target='_blank'>egghead.io</a>  
@@ -39,27 +39,27 @@
       <ul class="sponsors__bronze">
         <li class="sponsor__bronze">
           <a href='https://slite.com/' title='Slite' target='_blank'>
-            <img alt="Slite" src="{{asset('img/sponsors/slite.png')}}">
+            <img alt="Slite" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/slite.png')}}">
           </a>
         </li>
         <li class="sponsor__bronze">
           <a href='https://greengovernance.org/' title='Green Governance' target='_blank'>
-            <img alt="Green Governance" src="{{asset('img/sponsors/greengovernance.png')}}">
+            <img alt="Green Governance" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/greengovernance.png')}}">
           </a>
         </li>
         <li class="sponsor__bronze">
           <a href='https://marvelapp.com/' title='Marvel' target='_blank'>
-            <img alt="Marvel" src="{{asset('img/sponsors/marvel.png')}}">
+            <img alt="Marvel" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/marvel.png')}}">
           </a>
         </li>    
         <li class="sponsor__bronze">
           <a href='https://bubble.is/' title='Bubble' target='_blank'>
-            <img alt="Bubble" src="{{asset('img/sponsors/bubble.png')}}">
+            <img alt="Bubble" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/bubble.png')}}">
           </a>
         </li>
         <li class="sponsor__bronze">
           <a href='https://getkirby.com/' title='Kirby' target='_blank'>
-            <img alt="Kirby" src="{{asset('img/sponsors/kirby.png')}}">
+            <img alt="Kirby" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/kirby.png')}}">
           </a>
         </li>
         <li class="sponsor__bronze">
@@ -69,28 +69,28 @@
         </li>
         <li class="sponsor__bronze">
           <a href='https://drawkit.com/' title='DrawKit' target='_blank'>
-            <img alt="DrawKit" src="{{asset('img/sponsors/drawkit.png')}}">
+            <img alt="DrawKit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/drawkit.png')}}">
           </a>
         </li> 
         <li class="sponsor__bronze">
           <a href='https://offset.earth/' title='Offset Earth' target='_blank'>
-            <img alt="Offset Earth" src="{{asset('img/sponsors/offsetearth.png')}}">
+            <img alt="Offset Earth" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/offsetearth.png')}}">
           </a>
         </li> 
         <li class="sponsor__bronze">
           <a href='https://getyomo.com/' title='Yomo' target='_blank'>
-            <img alt="Yomo" src="{{asset('img/sponsors/yomo.png')}}">
+            <img alt="Yomo" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/yomo.png')}}">
           </a>
         </li>
         <li class="sponsor__bronze">
           <a href='https://hotjar.com/' title='Hotjar' target='_blank'>
-            <img alt="Hotjar" src="{{asset('img/sponsors/hotjar.png')}}">
+            <img alt="Hotjar" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/hotjar.png')}}">
           </a>
         </li>  
 
         <li class="sponsor__bronze">
           <a href='https://framer.com/' title='Framer' target='_blank'>
-            <img alt="framer" src="{{asset('img/sponsors/framer.png')}}">
+            <img alt="framer" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/framer.png')}}">
           </a>
         </li>  
       </ul>

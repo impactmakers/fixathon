@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Session;
 
 class HomeController extends Controller
 {
@@ -19,9 +20,11 @@ class HomeController extends Controller
     }
 
     public function welcome(Request $request){
+        /*
         if(!$request->session()->has('logged_in')){
             return redirect()->to('/#register');
         }
+        */
 
         return view('welcome');
     }

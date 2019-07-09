@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\SocialAccountService;
 
 use Socialite;
+use Session;
 
 class SocialAuthController extends Controller
 {
@@ -17,33 +18,33 @@ class SocialAuthController extends Controller
     public function callback(SocialAccountService $service, $provider) {
 
     	$user = Socialite::driver('makerlog')->stateless()->user();
+
+        session(['logged_in' => true]);
+        session(['username' =>  $user->getNickname()]);
+        session(['avatar' => $user->getAvatar()]);
+        session(['user' => $user]);
+        session::save();
+
         $this->registerToEvent($user->token);
-        
-        Session::put('logged_in', true);
-        Session::put('username',$user->getNickname());
-        Session::put('avatar', $user->getAvatar());
-        Session::put('user', $user);
-                
-        return view ( 'welcome', [
-        	'user' => $user, 
-        ]);
-    	
-    	/*
-    	$user = $service->createOrGetUser(Socialite::driver($provider));
-    	auth()->login($user);
-    	return redirect()->to('/');
-    	*/
+                        
+        return redirect()->route('welcome');
     }
 
     public function registerToEvent($token){
-        $base_uri = env('MAKERLOG_URL');
-        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/join';
-        
-        $client = new \GuzzleHttp\Client();
-        $response = $client->request('POST', $base_uri.$endpoint,[
-        'headers' => [
-                'Authorization' => 'Token '.$token
-            ]
-        ]);
+    	try{
+	        $base_uri = env('MAKERLOG_URL');
+	        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/join/';
+	        
+	        $client = new \GuzzleHttp\Client();
+	        $response = $client->post($base_uri.$endpoint,[
+	        	'headers' => [
+	        		'Accept' => 'application/json',
+		            'Authorization' => 'Bearer ' . $token,
+		            'Content-Type' => 'application/json',
+	            ]
+	        ]);
+	    }catch(Exception $e){
+	    	echo 'Caught exception: ',  $e->getMessage(), "\n";
+	    }
     }
 }

@@ -1,4 +1,4 @@
-@if(!session()->has('logged_in'))
+@if(Request::path() === 'faq')
 <section class="container top__container subpage__container" id="register">
 @else
 <section class="container subpage__container" id="register">
@@ -6,7 +6,7 @@
   <div class="inner subpage__inner">
 
     <div class="subpage__content">
-      @if(!session()->has('logged_in'))
+      @if(Request::path() === 'faq')
       <h1 class="brush__title brush__title--large subpage__title">
         FAQs
       </h1>
@@ -23,7 +23,7 @@
 
       <p>Winners will be announced on Thursday 5th September.</p>
 
-      @if(!session()->has('logged_in'))
+      @if(Request::path() === 'faq')
       <div class="subpage__divider"></div>
       <h2>✅ How do I register?</h2>
       <p>  

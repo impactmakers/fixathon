@@ -10,6 +10,5 @@
     @include('partials.prizes')
     @include('partials.judges')
     @include('partials.participants')
-    @include('partials.takePart')
 
 @endsection
