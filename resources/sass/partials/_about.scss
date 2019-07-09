@@ -49,6 +49,9 @@
     h2 {
         color: $black;
         text-align: left;
+        @include mq('tablet') {
+            @include pad-bot-standard;
+        }
     }
     p {
         color: $grayDark;
@@ -96,7 +99,7 @@
     flex-direction: row;
     @include pad-top-standard;
     @include pad-bot-standard;
-    border-top: 1px solid $white;
+    border-top: 1px solid $whiteFaded;
     &:first-child {
         padding-top: 0;
         border: none;
@@ -116,10 +119,12 @@
 .about__award-awareness {
 }
 .about__award-text {
+    color: $whiteFaded;
 }
 .about__award-name {
     color: $white;
     margin: 0;
+    @include font-size($text-lg);
 }
 .about__award-p {
     margin: 0;

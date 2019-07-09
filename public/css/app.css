@@ -2572,6 +2572,24 @@ header.sticky {
   text-align: left;
 }
 
+@media only screen and (min-width: 768px) {
+  .about__info h2 {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .about__info h2 {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1040px) {
+  .about__info h2 {
+    padding-bottom: 40px;
+  }
+}
+
 .about__info p {
   color: #535c69;
 }
@@ -2720,7 +2738,7 @@ header.sticky {
   flex-direction: row;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 @media only screen and (min-width: 768px) {
@@ -2768,9 +2786,43 @@ header.sticky {
   }
 }
 
+.about__award-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .about__award-name {
   color: #ffffff;
   margin: 0;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .about__award-name {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__award-name {
+    font-size: 23px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .about__award-name {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .about__award-name {
+    font-size: 26px;
+    line-height: 39px;
+  }
 }
 
 .about__award-p {
@@ -3528,13 +3580,26 @@ header.sticky {
 }
 
 .prize__winner {
-  border-right: 1px solid #dde0e5;
-  margin-bottom: 25px;
+  border-bottom: 1px solid #dde0e5;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .prize__winner {
     margin: 0;
+    padding: 0;
+    border-right: 1px solid #dde0e5;
+  }
+}
+
+.prize__runnerups {
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .prize__runnerups {
+    padding: 0;
   }
 }
 

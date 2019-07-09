@@ -40,13 +40,20 @@
     }
 }
 .prize__winner {
-    border-right: 1px solid $grayBorder;
-    margin-bottom: 25px;
+    border-bottom: 1px solid $grayBorder;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     @include mq('tablet') {
         margin: 0;
+        padding: 0;
+        border-right: 1px solid $grayBorder;
     }
 }
 .prize__runnerups {
+    padding-bottom: 20px;
+    @include mq('tablet') {
+        padding: 0;
+    }
 }
 .prize__title {
     font-size: 30px;
