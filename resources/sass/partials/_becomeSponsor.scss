@@ -5,7 +5,6 @@
 .becomeSponsor__inner {
     flex-direction: column;
     align-items: center;
-    @include pad-top-large;
     @include pad-bot-large;
 }
 
@@ -14,12 +13,17 @@
 
 .becomeSponsor__title {
     color: $black;
+    @include font-size($text-xl);
+    margin: 0;
 }
 
-.becomeSponsor__intro {
-    color: $gray;
+.becomeSponsor__p {
+    color: $grayDark;
+    max-width: 520px;
+    text-align: center;
 }
 
 .becomeSponsor__cta {
+    @include mar-top-standard;
     text-decoration: none;
 }
