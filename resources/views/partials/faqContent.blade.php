@@ -7,7 +7,7 @@
         FAQs
       </h1>
       <h2>🗓 What is the event schedule?</h2>
-      <p>The Fixathon will officially <b>begin at 12:00 GMT on Friday 2nd August</b> and <b>end at 12:00 GMT on Friday 30th August</b>. Use a <a href="https://www.worldtimebuddy.com/">timezone converter</a> to find the start and end times in your local timezone. </p>
+      <p>The Fixathon will officially <b>begin at 12:00 PST on Friday 2nd August</b> and <b>end at 23:59 PST on Friday 30th August</b>. Use a <a href="https://www.worldtimebuddy.com/">timezone converter</a> to find the start and end times in your local timezone. </p>
 
       <p>Upon the Fixathon ending our judges will go through submissions and decide which projects they feel should be given our Action, Awareness and Facilitation awards.</p>
 
@@ -16,13 +16,13 @@
       <div class="subpage__divider"></div>
       <h2>✅ How do I register?</h2>
       <p>  
-        To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 12:00 GMT on August 1st 2019.
+        To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PST on August 1st 2019.
       </p>
 
       <div class="subpage__divider"></div>
       <h2>📝 How do I submit my project?</h2>
       <p>  
-        To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 12:00 GMT on Friday 30th August. 
+        To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 23:59 PST on Friday 30th August. 
       </p>
       <p>  
         Please ensure that all team members who worked on the project are added to it on Makerlog.
