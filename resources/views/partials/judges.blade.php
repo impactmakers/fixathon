@@ -66,7 +66,7 @@
       <li class="judges__judge">
         <img alt="James Singleton" class="judge__img" src="{{asset('img/people/james.jpg')}}">
         <h3>James Singleton</h3>
-        <p>Short bio about why they make a good judge for this competition.</p>
+        <p>James is the author of ASP.NET Core 2 High Performance and he blogs at unop.uk.</p>
         <a href='https://twitter.com/shutdownscanner' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @shutdownscanner</a>
@@ -98,7 +98,7 @@
       <li class="judges__judge">
         <img alt="Catherine Friend" class="judge__img" src="{{asset('img/people/catherine.jpg')}}">
         <h3>Catherine Friend</h3>
-        <p>Partnership Cultivator at 1Password</p>
+        <p>1password growth manager and ocean advocate.</p>
         <a href='https://twitter.com/1password' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @1password</a>
