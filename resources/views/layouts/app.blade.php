@@ -5,29 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'The Climate Fixathon') }} - The world's first online hackathon to help fix the climate</title>
-    <meta name="description" content="Global hackathon for tech makers to help prevent climate breakdown">
-    <meta name="keywords" content="hackathon,tech,climate change,climate emergency,climate breakdown,programmers,climate,event,global,makers,products">
+    <title>{{ config('app.name', 'Fixathon') }}</title>
+    <meta name="description" content="The world's first online hackathon for makers to help fix the climate. 2nd-30th August. Thusands in cash prizes to be won. Open to everyone.">
+    <meta name="keywords" content="hackathon,tech,climate change,climate emergency,climate breakdown,programmers,climate,event,global,makers,products, developers,online,impact,positive,volunteer">
     <meta name="Distribution" content="global"/>
     <meta name="Robots" content="all"/>
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@fixathon">
-    <meta name="twitter:title" content="Fixathon - The world's first online hackathon for makers to help fix the climate">
-    <meta name="twitter:description" content="Global hackathon for tech makers to help prevent climate breakdown">
+    <meta name="twitter:title" content="The Climate Fixathon">
+    <meta name="twitter:description" content="The world's first online hackathon for makers to help fix the climate">
     <meta name="twitter:creator" content="@fixathon">
-    <meta name="twitter:image:src" content="{{asset('img/logo_sm.png')}}">
+    <meta name="twitter:image:src" content="{{asset('img/share-img.jpg')}}">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Fixathon - The world's first online hackathon for makers to help fix the climate" />
+    <meta property="og:title" content="The Climate Fixathon" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="http://fixathon.io" />
-    <meta property="og:image" content="{{asset('img/logo_sm.png')}}" />
-    <meta property="og:description" content="Global hackathon for tech makers to help prevent climate breakdown" />
-    <meta name="theme-color" content="#325d42"/>
+    <meta property="og:url" content="https://fixathon.io" />
+    <meta property="og:image" content="{{asset('img/share-img.jpg')}}" />
+    <meta property="og:description" content="The world's first online hackathon for makers to help fix the climate" />
+    <meta name="theme-color" content="#052AB5"/>
     
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script type="text/javascript" src="//fast.fonts.net/jsapi/608430df-03a7-475c-88dd-670405b8a199.js"></script>

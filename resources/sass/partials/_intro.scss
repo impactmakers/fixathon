@@ -12,7 +12,7 @@
 .intro__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 760px;
+    max-width: 780px;
     @include pad-top-large;
     @include pad-bot-large;
 }
@@ -27,7 +27,7 @@
 .intro__key {
     @include pad-top-small;
     @include pad-bot-standard;
-    margin: 10px 0 20px;
+    margin: 0 0 10px;
     list-style-type: none;
     padding: 0;
     flex-direction: column;
@@ -66,6 +66,6 @@
     margin-top: 40px;
     @include font-size($text-md);
     @include mq('tablet') {
-        margin-top: 90px;
+        margin-top: 50px;
     }
 }

@@ -17,6 +17,7 @@
 .subpage__title {
     @include mar-top-large;
     @include pad-top-standard;
+    @include mar-bot-standard;
 }
 
 .subpage__intro {
@@ -27,6 +28,19 @@
     color: $grayDark;
     margin-bottom: 0;
     @include font-size($text);
+}
+
+.subpage__divider {
+    height: 1px;
+    background-color: $grayBorder;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    padding: 0 !important;
+    @include mq('tablet') {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
 }
 
 /* Content styling
@@ -188,8 +202,9 @@
     }
 
     h2 {
-        color: $black;
+        color: $green;
         font-weight: bold;
+        @include mar-top-small;
     }
     h3 {
         color: $green;

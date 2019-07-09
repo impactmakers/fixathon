@@ -20,7 +20,7 @@
         </div>
       </div>
       <ul class="footer__nav">
-        <li><a href="/faq">FAQs</a></li>
+        <li><a href="/faq" title="FAQs">FAQs</a></li>
         <li><a href="mailto:hi@fixathon.io">Email us</a></li>
         <li class="footer__nav-twitter"><a href="https://twitter.com/fixathon" target='_blank'>        <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}"> @fixathon</a></li>
       </ul>

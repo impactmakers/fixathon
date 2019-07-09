@@ -78,6 +78,7 @@
 }
 .prize__items {
     @include mar-top-small;
+    margin-bottom: 0;
     @include font-size($text-xs);
     color: $grayDark;
     display: flex;
@@ -89,6 +90,9 @@
     @include links-on-light;
     li {
         margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

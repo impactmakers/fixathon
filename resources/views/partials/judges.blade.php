@@ -9,7 +9,7 @@
         Judges
       </h1>
       <p class="centered__intro judges__intro">
-        Our panel of climate and tech experts will choose a winner and runner up for each challenge.
+        Meet our panel of tech experts who will be responsible for selected the Fixathon winners.
       </p>
     </div>
     <ul class="judges__list">
