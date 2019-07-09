@@ -20,7 +20,11 @@
         <a class="header__nav-link" href="#sponsors">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="#register">Register</a>
+        @if (!Auth::check())
+          <a class="header__nav-link" href="#register">Register</a>
+        @else
+          Hi {{Auth::user()->name}}
+        @endif
       </li>
     </ul>
   </div>
@@ -46,7 +50,11 @@
         <a class="header__nav-link" href="{{url('/#sponsors')}}">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="{{url('/#register')}}">Register</a>
+        @if (!Auth::check())
+          <a class="header__nav-link" href="#register">Register</a>
+        @else
+          Hi {{Auth::user()->name}}
+        @endif
       </li>
     </ul>
   </div>

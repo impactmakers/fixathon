@@ -11,15 +11,21 @@
       </p>
       <h2 class="takepart__sub-title">How to register your entry</h2>
       <p class="takepart__p--lead">
-        The Climate Fixathon will be hosted on <a href='https://makerlog.com' target='_blank'>Makerlog</a> - a platform for makers to develop and launch in the open.
+        The Climate Fixathon will be hosted on <a href='https://getmakerlog.com' target='_blank'>Makerlog</a> - a platform for makers to develop and launch in the open.
       </p>
       <p class="takepart__p">  
-        To take part you must create a user account on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
+        To take part you must <a href='https://getmakerlog.com/begin' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
       </p>
+      
+      <!--
       <a class="takepart__cta" href="{{ url('login/makerlog') }}" target="_blank">
         <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
       </a>
+      -->
 
+      <a class="takepart__cta" href="{{ url('redirect/makerlog') }}" target="_blank">
+        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
+      </a>
 
       <h3 class="takepart__small-title">Looking for team members?</h3>
       <p class="takepart__p--lead">Join the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel.</p>

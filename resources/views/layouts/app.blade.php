@@ -31,7 +31,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script type="text/javascript" src="//fast.fonts.net/jsapi/608430df-03a7-475c-88dd-670405b8a199.js"></script>
-
 </head>
 <body>
     <div id="app"> 
