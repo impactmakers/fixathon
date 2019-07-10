@@ -66,8 +66,20 @@
         display: flex;
         align-items: center;
         align-self: baseline center;
-        @include font-size($text-xs);
+        @include font-size($text);
         @include links-on-light;
+        @include mar-bot-small;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .sponsors__silver {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor__silver {
+        width: 45%;
+        margin-bottom: 40px;
     }
 }
 
@@ -107,5 +119,15 @@
         display: flex;
         align-items: center;
         align-self: baseline center;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .sponsors__bronze {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sponsor__bronze {
+        width: 30%;
+        margin-bottom: 40px;
     }
 }

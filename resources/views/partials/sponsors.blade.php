@@ -53,6 +53,11 @@
           </a>
         </li>    
         <li class="sponsor__bronze">
+          <a href='https://onesignal.com/' title='Bubble' target='_blank'>
+            <img alt="OneSignal" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/onesignal.png')}}">
+          </a>
+        </li>
+        <li class="sponsor__bronze">
           <a href='https://bubble.is/' title='Bubble' target='_blank'>
             <img alt="Bubble" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/bubble.png')}}">
           </a>
@@ -68,10 +73,16 @@
           </a>
         </li>
         <li class="sponsor__bronze">
+          <a href='https://bigcartel.com/' title='Big Cartel' target='_blank'>
+            <img alt="Big Cartel" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/bigcartel.png')}}">
+          </a>
+        </li> 
+        <li class="sponsor__bronze">
           <a href='https://drawkit.com/' title='DrawKit' target='_blank'>
             <img alt="DrawKit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/drawkit.png')}}">
           </a>
         </li> 
+        
         <li class="sponsor__bronze">
           <a href='https://offset.earth/' title='Offset Earth' target='_blank'>
             <img alt="Offset Earth" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/offsetearth.png')}}">

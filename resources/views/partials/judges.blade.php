@@ -96,6 +96,14 @@
         @devdevcharlie</a>
       </li>
       <li class="judges__judge">
+        <img alt="Chris Adams" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/chris.jpg')}}">
+        <h3>Chris Adams</h3>
+        <p>Co-organiser Climate Action Tech, director of the Green Web Foundation.</p>
+        <a href='https://twitter.com/1password' target='_blank' class='judge__link'>
+        <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
+        @mrchrisadams</a>
+      </li>
+      <li class="judges__judge">
         <img alt="Catherine Friend" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/catherine.jpg')}}">
         <h3>Catherine Friend</h3>
         <p>1password growth manager and ocean advocate.</p>

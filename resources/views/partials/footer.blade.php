@@ -36,3 +36,13 @@
     </div>
   </div>
 </footer>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2193289-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-2193289-10', { 'anonymize_ip': true });
+  </script>
+

@@ -29,7 +29,60 @@
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <script type="text/javascript" src="//fast.fonts.net/jsapi/608430df-03a7-475c-88dd-670405b8a199.js"></script>
+    <style type="text/css">
+
+      @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=608430df-03a7-475c-88dd-670405b8a199");
+          @font-face{
+              font-family:"Helvetica Now Text W05_n4";
+              src:url("Fonts/34aa1526-948d-4e18-9bf7-fd91b4eae796.eot?#iefix") format("eot")
+          }
+          @font-face{
+              font-family:"Helvetica Now Text W05";
+              src:url("Fonts/34aa1526-948d-4e18-9bf7-fd91b4eae796.eot?#iefix");
+              src:url("Fonts/34aa1526-948d-4e18-9bf7-fd91b4eae796.eot?#iefix") format("eot"),url("Fonts/5eec4451-e90c-42e7-b4d8-9b8654a65568.woff2") format("woff2"),url("Fonts/f7cf763b-e79b-4c28-af92-803e0c3f16d4.woff") format("woff"),url("Fonts/4f32bc08-77d9-4675-bb6a-93ac6cc69cc7.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+          }
+          @font-face{
+              font-family:"Helvetica Now Text W05_i4";
+              src:url("Fonts/3c67490e-23f1-4a86-97a5-e3c16fedc7e8.eot?#iefix") format("eot")
+          }
+          @font-face{
+              font-family:"Helvetica Now Text W05";
+              src:url("Fonts/3c67490e-23f1-4a86-97a5-e3c16fedc7e8.eot?#iefix");
+              src:url("Fonts/3c67490e-23f1-4a86-97a5-e3c16fedc7e8.eot?#iefix") format("eot"),url("Fonts/db2aea0d-59aa-466a-b1c2-17f44663a0fe.woff2") format("woff2"),url("Fonts/d99c363f-9e4a-47f4-b101-0ae1202ccd23.woff") format("woff"),url("Fonts/5305b00d-26e8-4ffe-b991-22eeab693b07.ttf") format("truetype");
+      font-weight: 400;
+      font-style: italic;
+          }
+          @font-face{
+              font-family:"Helvetica Now Text W05_n7";
+              src:url("Fonts/c193c18d-e4dc-4120-8e8a-09aeccba0d45.eot?#iefix") format("eot")
+          }
+          @font-face{
+              font-family:"Helvetica Now Text W05";
+              src:url("Fonts/c193c18d-e4dc-4120-8e8a-09aeccba0d45.eot?#iefix");
+              src:url("Fonts/c193c18d-e4dc-4120-8e8a-09aeccba0d45.eot?#iefix") format("eot"),url("Fonts/2a13627f-dba8-48e1-935c-a404f5293139.woff2") format("woff2"),url("Fonts/ce7a1fe7-2605-427a-b064-a01ebce69295.woff") format("woff"),url("Fonts/30856021-7394-4e14-b917-357ff12e6ebf.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+          }
+          @font-face{
+              font-family:"Poster Brush W05_o4";
+              src:url("Fonts/31869d5d-7941-404f-ad44-4d50ae0fe17b.eot?#iefix") format("eot")
+          }
+          @font-face{
+              font-family:"Poster Brush W05";
+              src:url("Fonts/31869d5d-7941-404f-ad44-4d50ae0fe17b.eot?#iefix");
+              src:url("Fonts/31869d5d-7941-404f-ad44-4d50ae0fe17b.eot?#iefix") format("eot"),url("Fonts/efde0365-9fbe-4819-b373-15b8d9a45f82.woff2") format("woff2"),url("Fonts/e9cf1484-9392-4799-b57f-d9c465dd050b.woff") format("woff"),url("Fonts/fa518b73-eade-47e4-8798-3f25e7edcc06.ttf") format("truetype");
+      font-weight: 400;
+      font-style: oblique;
+          }
+
+    </style>
+
+
+
+
+
 </head>
 <body>
     <div id="app"> 

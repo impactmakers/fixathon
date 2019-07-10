@@ -12,12 +12,13 @@
 .intro__inner {
     flex-direction: column;
     align-items: center;
-    max-width: 780px;
+
     @include pad-top-large;
     @include pad-bot-large;
 }
 
 .intro__title {
+    max-width: 780px;
     text-align: center;
     font-weight: normal;
     margin: 0;
@@ -25,6 +26,7 @@
 }
 
 .intro__key {
+    max-width: 780px;
     @include pad-top-small;
     @include pad-bot-standard;
     margin: 0 0 10px;
@@ -67,5 +69,74 @@
     @include font-size($text-md);
     @include mq('tablet') {
         margin-top: 50px;
+    }
+}
+
+// INTRO LOGGED IN
+
+.intro__next-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 40px;
+    @include mq('mobile') {
+        grid-template-columns: 1fr;
+    }
+    @include mq('tablet') {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mq('desktop') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.intro__next-item {
+    border: 1px solid $grayBorder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    @include white-box;
+    @include links-on-light;
+    h3 {
+        @include font-size($text-md);
+        margin: 0 0 10px;
+    }
+    p {
+        @include font-size($text-xs);
+        color: $grayDark;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    a {
+        @include font-size($text-sm);
+        //text-decoration: none;
+    }
+}
+
+.intro__next-cta {
+    width: 100%;
+    a {
+        width: 100%;
+        text-decoration: none;
+    }
+
+    margin-bottom: 30px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .intro__next-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .intro__next-item {
+        width: 30%;
+        margin-bottom: 40px;
     }
 }

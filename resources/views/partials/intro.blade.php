@@ -14,7 +14,7 @@
       <li class="intro__key-item">
         🗓 2nd-30th August</li>
       <li class="intro__key-item">
-        🏆 +$10,000 in prizes</li>
+        🏆 Prize value of $10k+</li>
       <li class="intro__key-item">
         🌎 Open to everyone 
       </li>

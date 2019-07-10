@@ -1,7 +1,7 @@
 @if(Request::path() === 'faq')
-<section class="container top__container subpage__container" id="register">
+<section class="container top__container subpage__container" id="faq">
 @else
-<section class="container subpage__container" id="register" style='margin-top:80px;'>
+<section class="container subpage__container faq__container" id="faq"'>
 @endif
   <div class="inner subpage__inner">
 
@@ -12,7 +12,7 @@
       </h1>
       @else
       <h1 class="brush__title brush__title--large subpage__title">
-        How it Works?
+        FAQs
       </h1>
       @endif
 

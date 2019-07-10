@@ -19,8 +19,8 @@
 
 .regbanner__title {
     text-align: center;
-    font-weight: normal;
-    margin: 0 0 20px 0;
+    font-weight: bold;
+    margin: 0 0 0 0;
     @include font-size($text-xl);
     @include mq('tablet') {
         text-align: left;
@@ -28,6 +28,44 @@
     }
 }
 
+.regbanner__subtitle {
+    text-align: center;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    @include font-size($text);
+    @include mq('tablet') {
+        text-align: left;
+        margin: 0 0 40px;
+    }
+}
+
+
+.regbanner__text {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .regbanner__cta {
     text-decoration: none;
+    margin-top: 20px;
+    @include font-size($text-xl);
+    @include mq('tablet') {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+
+.regbanner__twitter {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+.regbanner__twitter-tweet {
+    margin-right: 15px;
+}
+.regbanner__twitter-follow{
+
 }

@@ -2,6 +2,11 @@
     background: $white;
 }
 
+.faq__container {
+    @include mar-top-standard;
+}
+
+
 .subpage__inner {
     flex-direction: column;
     align-items: center;

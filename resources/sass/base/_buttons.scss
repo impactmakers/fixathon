@@ -54,7 +54,7 @@
 }
 .btn-sm {
     padding: 3px 10px;
-    font-size: 18px;
+    @include font-size($text-sm);
     font-family: inherit;
 }
 .btn-xs {
@@ -104,7 +104,7 @@
 .btn-simple.btn-sm,
 .btn-gradient.btn-sm {
     padding: 10px 20px;
-    font-size: 15px;
+    @include font-size($text-sm);
     font-family: inherit;
 }
 .btn-simple.btn-md,
@@ -184,7 +184,7 @@
 }
 .btn-bordered.btn-sm {
     padding: 10px 15px;
-    font-size: 15px;
+    @include font-size($text-sm);
     font-weight: bold;
     font-family: inherit;
 }
@@ -457,6 +457,9 @@
     @include mq('tablet') {
         width: auto;
     }
+}
+.btn-full-width {
+    width: 100%;
 }
 
 .btn-header {
