@@ -5,7 +5,7 @@ use Laravel\Socialite\Contracts\Provider;
 
 class SocialAccountService
 {
-    public function createOrGetUser($user,$avatar,$token,$refreshToken) //Provider $provider)
+    public function createOrGetUser($user,$email,$avatar,$token,$refreshToken) //Provider $provider)
     {
         $providerUser = $user;
         $providerName = 'makerlog'; 
@@ -23,7 +23,7 @@ class SocialAccountService
                 'provider' => $providerName
             ]);
 
-            $email = $providerUser->getEmail();
+            //$email = $providerUser->getEmail();
             if($email === null || $email === ''){
                 $email = $providerUser->getNickname()."@fakemail.com";
             }

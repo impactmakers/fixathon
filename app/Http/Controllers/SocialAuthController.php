@@ -19,7 +19,7 @@ class SocialAuthController extends Controller
     	$user = Socialite::driver('makerlog')->stateless()->user();
         $this->registerToEvent($user->token);
 
-        $user = $service->createOrGetUser($user,$user->getAvatar(),$user->token,$user->refreshToken);
+        $user = $service->createOrGetUser($user,$user->getEmail(),$user->getAvatar(),$user->token,$user->refreshToken);
         auth()->login($user);
     	                
         return redirect()->route('welcome');
