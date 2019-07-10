@@ -99,7 +99,7 @@
         <img alt="Chris Adams" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/chris.jpg')}}">
         <h3>Chris Adams</h3>
         <p>Co-organiser Climate Action Tech, director of the Green Web Foundation.</p>
-        <a href='https://twitter.com/1password' target='_blank' class='judge__link'>
+        <a href='https://twitter.com/mrchrisadams' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @mrchrisadams</a>
       </li>
