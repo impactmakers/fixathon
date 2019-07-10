@@ -1,7 +1,7 @@
 @if(Request::path() === 'faq')
 <section class="container top__container subpage__container" id="register">
 @else
-<section class="container subpage__container" id="register">
+<section class="container subpage__container" id="register" style='margin-top:80px;'>
 @endif
   <div class="inner subpage__inner">
 
@@ -40,8 +40,7 @@
         Please ensure that all team members who worked on the project are added to it on Makerlog.
       </p>
 
-      <div class="subpage__divider"></div>
-      
+      <div class="subpage__divider"></div>      
 
       <h2>👥 Is there a maximum team size?</h2>
       <p>Teams can be any size. Please note that we may not be able to provide some prizes to teams of more than 4 people.</p>
@@ -51,9 +50,6 @@
       <h2>🔍 How do I find team members?</h2>
       <p>Ask for collaborators in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>
   
-        <div class="subpage__divider"></div>
-
-
       <div class="subpage__divider"></div>
 
       <h2>🤔 Don't know what you're going to work on yet?</h2>
@@ -65,7 +61,6 @@
       <p><b>👁️ Awareness:</b> Most likely to raise awareness of climate breakdown.</p>
       <p><b>👊 Action:</b> Most likely to help people take action against climate breakdown.</p>
       <p><b>🛠️ Facilitation:</b> Most likely to make climate breakdown related tech projects easier to create in the future</p>
-
 
       <h2>💸 Can I enter a for-profit project?</h2>
       <p>Yes for-profit projects are eligible to enter and win.</p>

@@ -5,10 +5,10 @@ use Laravel\Socialite\Contracts\Provider;
 
 class SocialAccountService
 {
-    public function createOrGetUser(Provider $provider)
+    public function createOrGetUser($user,$avatar,$token,$refreshToken) //Provider $provider)
     {
-        $providerUser = $provider->user();
-        $providerName = class_basename($provider); 
+        $providerUser = $user;
+        $providerName = 'makerlog'; 
 
         $account = SocialAccount::whereProvider($providerName)
             ->whereProviderUserId($providerUser->getId())
@@ -23,14 +23,20 @@ class SocialAccountService
                 'provider' => $providerName
             ]);
 
-            $user = User::whereEmail($providerUser->getEmail())->first();
+            $email = $providerUser->getEmail();
+            if($email === null || $email === ''){
+                $email = $providerUser->getNickname()."@fakemail.com";
+            }
+
+            $user = User::whereEmail($email)->first();
 
             if (!$user) {
-
                 $user = User::create([
-                    'email' => $providerUser->getEmail(),
-                    'name' => $providerUser->getName(),
-                    'avatar' => $providerUser->getAvatar()
+                    'email' => $email,
+                    'name' => $providerUser->getNickname(),
+                    'avatar' => $avatar,
+                    'token' => $token,
+                    'refreshToken' => $refreshToken
                 ]);
             }
 
@@ -38,7 +44,6 @@ class SocialAccountService
             $account->save();
 
             return $user;
-
         }
 
     }

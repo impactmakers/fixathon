@@ -20,10 +20,13 @@
         <a class="header__nav-link" href="#sponsors">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        @if(!session()->has('logged_in'))
+        @if (!Auth::check())
           <a class="header__nav-link" href="#register">Register</a>
         @else
-          Hi {{ Session::get('username')}}
+          <a class="header__nav-link" href="https://getmakerlog.com/@<?php echo Auth::user()->name ?>">
+            <span>Hi</span>
+            <img alt="{{ Auth::user()->name }}" src="{{ Auth::user()->avatar }}" class="footer__im-from-avatar" style='margin-left:8px;border-radius:30px;margin-top:3px;'>
+          </a>
         @endif
       </li>
     </ul>
@@ -50,10 +53,13 @@
         <a class="header__nav-link" href="{{url('/#sponsors')}}">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        @if(!session()->has('logged_in'))
+        @if (!Auth::check())
           <a class="header__nav-link" href="{{url('/#register')}}">Register</a>
         @else
-          Hi {{ Session::get('username')}}
+          <a class="header__nav-link" target='_blank' href="https://getmakerlog.com/@<?php echo Auth::user()->name ?>">
+            <span>Hi</span>
+            <img alt="{{ Auth::user()->name }}" src="{{ Auth::user()->avatar }}" class="footer__im-from-avatar" style='margin-left:8px;border-radius:30px;margin-top:3px;'>
+          </a>
         @endif
       </li>
     </ul>

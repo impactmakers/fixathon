@@ -16,7 +16,7 @@
           <img alt="Winners" class="prize__icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/winners.svg')}}">
           Winners
         </h3>
-        <h2 class="prize__amount">$1,000</h2>
+        <h2 class="prize__amount">$1,250</h2>
         <span class="prize__strapline">Cash for your team to spend</span>
         <ul class="prize__items">
           <li>+ Free <a href='https://sketchapp.com' target='_blank'>Sketch</a> licenses</li>
@@ -39,14 +39,18 @@
         </ul>
       </div>
     </div>
-    <div class="prizes__cta-banner">
-      <h1 class="prizes__cta-title">
-      Want to take part in the Climate Fixathon?
-      </h1>
-      <a class="prizes__cta" href="#register">
-        <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register Now</button>
-      </a>
-    </div>
+
+    @if (!Auth::check())
+      <div class="prizes__cta-banner">
+        <h1 class="prizes__cta-title">
+        Want to take part in the Climate Fixathon?
+        </h1>
+        <a class="prizes__cta" href="#register">
+          <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register Now</button>
+        </a>
+      </div>
+    @endif
+    
   </div>
 </section>
 

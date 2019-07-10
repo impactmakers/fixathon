@@ -13,19 +13,24 @@
       <p class="takepart__p--lead">
         The Climate Fixathon will be hosted on <a href='https://getmakerlog.com' target='_blank'>Makerlog</a> - a platform for makers to develop and launch in the open.
       </p>
-      <p class="takepart__p">  
-        To take part you must <a href='https://getmakerlog.com/begin' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
-      </p>
-      
-      <!--
-      <a class="takepart__cta" href="{{ url('login/makerlog') }}" target="_blank">
-        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
-      </a>
-      -->
 
-      <a class="takepart__cta" href="{{ url('redirect/makerlog') }}" target="_blank">
-        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
-      </a>
+      @if (!Auth::check())
+        <p class="takepart__p">  
+          To take part you must <a href='https://getmakerlog.com/begin' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
+        </p>
+        
+        <a class="takepart__cta" href="{{ url('redirect/makerlog') }}" target="_blank">
+          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
+        </a>
+      @else
+        <p class="takepart__p">  
+          You already joined <strong>The Climate Fixathon</strong>. You could go to Makerlog to add your product, tasks, add team members & more:
+        </p>
+        
+        <a class="takepart__cta" href="https://getmakerlog.com/events/the-climate-fixathon" target="_blank">
+          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View Event</button>
+        </a>
+      @endif
 
       <h3 class="takepart__small-title">Looking for team members?</h3>
       <p class="takepart__p--lead">Ask in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>

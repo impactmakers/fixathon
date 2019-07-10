@@ -16,17 +16,12 @@ class SocialAuthController extends Controller
     }
 
     public function callback(SocialAccountService $service, $provider) {
-
     	$user = Socialite::driver('makerlog')->stateless()->user();
-
-        session(['logged_in' => true]);
-        session(['username' =>  $user->getNickname()]);
-        session(['avatar' => $user->getAvatar()]);
-        session(['user' => $user]);
-        session::save();
-
         $this->registerToEvent($user->token);
-                        
+
+        $user = $service->createOrGetUser($user,$user->getAvatar(),$user->token,$user->refreshToken);
+        auth()->login($user);
+    	                
         return redirect()->route('welcome');
     }
 
