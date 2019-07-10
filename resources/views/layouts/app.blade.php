@@ -80,31 +80,32 @@
     </style>
 </head>
 <body>
-    <div id="app"> 
-        @include('partials.header')
-        <main>
-            @yield('content')
-        </main>
-        @include('partials.footer')
-    </div>
-</body>
-<script src="{{ asset('js/app.js') }}" defer></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2193289-10"></script>
-<script>
-    function init() {
-      var imgDefer = document.getElementsByTagName('img');
-      for (var i = 0; i < imgDefer.length; i++) {
-        if (imgDefer[i].getAttribute('data-src')) {
-          imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+  <div id="app"> 
+      @include('partials.header')
+      <main>
+          @yield('content')
+      </main>
+      @include('partials.footer')
+  </div>
+  
+  <script src="{{ asset('js/app.js') }}" defer></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2193289-10"></script>
+  <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          }
         }
       }
-    }
-    window.onload = init;
+      window.onload = init;
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-2193289-10', { 'anonymize_ip': true });
-</script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-2193289-10', { 'anonymize_ip': true });
+  </script>
+</body>
 </html>
