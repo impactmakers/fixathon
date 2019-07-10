@@ -1,5 +1,4 @@
 <!-- PRICES -->
-
 <section class="container prizes__container" id="prizes">
   <div class="inner prizes__inner">
     <div class="centered__header prizes__header">
@@ -43,15 +42,13 @@
     @if (!Auth::check())
       <div class="prizes__cta-banner">
         <h1 class="prizes__cta-title">
-        Want to take part in the Climate Fixathon?
+          Want to take part in the Climate Fixathon?
         </h1>
         <a class="prizes__cta" href="#register">
           <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register Now</button>
         </a>
       </div>
-    @endif
-    
+    @endif    
   </div>
 </section>
-
 <!-- END PRICES -->

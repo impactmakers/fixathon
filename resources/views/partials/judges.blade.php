@@ -1,6 +1,4 @@
-
 <!-- JUDGES -->
-
 <div class="border-img__top border-img__top--gray-light"></div>
 <section class="container judges__container" id="judges">
   <div class="inner judges__inner">
@@ -28,9 +26,7 @@
         <a href='https://twitter.com/anthilemoon' target='_blank' class='judge__link'>
           <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @anthilemoon</a>
-      </li>  
-      
-
+      </li>
       <li class="judges__judge">
         <img alt="Justin Jackson" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/justin.jpg')}}">
         <h3>Justin Jackson</h3>
@@ -111,7 +107,6 @@
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @1password</a>
       </li>
-
     </ul>
   </div>
 </section>

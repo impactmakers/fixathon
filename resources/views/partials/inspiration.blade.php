@@ -1,5 +1,4 @@
 <!-- INSPIRATION -->
-
 <div class="border-img__top border-img__top--gray-light"></div>
 <section class="container inspiration__container" id="inspiration">
   <div class="inner inspiration__inner">
@@ -12,7 +11,6 @@
       </p>
     </div>
     <iframe width='100%' height='640' src='https://embed.coggle.it/diagram/XSNu7lj7lQY-PW-r/877c60fcd9acca6f8f62ddfbe86546976cbf7a35417468c1bc2ad01ef587b63b' frameborder='0' allowfullscreen></iframe>
-
   </div>
 </section>
 <!-- END INSPIRATION -->

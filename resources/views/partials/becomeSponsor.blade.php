@@ -1,5 +1,4 @@
 <!-- BECOME SPONSOR -->
-
 <section class="container becomeSponsor__container" id="becomeSponsor">
   <div class="inner becomeSponsor__inner">
     <h3 class="centered__intro becomeSponsor__title">Want to sponsor the Fixathon?</h3>

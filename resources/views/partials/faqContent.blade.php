@@ -1,10 +1,9 @@
 @if(Request::path() === 'faq')
 <section class="container top__container subpage__container" id="faq">
 @else
-<section class="container subpage__container faq__container" id="faq"'>
+<section class="container subpage__container faq__container" id="faq">
 @endif
   <div class="inner subpage__inner">
-
     <div class="subpage__content">
       @if(Request::path() === 'faq')
       <h1 class="brush__title brush__title--large subpage__title">
@@ -23,12 +22,12 @@
 
       <p>Winners will be announced on Thursday 5th September.</p>
 
-      @if(Request::path() === 'faq')
-      <div class="subpage__divider"></div>
-      <h2>✅ How do I register?</h2>
-      <p>  
-        To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PST on August 1st 2019.
-      </p>
+      @if (!Auth::check())
+        <div class="subpage__divider"></div>
+        <h2>✅ How do I register?</h2>
+        <p>  
+          To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PST on August 1st 2019.
+        </p>
       @endif
 
       <div class="subpage__divider"></div>
@@ -55,8 +54,6 @@
       <h2>🤔 Don't know what you're going to work on yet?</h2>
       <p>No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find here will spark an idea!</p>
       
-
-
       <div class="subpage__divider"></div>
       <h2>💸 What kinds of projects are eligible to win prizes?</h2>
       <p>Any website, app or service that aims to help restore a safe climate for our planet can be entered. Please keep in mind that winners will be selected based on the definitions of our 3 awards:</p>
@@ -83,6 +80,3 @@
     </div>
   </div>
 </section>
-
-
-

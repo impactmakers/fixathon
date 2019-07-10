@@ -1,7 +1,4 @@
-
-
 <!-- SPONSORS -->
-
 <section class="container sponsors__container" id="sponsors">
   <div class="inner sponsors__inner">
     <div class="centered__header sponsors__header">
@@ -110,8 +107,6 @@
           </a>
         </li>  
       </ul>
-
-
     </div>
   </div>
 </section>

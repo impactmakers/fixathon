@@ -90,6 +90,7 @@
 </body>
 <script src="{{ asset('js/app.js') }}" defer></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2193289-10"></script>
 <script>
     function init() {
       var imgDefer = document.getElementsByTagName('img');
@@ -99,7 +100,11 @@
         }
       }
     }
-
     window.onload = init;
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-2193289-10', { 'anonymize_ip': true });
 </script>
 </html>

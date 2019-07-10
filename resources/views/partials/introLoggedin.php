@@ -1,7 +1,6 @@
 <!-- INTRO -->
 <section class="container top__container intro__container">
-  <div class="inner intro__inner">
-    
+  <div class="inner intro__inner"> 
     <h1 class="intro__title">
       You’ve registered to take part in the Climate Fixathon 🎉 
     </h1>
@@ -49,12 +48,6 @@
         </a>
       </li>
     </ul>
-
-
-
-
-
-</div>
   </div>
 </section>
 <!-- END INTRO -->

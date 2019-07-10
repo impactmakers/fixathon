@@ -1,5 +1,3 @@
-<!-- <img alt="image" src="{{asset('img/logo_sm.png')}}" height="80" style='margin-top:-10px;'> -->
-
 <footer class="container footer__container" id="footer">
   <div class="inner footer__inner">
     <div class="footer__top">
@@ -36,13 +34,3 @@
     </div>
   </div>
 </footer>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2193289-10"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-2193289-10', { 'anonymize_ip': true });
-  </script>
-

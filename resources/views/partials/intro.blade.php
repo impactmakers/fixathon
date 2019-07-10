@@ -1,7 +1,6 @@
 <!-- INTRO -->
 <section class="container top__container intro__container">
-  <div class="inner intro__inner">
-    
+  <div class="inner intro__inner"> 
     <h1 class="intro__title">
         @if (Auth::check())
           Congratulations! You <strong>joined</strong> the
@@ -31,11 +30,11 @@
       </a>
 
       <div class="intro__secondary-cta">
-      <a href="#about">
-        Learn more
-      </a>
+        <a href="#about">
+          Learn more
+        </a>
+      </div>
     @endif
-</div>
   </div>
 </section>
 <!-- END INTRO -->
