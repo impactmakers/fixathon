@@ -24,8 +24,7 @@
           <a class="header__nav-link" href="#register">Register</a>
         @else
           <a class="header__nav-link" href="/welcome">
-            <span>Hi</span>
-            <img alt="{{ Auth::user()->name }}" src="{{ Auth::user()->avatar }}" class="footer__im-from-avatar" style='margin-left:8px;border-radius:30px;margin-top:3px;'>
+            Participant info
           </a>
         @endif
       </li>

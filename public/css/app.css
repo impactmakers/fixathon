@@ -512,7 +512,7 @@ h3 {
 
 @media screen and (min-width: 480px) {
   h3 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -547,7 +547,7 @@ h4 {
 
 @media screen and (min-width: 480px) {
   h4 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -1499,7 +1499,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .header__nav-item {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -1576,7 +1576,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .header__nav-item.sticky a {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -2477,7 +2477,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .intro__key-item {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -2553,7 +2553,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .intro__secondary-cta {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -2655,7 +2655,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .intro__next-item h3 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -3343,7 +3343,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .participant h3 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
@@ -3673,7 +3673,7 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .judges__judge h3 {
-    font-size: 18;
+    font-size: 18px;
     line-height: 27px;
   }
 }
