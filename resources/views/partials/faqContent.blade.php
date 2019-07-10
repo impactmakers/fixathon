@@ -53,7 +53,9 @@
       <div class="subpage__divider"></div>
 
       <h2>🤔 Don't know what you're going to work on yet?</h2>
-      <p>No problem! Please still registered for the event. You can decide on your project later. Check out our <a href="#inspiration">Climate Emergency Causes Mind Map</a> to find problems to solve.</p>
+      <p>No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find here will spark an idea!</p>
+      
+
 
       <div class="subpage__divider"></div>
       <h2>💸 What kinds of projects are eligible to win prizes?</h2>

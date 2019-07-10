@@ -44,8 +44,8 @@
             <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Discover Root Causes</button>
           </a>
         </div>
-        <a title="Learn about the issue" href="https://climatechoice.co/" target='_blank'>
-          Learn about the issue
+        <a title="View project inspiration" href="https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af" target='_blank'>
+          View project inspiration
         </a>
       </li>
     </ul>

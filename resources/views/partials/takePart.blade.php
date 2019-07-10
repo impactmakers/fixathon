@@ -16,32 +16,32 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by by 23:59 PST on 1st August 2019.
         </p>
                 
-        <a class="takepart__cta" href="{{ url('redirect/makerlog') }}" target="_blank" style='margin:0px auto 30px;'>
-          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Join with Makerlog</button>
-        </a>
 
-        <h3 class="takepart__small-title">Don't have MakerLog Account? Create one & join:</h3>
-        <a class="takepart__cta" href="https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog" target="_blank" style='margin: 0px auto 40px;'>
-          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register with Makerlog</button>
-        </a>
-      @else
-        <p class="takepart__p">  
-          You already joined <strong>The Climate Fixathon</strong>. You could go to Makerlog to add your product, tasks, add team members & more:
-        </p>
-        
-        <a class="takepart__cta" href="https://getmakerlog.com/events/the-climate-fixathon" target="_blank">
-          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View Event</button>
-        </a>
-      @endif
+        <h2 class="takepart__sub-title">Join with Makerlog:</h2>
+        <div class="takepart__actions">
+          <a class="takepart__cta takepart__cta--one" href="{{ url('redirect/makerlog') }}" target="_blank">
+            <button type="submit" class="btn-simple btn-md btn-green btn-mobile">I have an account</button>
+          </a>
+
+          <a class="takepart__cta" href="https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog" target="_blank">
+            <button type="submit" class="btn-simple btn-md btn-green btn-mobile">I don't have an account</button>
+          </a>
+        @else
+          <p class="takepart__p">  
+            You already joined <strong>The Climate Fixathon</strong>. <a title="Discover next steps" href="/welcome" target="_blank">Discover next steps</a>.
+          </p>
+        @endif
+        </div>
+
 
       <h3 class="takepart__small-title">Looking for team members?</h3>
       <p class="takepart__p--lead">Ask in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>
       <br />
       <h3 class="takepart__small-title">Don't know what you're going to work on yet?</h3>
-      <p class="takepart__p--lead">No problem! Please still register for the event. You can decide on your project later. Check out our <a href="https://coggle.it/diagram/XSNu7lj7lQY-PW-r/t/our-planet's-climate-is-breaking-down-root-causes-of-this/858ceeb6df601a9dbba5520c1d3b3443165f776450d66d3dd66b60beef969648">Climate Breakdown Root Causes Mind Map</a> to discover a problem to solve.</p>
+      <p class="takepart__p--lead">No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find here will spark an idea!</p>
      
       <p>To learn more read our <a href="/faq" title="FAQs">FAQs</a>.</p>
     </div>

@@ -23,7 +23,7 @@
         @if (!Auth::check())
           <a class="header__nav-link" href="#register">Register</a>
         @else
-          <a class="header__nav-link" href="https://getmakerlog.com/@<?php echo Auth::user()->name ?>">
+          <a class="header__nav-link" href="/welcome">
             <span>Hi</span>
             <img alt="{{ Auth::user()->name }}" src="{{ Auth::user()->avatar }}" class="footer__im-from-avatar" style='margin-left:8px;border-radius:30px;margin-top:3px;'>
           </a>

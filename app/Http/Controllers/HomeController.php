@@ -22,9 +22,9 @@ class HomeController extends Controller
 
     public function welcome(Request $request){
 
-        if(!Auth::check()){
-            return redirect()->to('/#register');
-        }
+        // if(!Auth::check()){
+        //     return redirect()->to('/#register');
+        // }
 
         return view('welcome');
     }

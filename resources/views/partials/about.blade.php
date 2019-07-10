@@ -7,7 +7,7 @@
       What is a climate fixathon?
       </h1>
       <p class="centered__intro about__intro">
-        It’s a 4-week online hackathon for individuals or teams to use their skills to build and launch projects intended to help prevent earth’s climate breaking down.
+        It’s a 4-week online hackathon for individuals or teams to use their tech skills to build and launch projects intended to help fix the climate.
       </p>
     </div>
   <div class="about">
