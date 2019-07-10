@@ -972,7 +972,7 @@ p a:active {
 .btn-simple.btn-white,
 .btn-gradient.btn-white {
   background: #ffffff;
-  color: #535c69;
+  color: #5E6878;
 }
 
 .btn-bordered {
@@ -1070,8 +1070,8 @@ p a:active {
 }
 
 .btn-bordered.btn-secondary {
-  border-color: #6a7586;
-  color: #6a7586;
+  border-color: #5E6878;
+  color: #5E6878;
   background: none;
 }
 
@@ -1250,7 +1250,7 @@ p a:active {
 }
 
 .btn-secondary {
-  color: #535c69;
+  color: #5E6878;
   background: #f8f8f8;
 }
 
@@ -1798,7 +1798,7 @@ header.sticky {
 .footer__im-p {
   font-size: 14px;
   line-height: 22px;
-  color: #535c69;
+  color: #5E6878;
   max-width: 360px;
 }
 
@@ -1915,7 +1915,7 @@ header.sticky {
 .footer__nav li a {
   font-weight: bold;
   text-decoration: none;
-  color: #6a7586;
+  color: #5E6878;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1951,7 +1951,7 @@ header.sticky {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #535c69;
+  color: #5E6878;
   width: 100%;
   margin-top: 20px;
   padding-top: 20px;
@@ -2029,7 +2029,7 @@ header.sticky {
 .footer-statement {
   font-size: 14px;
   line-height: 22px;
-  color: #535c69;
+  color: #5E6878;
   margin: 0;
   padding: 0;
 }
@@ -2472,7 +2472,7 @@ header.sticky {
 .intro__key-item {
   font-size: 18px;
   line-height: 27px;
-  color: #6a7586;
+  color: #5E6878;
 }
 
 @media screen and (min-width: 480px) {
@@ -2684,7 +2684,7 @@ header.sticky {
 .intro__next-item p {
   font-size: 14px;
   line-height: 22px;
-  color: #535c69;
+  color: #5E6878;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -2874,7 +2874,7 @@ header.sticky {
 }
 
 .about__info p {
-  color: #535c69;
+  color: #5E6878;
 }
 
 .about__info p:last-child {
@@ -3418,6 +3418,7 @@ header.sticky {
 
 .participant__info {
   margin-top: -5px;
+  width: 100%;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -3490,7 +3491,7 @@ header.sticky {
 }
 
 .becomeSponsor__p {
-  color: #535c69;
+  color: #5E6878;
   max-width: 520px;
   text-align: center;
 }
@@ -3553,7 +3554,7 @@ header.sticky {
 }
 
 .inspiration__intro {
-  color: #6a7586;
+  color: #5E6878;
 }
 
 .judges__container {
@@ -3596,7 +3597,7 @@ header.sticky {
 }
 
 .judges__intro {
-  color: #6a7586;
+  color: #5E6878;
 }
 
 .judges__list {
@@ -3702,7 +3703,7 @@ header.sticky {
 .judges__judge p {
   font-size: 14px;
   line-height: 22px;
-  color: #535c69;
+  color: #5E6878;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -3832,7 +3833,7 @@ header.sticky {
 }
 
 .prizes__intro {
-  color: #6a7586;
+  color: #5E6878;
 }
 
 .prizes {
@@ -3985,7 +3986,7 @@ header.sticky {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 22px;
-  color: #535c69;
+  color: #5E6878;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4382,7 +4383,7 @@ header.sticky {
 }
 
 .sponsors__intro {
-  color: #6a7586;
+  color: #5E6878;
 }
 
 .sponsors__gold {
@@ -4467,7 +4468,7 @@ header.sticky {
 .sponsor__gold p {
   font-size: 16px;
   line-height: 24px;
-  color: #535c69;
+  color: #5E6878;
   margin-top: 28px;
   margin-bottom: 28px;
 }
@@ -4647,7 +4648,7 @@ header.sticky {
 }
 
 .takepart__text {
-  color: #535c69;
+  color: #5E6878;
 }
 
 .takepart__sub-title {
@@ -4846,11 +4847,11 @@ header.sticky {
 }
 
 .subpage__intro {
-  color: #6a7586;
+  color: #5E6878;
 }
 
 .subpage__small-title {
-  color: #535c69;
+  color: #5E6878;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 24px;
@@ -5029,7 +5030,7 @@ header.sticky {
   padding-left: 0;
   font-size: 16px;
   line-height: 24px;
-  color: #535c69;
+  color: #5E6878;
 }
 
 @media screen and (min-width: 480px) {
