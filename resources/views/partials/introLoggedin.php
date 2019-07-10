@@ -13,14 +13,14 @@
     <ul class="intro__next-list">
       <li class="intro__next-item">
         <h3>Setup on Makerlog</h3>
-        <p>While the Fixathon doesn’t start until 2nd August you can still setup your attendance or add your product once you know what it will be.</p>
+        <p>While the Fixathon doesn’t start until 2nd August you can add your product and team on Makerlog.</p>
         <div class="intro__next-cta">
-          <a href="https://getmakerlog.com/events/the-climate-fixathon/" title="Fixathon event on Makerlog" target='_blank'>
-            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View on Makerlog</button>
+          <a href="https://getmakerlog.com/products" title="Fixathon event on Makerlog" target='_blank'>
+            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Add your product</button>
           </a>
         </div>
-        <a title="Create your Fixathon Product" href="https://getmakerlog.com/products" target='_blank'>
-          Add your product
+        <a title="Create your Fixathon Product" href="https://getmakerlog.com/events/the-climate-fixathon/" target='_blank'>
+          Fixathon event on Makerlog
         </a>
       </li>
       <li class="intro__next-item">
@@ -37,7 +37,7 @@
       </li>
       <li class="intro__next-item">
         <h3>Get project inspiration</h3>
-        <p> You can decide on your project later. Check out our Climate Emergency Causes Mind Map to find problems to solve.
+        <p>We’ve compiled several sources of inspiration to help guide and inspire you. Hopefully, something you find will spark an idea!
         </p>
         <div class="intro__next-cta">
           <a href="https://coggle.it/diagram/XSNu7lj7lQY-PW-r/t/our-planet's-climate-is-breaking-down-root-causes-of-this/858ceeb6df601a9dbba5520c1d3b3443165f776450d66d3dd66b60beef969648" title="Discover causes of climate breakdown" target='_blank'>
