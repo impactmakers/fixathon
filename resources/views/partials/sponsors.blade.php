@@ -83,7 +83,7 @@
           </a>
         </li> 
         <li class="sponsor__silver">
-          <a href='https://drawkit.com/' title='DrawKit' target='_blank'>
+          <a href='https://drawkit.io/' title='DrawKit' target='_blank'>
             <img alt="DrawKit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/drawkit.png')}}">
           </a>
         </li> 

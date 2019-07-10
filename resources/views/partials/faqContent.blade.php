@@ -48,12 +48,14 @@
       <div class="subpage__divider"></div>
 
       <h2>🔍 How do I find team members?</h2>
-      <p>Ask for collaborators in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>
+      <p>Ask for collaborators in the Impact Makers <a href='https://impact-makers-group.slack.com/messages/CJSSYTZMW' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.</p>
   
       <div class="subpage__divider"></div>
 
       <h2>🤔 Don't know what you're going to work on yet?</h2>
-      <p>No problem! Please still registered for the event. You can decide on your project later. Check out our <a href="#inspiration">Climate Emergency Causes Mind Map</a> to find problems to solve.</p>
+      <p>No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find here will spark an idea!</p>
+      
+
 
       <div class="subpage__divider"></div>
       <h2>💸 What kinds of projects are eligible to win prizes?</h2>
