@@ -2355,7 +2355,7 @@ header.sticky {
 
 @media only screen and (min-width: 768px) {
   .top__container {
-    padding-top: 165px;
+    padding-top: 175px;
   }
 }
 
@@ -2391,39 +2391,39 @@ header.sticky {
 }
 
 .intro__title {
-  max-width: 780px;
+  max-width: 600px;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0;
-  font-size: 32px;
-  line-height: 41px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .intro__title {
-    font-size: 32px;
-    line-height: 41px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .intro__title {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .intro__title {
-    font-size: 50px;
-    line-height: 66px;
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .intro__title {
-    font-size: 50px;
-    line-height: 66px;
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 
@@ -2470,36 +2470,36 @@ header.sticky {
 }
 
 .intro__key-item {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
   color: #5E6878;
 }
 
 @media screen and (min-width: 480px) {
   .intro__key-item {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .intro__key-item {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .intro__key-item {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .intro__key-item {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
@@ -2525,8 +2525,8 @@ header.sticky {
 
 .intro__secondary-cta {
   margin-top: 40px;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .intro__secondary-cta a {
@@ -2553,29 +2553,29 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .intro__secondary-cta {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .intro__secondary-cta {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .intro__secondary-cta {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .intro__secondary-cta {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
