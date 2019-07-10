@@ -794,7 +794,7 @@ p a:active {
 .btn-md {
   font-size: 29px;
   font-family: inherit;
-  padding: 18px 12px 5px;
+  padding: 18px 9px 5px;
 }
 
 .btn-sm {
@@ -924,7 +924,7 @@ p a:active {
 
 .btn-simple.btn-md,
 .btn-gradient.btn-md {
-  padding: 18px 35px 18px;
+  padding: 18px 30px 18px;
   font-size: 24px;
   font-weight: bold;
   font-family: inherit;
@@ -2172,7 +2172,7 @@ header.sticky {
 }
 
 .twocol__text {
-  max-width: 600px;
+  max-width: 640px;
   display: flex;
   flex-direction: column;
 }
@@ -4659,35 +4659,59 @@ header.sticky {
   margin-top: 5px;
 }
 
-.takepart__cta {
-  text-decoration: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+.takepart__actions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) {
+  .takepart__actions {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+.takepart__cta {
+  text-decoration: none;
+  padding-top: 10px !important;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .takepart__cta {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .takepart__cta {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1040px) {
+  .takepart__cta {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
   .takepart__cta {
     margin-bottom: 30px;
   }
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 768px) and (min-width: 1040px) {
   .takepart__cta {
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .takepart__cta {
-    padding-bottom: 15px;
-  }
-}
-
-@media only screen and (min-width: 1040px) {
-  .takepart__cta {
-    padding-top: 20px;
+  .takepart__cta--one {
+    margin-right: 10px;
   }
 }
 

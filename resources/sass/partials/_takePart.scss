@@ -21,12 +21,33 @@
     margin-top: 5px;
 }
 
+.takepart__actions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    @include mq('tablet') {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
 .takepart__cta {
     text-decoration: none;
-    padding: 0;
+    padding-top: 10px !important;
     margin-top: 0;
-    @include mar-bot-standard;
-    @include pad-bot-small;
+
+    @include mq('tablet') {
+        @include pad-bot-small;
+        @include mar-bot-standard;
+    }
+
+}
+
+.takepart__cta--one {
+
+    @include mq('tablet') {
+        margin-right: 10px;
+    }
 }
 
 .takepart__sub-title {
