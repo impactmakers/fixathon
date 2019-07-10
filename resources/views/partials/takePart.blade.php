@@ -16,7 +16,7 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=http://www.leaguemakers.com/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 1st August 2019 at 12:00 GMT.
         </p>
                 
         <a class="takepart__cta" href="{{ url('redirect/makerlog') }}" target="_blank" style='margin:0px auto 30px;'>
@@ -24,7 +24,7 @@
         </a>
 
         <h3 class="takepart__small-title">Don't have MakerLog Account? Create one & join:</h3>
-        <a class="takepart__cta" href="https://getmakerlog.com/begin?next=http://www.leaguemakers.com/redirect/makerlog" target="_blank" style='margin: 0px auto 40px;'>
+        <a class="takepart__cta" href="https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog" target="_blank" style='margin: 0px auto 40px;'>
           <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register with Makerlog</button>
         </a>
       @else
