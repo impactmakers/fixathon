@@ -8,7 +8,7 @@
         Help spread the word!
       </h1>
       <p class="regbanner__subtitle">
-        Tweet that you’re taking part in the Fixathon
+        Tweet that you’re taking part in the Climate Fixathon.
       </p>
       <div class="regbanner__twitter">
         <div class="regbanner__twitter-tweet">

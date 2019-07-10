@@ -81,7 +81,7 @@
 }
 
 .prize__strapline {
-    @include font-size($text-xs);
+    @include font-size($text-sm);
     font-weight: bold;
 }
 .prize__items {
@@ -116,7 +116,7 @@
     @include mq('tablet') {
         flex-direction: row;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
 }
 

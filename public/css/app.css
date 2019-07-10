@@ -2355,7 +2355,7 @@ header.sticky {
 
 @media only screen and (min-width: 768px) {
   .top__container {
-    padding-top: 190px;
+    padding-top: 165px;
   }
 }
 
@@ -3948,36 +3948,36 @@ header.sticky {
 }
 
 .prize__strapline {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 27px;
   font-weight: bold;
 }
 
 @media screen and (min-width: 480px) {
   .prize__strapline {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .prize__strapline {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .prize__strapline {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .prize__strapline {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -4104,7 +4104,7 @@ header.sticky {
   .prizes__cta-banner {
     flex-direction: row;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
 

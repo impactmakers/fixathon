@@ -16,10 +16,10 @@
             What should <br/>I make?
           </h2>
           <p>
-            Any web or app-based project that aims to help restore a safe climate for our planet. 
+            Any website, app or service that aims to help restore a safe climate for our planet. 
           </p>
           <p>
-            At the end a winner and runner up will be selected for each of our <strong>Fixathon awards</strong>. 👉
+            At the end of the event a winner and runner up will be selected for each of our <strong>Fixathon awards</strong>. 👉
           </p>
         </div>
       </div>
