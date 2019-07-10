@@ -24,7 +24,7 @@
           <a class="header__nav-link" href="#register">Register</a>
         @else
           <a class="header__nav-link" href="/welcome">
-            Participant info
+            Event info
           </a>
         @endif
       </li>
