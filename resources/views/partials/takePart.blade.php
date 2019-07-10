@@ -15,7 +15,7 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by by 23:59 PST on 1st August 2019.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PST on 1st August 2019.
         </p>                
 
         <h2 class="takepart__sub-title">Join with Makerlog:</h2>
@@ -35,7 +35,7 @@
       @endif
 
       <h3 class="takepart__small-title">Looking for team members?</h3>
-      <p class="takepart__p--lead">Ask in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a href='https://twitter.com/search?f=tweets&vertical=default&q=%23fixathonteamup&src=typd' target='_blank'>#fixathonteamup</a>.
+      <p class="takepart__p--lead">Ask in the Impact Makers <a href='https://join.slack.com/t/impact-makers-group/shared_invite/enQtNjQ2MTY3NDM1MjcxLWUwNjA1YWViZmI1NjQ5YTIzMjA1OWE2NzI3NzMwNzQ0ODBiMmZlMzI0YTI4MDUyMzlhNmZhZDFiOWZkODQ0Yjg' target='_blank'>#meet-makers</a> Slack channel or tweet with the hashtag <a title="Tweet with #fixathonteamup" href="https://twitter.com/intent/tweet/?text=%20Team%20up%20with%20me%20for%20The%20Climate%20%40Fixathon%20%23fixathonteamup" target='_blank'>#fixathonteamup</a>.
       </p>
       <br />
       <h3 class="takepart__small-title">Don't know what you're going to work on yet?</h3>

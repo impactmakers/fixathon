@@ -3,7 +3,7 @@
   <div class="inner sponsors__inner">
     <div class="centered__header sponsors__header">
       <h1 class="brush__title brush__title--large centered__title sponsors__title">
-        Our Sponsors 🙌
+        Sponsors 🙌
       </h1>
       <p class="centered__intro sponsors__intro">
         Our prizes would not be possible without the support of these awesome companies and makers.
