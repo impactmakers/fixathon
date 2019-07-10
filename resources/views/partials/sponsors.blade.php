@@ -65,6 +65,16 @@
           </a>
         </li>
         <li class="sponsor__silver">
+          <a href='https://browserless.io/' title='Browserless' target='_blank'>
+            <img alt="Browserless" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/browserless.png')}}">
+          </a>
+        </li>
+        <li class="sponsor__silver">
+          <a href='https://upscri.be/' title='Upscribe' target='_blank'>
+            <img alt="Upscribe" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/upscribe.png')}}">
+          </a>
+        </li> 
+        <li class="sponsor__silver">
           <a href='https://getkirby.com/' title='Kirby' target='_blank'>
             <img alt="Kirby" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/kirby.png')}}">
           </a>

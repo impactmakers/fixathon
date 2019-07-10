@@ -1,7 +1,7 @@
 .top__container {
     padding-top: 90px;
     @include mq('tablet') {
-        padding-top: 165px;
+        padding-top: 175px;
     }
 }
 
@@ -18,11 +18,11 @@
 }
 
 .intro__title {
-    max-width: 780px;
+    max-width: 600px;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
-    @include font-size($text-xxl);
+    @include font-size($text-xl);
 }
 
 .intro__key {
@@ -41,7 +41,7 @@
 }
 
 .intro__key-item {
-    @include font-size($text-md);
+    @include font-size($text);
     color: $gray;
     @include mq('tablet') {
         margin-right: 40px;
@@ -66,7 +66,7 @@
 .intro__secondary-cta {
     @include links-on-light;
     margin-top: 40px;
-    @include font-size($text-md);
+    @include font-size($text);
     @include mq('tablet') {
         margin-top: 50px;
     }
