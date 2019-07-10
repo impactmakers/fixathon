@@ -22,7 +22,7 @@
 
 //sponsors silver
 
-.sponsors__silver {
+.sponsors__gold {
     margin: 0;
     @include mar-bot-large;
     padding: 0;
@@ -39,7 +39,7 @@
     }
 }
 
-.sponsor__silver {
+.sponsor__gold {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,11 +73,11 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .sponsors__silver {
+    .sponsors__gold {
         display: flex;
         flex-wrap: wrap;
     }
-    .sponsor__silver {
+    .sponsor__gold {
         width: 45%;
         margin-bottom: 40px;
     }
@@ -85,7 +85,7 @@
 
 //sponsors bronze
 
-.sponsors__bronze {
+.sponsors__silver {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -104,7 +104,7 @@
     }
 }
 
-.sponsor__bronze {
+.sponsor__silver {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,11 +122,11 @@
     }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .sponsors__bronze {
+    .sponsors__silver {
         display: flex;
         flex-wrap: wrap;
     }
-    .sponsor__bronze {
+    .sponsor__silver {
         width: 30%;
         margin-bottom: 40px;
     }
