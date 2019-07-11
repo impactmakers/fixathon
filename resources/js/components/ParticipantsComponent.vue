@@ -3,17 +3,25 @@
     <ul class="participants__list" v-if="totalParticipants !== 0">
       <li class="participant" v-for="user in participants">
         <a :href="'https://getmakerlog.com/@'+user.username" target="_blank">
-          <img alt="user.username" class="partcipant__avatar" :src="user.avatar" />
+          <div class="partcipant__avatar">
+            <img alt="user.username" :src="user.avatar" />
+          </div>
+
           <div class="participant__info">
             <h3>{{user.username}}</h3>
-            <p>{{user.description}}</p>
+            <!-- <p>{{user.description}}</p> -->
           </div>
         </a>
-      </li>      
+      </li>
     </ul>
 
-    <div style='text-align:center;margin-top:50px;width:100%;'>
-      <button style='margin:0px auto;' class='btn-simple btn-md btn-green btn-mobile' v-if="more" @click="loadMore()">Load More</button>
+    <div style="text-align:center;margin-top:50px;width:100%;">
+      <button
+        style="margin:0px auto;"
+        class="btn-simple btn-md btn-white-blue btn-mobile"
+        v-if="more"
+        @click="loadMore()"
+      >Load More</button>
     </div>
 
     <div class="centered__intro participants__intro" v-if="totalParticipants === 0">
@@ -43,7 +51,7 @@ export default {
   methods: {
     loadMore: function(event) {
       axios
-        .get("participants/"+this.page)
+        .get("participants/" + this.page)
         .then(resp => {
           this.participants = this.participants.concat(resp.data.results);
           this.totalParticipants = resp.data.count;
@@ -66,8 +74,8 @@ export default {
       });
   },
   computed: {
-    more: function () {
-      return (this.totalParticipants > (this.page * 20));
+    more: function() {
+      return this.totalParticipants > this.page * 20;
     }
   }
 };
