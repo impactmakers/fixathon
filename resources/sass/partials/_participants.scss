@@ -27,18 +27,18 @@
     width: 100%;
     display: grid;
     justify-content: space-between;
-    grid-gap: 40px;
+    grid-gap: 20px;
     @include mq('mobile') {
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
     @include mq('tablet') {
         grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
+        grid-gap: 20px;
     }
     @include mq('desktop') {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px;
+        grid-gap: 20px;
     }
 }
 
@@ -48,8 +48,7 @@
         padding: 25px 30px 24px;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        align-content: flex-start;
+        align-items: center;
         text-align: left;
         flex-direction: row;
         text-decoration: none;
@@ -70,12 +69,12 @@
 
 .partcipant__avatar {
     width: 40px;
-    height: auto;
-    border-radius: 40px;
+    height: 40px;
     margin-right: 12px;
     img {
+        border-radius: 40px;
         width: 40px;
-        height: auto;
+        height: 40px;
     }
 }
 
