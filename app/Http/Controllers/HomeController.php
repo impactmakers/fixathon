@@ -43,9 +43,14 @@ class HomeController extends Controller
         echo $response->getBody();
     }
 
-    public function participants(){
+    public function participants($page = 0){
+        $offset = '';
+        if($page !== 0){
+            $offset = "/?limit=20&offset=".($page*20);
+        }
+
         $base_uri = env('MAKERLOG_URL');
-        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/participants';
+        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/participants'.$offset;
         
         $client = new \GuzzleHttp\Client();
         $response = $client->request('GET', $base_uri.$endpoint,[

@@ -9,8 +9,12 @@
             <p>{{user.description}}</p>
           </div>
         </a>
-      </li>
+      </li>      
     </ul>
+
+    <div style='text-align:center;margin-top:50px;width:100%;'>
+      <button style='margin:0px auto;' class='btn-simple btn-md btn-green btn-mobile' v-if="more" @click="loadMore()">Load More</button>
+    </div>
 
     <div class="centered__intro participants__intro" v-if="totalParticipants === 0">
       <b>No participants yet. Be the first one!</b>
@@ -32,10 +36,24 @@ export default {
   data() {
     return {
       participants: [],
-      totalParticipants: 0
+      totalParticipants: 0,
+      page: 1
     };
   },
-  methods: {},
+  methods: {
+    loadMore: function(event) {
+      axios
+        .get("participants/"+this.page)
+        .then(resp => {
+          this.participants = this.participants.concat(resp.data.results);
+          this.totalParticipants = resp.data.count;
+          this.page = this.page + 1;
+        })
+        .catch(resp => {
+          console.log("Could not load more participants");
+        });
+    }
+  },
   mounted() {
     axios
       .get("participants")
@@ -46,6 +64,11 @@ export default {
       .catch(resp => {
         console.log("Could not load participants");
       });
+  },
+  computed: {
+    more: function () {
+      return (this.totalParticipants > (this.page * 20));
+    }
   }
 };
 </script>
