@@ -2391,7 +2391,7 @@ header.sticky {
 }
 
 .intro__title {
-  max-width: 600px;
+  max-width: 680px;
   text-align: center;
   font-weight: bold;
   margin: 0;
@@ -2424,6 +2424,13 @@ header.sticky {
   .intro__title {
     font-size: 36px;
     line-height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .intro__title {
+    font-size: 42px;
+    line-height: 56px;
   }
 }
 
