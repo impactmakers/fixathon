@@ -32,6 +32,13 @@
           <p>High quality, concise web development screencasts. Coding with expert open-source contributors.</p>
           <a href='https://egghead.io' title='Egghead.io' target='_blank'>egghead.io</a>  
         </li>
+        <li class="sponsor__gold">
+          <a href='https://vwo.com' title='VWO' target='_blank'>
+            <img alt="Egghead.io" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/vwo.png')}}">
+          </a>
+          <p>The All-in-One Connected A/B Testing and Conversion Optimization Platform. </p>
+          <a href='https://vwo.com' title='VWO' target='_blank'>vwo.com</a>  
+        </li>
       </ul>
       <ul class="sponsors__silver">
         <li class="sponsor__silver">
@@ -94,7 +101,11 @@
             <img alt="DrawKit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/drawkit.png')}}">
           </a>
         </li> 
-        
+        <li class="sponsor__silver">
+          <a href='https://rotorvideos.com/' title='rotor' target='_blank'>
+            <img alt="Rotor" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/rotor.png')}}">
+          </a>
+        </li>
         <li class="sponsor__silver">
           <a href='https://offset.earth/' title='Offset Earth' target='_blank'>
             <img alt="Offset Earth" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/offsetearth.png')}}">

@@ -18,11 +18,15 @@
 }
 
 .intro__title {
-    max-width: 600px;
+    max-width: 680px;
     text-align: center;
     font-weight: bold;
     margin: 0;
     @include font-size($text-xl);
+    @include mq('desktop') {
+        font-size: 42px;
+        line-height: 56px;
+    }
 }
 
 .intro__key {
