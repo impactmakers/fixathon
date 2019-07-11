@@ -21,7 +21,10 @@
         class="btn-simple btn-md btn-white-blue btn-mobile"
         v-if="more"
         @click="loadMore()"
-      >Load More</button>
+      >
+        <!-- <span v-if='loadingParticipants'><img src='/public/images/blue.gif'></span>-->
+        Load More
+      </button>
     </div>
 
     <div class="centered__intro participants__intro" v-if="totalParticipants === 0">
@@ -45,20 +48,24 @@ export default {
     return {
       participants: [],
       totalParticipants: 0,
-      page: 1
+      page: 1,
+      loadingParticipants: false
     };
   },
   methods: {
     loadMore: function(event) {
+      this.loadingParticipants = true;
       axios
         .get("participants/" + this.page)
         .then(resp => {
           this.participants = this.participants.concat(resp.data.results);
           this.totalParticipants = resp.data.count;
           this.page = this.page + 1;
+          this.loadingParticipants = false;
         })
         .catch(resp => {
           console.log("Could not load more participants");
+          this.loadingParticipants = false;
         });
     }
   },
@@ -68,6 +75,7 @@ export default {
       .then(resp => {
         this.participants = resp.data.results;
         this.totalParticipants = resp.data.count;
+        this.$emit('totals', this.totalParticipants);
       })
       .catch(resp => {
         console.log("Could not load participants");
