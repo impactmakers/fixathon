@@ -30,7 +30,7 @@
         </div>
       @else
         <p class="takepart__p">  
-          You already joined <strong>The Climate Fixathon</strong>. <a title="Discover next steps" href="/welcome" target="_blank">Discover next steps</a>.
+          You already joined <strong>The Climate Fixathon</strong>. <a title="Discover next steps" href="/welcome">Discover next steps</a>.
         </p>
       @endif
 

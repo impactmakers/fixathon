@@ -15,7 +15,7 @@
           <img alt="Winners" class="prize__icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/winners.svg')}}">
           Winners
         </h3>
-        <h2 class="prize__amount">$1,250</h2>
+        <h2 class="prize__amount">$1,500</h2>
         <span class="prize__strapline">Cash for your team to spend</span>
         <ul class="prize__items">
           <li>+ Free <a href='https://sketchapp.com' target='_blank'>Sketch</a> licenses</li>
@@ -31,7 +31,7 @@
           <img alt="Runner ups" class="prize__icon" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/runnerups.svg')}}">
           Runner ups
         </h3>
-        <h2 class="prize__amount">$250</h2>
+        <h2 class="prize__amount">$300</h2>
         <span class="prize__strapline">Cash for your team to spend</span>
         <ul class="prize__items">
           <li>+ 25 trees planted by <a href='https://offset.earth' target='_blank'>Offset Earth</a></li>
