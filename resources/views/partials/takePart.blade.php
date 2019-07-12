@@ -15,7 +15,7 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PST on 1st August 2019.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PST on 1st August 2019.
         </p>                
 
         <h2 class="takepart__sub-title">Join with Makerlog:</h2>
@@ -24,7 +24,7 @@
             <button type="submit" class="btn-simple btn-md btn-green btn-mobile">I have an account</button>
           </a>
 
-          <a class="takepart__cta" href="https://getmakerlog.com/begin?next=https://www.fixathon.io/redirect/makerlog" target="_blank">
+          <a class="takepart__cta" href="https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog" target="_blank">
             <button type="submit" class="btn-simple btn-md btn-green btn-mobile">I don't have an account</button>
           </a>
         </div>
