@@ -60,6 +60,7 @@
     p {
         @include font-size($text-xs);
         color: $grayDark;
+        width: 100%;
         margin-top: 0;
         margin-bottom: 30px;
     }

@@ -3709,6 +3709,7 @@ header.sticky {
   font-size: 14px;
   line-height: 22px;
   color: #5E6878;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -4391,6 +4392,12 @@ header.sticky {
   color: #5E6878;
 }
 
+.sponsors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .sponsors__gold {
   margin: 0;
   margin-bottom: 40px;
@@ -4476,6 +4483,7 @@ header.sticky {
   color: #5E6878;
   margin-top: 28px;
   margin-bottom: 28px;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {

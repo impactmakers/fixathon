@@ -36,7 +36,7 @@
           <a href='https://vwo.com' title='VWO' target='_blank'>
             <img alt="Egghead.io" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/vwo.png')}}">
           </a>
-          <p>The All-in-One Connected A/B Testing and Conversion Optimization Platform. </p>
+          <p>VWO is an all-in-one conversion optimisation platform to help marketers & product managers increase conversions & online sales. </p>
           <a href='https://vwo.com' title='VWO' target='_blank'>vwo.com</a>  
         </li>
       </ul>

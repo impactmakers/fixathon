@@ -110,7 +110,7 @@
       <li class="judges__judge">
         <img alt="Paras Chopra" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/paras.jpg')}}">
         <h3>Paras Chopra</h3>
-        <p>Founder of @Wingify.</p>
+        <p>Founder & Chairman of VWO, market-leading A/B testing and conversion optimization platform.</p>
         <a href='https://twitter.com/paraschopra' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @paraschopra</a>
