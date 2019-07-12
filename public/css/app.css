@@ -3308,7 +3308,7 @@ header.sticky {
 }
 
 .participant a {
-  padding: 25px 30px 24px;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3322,6 +3322,7 @@ header.sticky {
   line-height: 27px;
   margin: 0;
   color: #ffffff;
+  font-weight: normal;
 }
 
 .participant h3 a {
@@ -3412,7 +3413,7 @@ header.sticky {
 .partcipant__avatar {
   width: 40px;
   height: 40px;
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 .partcipant__avatar img {

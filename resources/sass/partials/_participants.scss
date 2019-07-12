@@ -45,7 +45,7 @@
 .participant {
     border: 1px solid $white;
     a {
-        padding: 25px 30px 24px;
+        padding: 16px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,6 +59,7 @@
         @include font-size($text-md);
         margin: 0;
         color: $white;
+        font-weight: normal;
     }
     p {
         @include font-size($text-xs);
@@ -70,7 +71,7 @@
 .partcipant__avatar {
     width: 40px;
     height: 40px;
-    margin-right: 12px;
+    margin-right: 14px;
     img {
         border-radius: 40px;
         width: 40px;
