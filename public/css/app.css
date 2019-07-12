@@ -3318,8 +3318,8 @@ header.sticky {
 }
 
 .participant h3 {
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
   color: #ffffff;
   font-weight: normal;
@@ -3349,29 +3349,29 @@ header.sticky {
 
 @media screen and (min-width: 480px) {
   .participant h3 {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .participant h3 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .participant h3 {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .participant h3 {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: 19px;
+    line-height: 30px;
   }
 }
 
