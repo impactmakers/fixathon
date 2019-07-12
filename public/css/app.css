@@ -696,7 +696,7 @@ p a:active {
 }
 
 .brush__title {
-  font-family: "Poster Brush W05", serif;
+  font-family: "Poster Brush W05", Impact, Charcoal, sans-serif;
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1465,7 +1465,7 @@ header.sticky {
 }
 
 .header__nav-item {
-  font-family: "Poster Brush W05", serif;
+  font-family: "Poster Brush W05", Impact, Charcoal, sans-serif;
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -3900,7 +3900,7 @@ header.sticky {
   align-items: center;
   transform: rotate(-3deg);
   letter-spacing: 3.43px;
-  font-family: "Poster Brush W05", serif;
+  font-family: "Poster Brush W05", Impact, Charcoal, sans-serif;
   font-weight: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
