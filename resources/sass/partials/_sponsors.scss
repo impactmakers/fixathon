@@ -57,9 +57,11 @@
     @include white-box;
     @include links-on-light;
     img {
-        width: 300px;
+        width: 100%;
+        max-width: 240px;
         @include mq('tablet') {
             margin-top: 10px;
+            max-width: 300px;
         }
     }
     p {
