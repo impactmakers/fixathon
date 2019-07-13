@@ -14,7 +14,7 @@
         <h3>Setup on Makerlog</h3>
         <p>While the Fixathon doesn’t start until 2nd August you can add your product and team on Makerlog.</p>
         <div class="intro__next-cta">
-          <a href="https://getmakerlog.com/products" title="Fixathon event on Makerlog" target='_blank'>
+          <a href="https://getmakerlog.com/explore/products" title="Fixathon event on Makerlog" target='_blank'>
             <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Add your product</button>
           </a>
         </div>
