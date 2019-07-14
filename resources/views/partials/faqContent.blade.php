@@ -60,9 +60,17 @@
       <p><b>👁️ Awareness:</b> Most likely to raise awareness of climate breakdown.</p>
       <p><b>👊 Action:</b> Most likely to help people take action against climate breakdown.</p>
       <p><b>🛠️ Facilitation:</b> Most likely to make climate breakdown related tech projects easier to create in the future</p>
-
+      <div class="subpage__divider"></div>
       <h2>💸 Can I enter a for-profit project?</h2>
       <p>Yes for-profit projects are eligible to enter and win.</p>
+
+      <div class="subpage__divider"></div>
+      <h2>🔑 Who owns projects created during the Fixathon?</h2>
+      <p>You (or you and your team) have full ownership of whatever you make and we hope you'll continue to develop your project beyond the event!</p>
+
+      <div class="subpage__divider"></div>
+      <h2>⏰ Is there a minimum time requirement to take part?</h2>
+      <p>No it's up to you how much time you commit to your project.</p>
 
       <div class="subpage__divider"></div>
       <h2>🚧 I've already started working on my project. Can I still enter?</h2>
