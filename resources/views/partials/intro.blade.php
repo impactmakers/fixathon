@@ -20,7 +20,7 @@
     </ul>
     <ul class="intro__key tablet-hide">
       <li class="intro__key-item intro__key-item--mobile">
-        2nd-30th August, +$10,000 in prizes, Open to everyone 
+        2nd-30th August, Prize value of $10k+, Open to everyone 
       </li>
     </ul>   
 
