@@ -3,9 +3,9 @@
     <ul class="participants__list" v-if="totalParticipants !== 0">
       <li class="participant" v-for="user in participants">
         <a :href="'https://getmakerlog.com/@'+user.username" target="_blank">
-          <div class="partcipant__avatar">
+          <!-- <div class="partcipant__avatar">
             <img alt="user.username" :src="user.avatar" />
-          </div>
+          </div> -->
 
           <div class="participant__info">
             <h3>{{user.username}}</h3>

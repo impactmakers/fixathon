@@ -37204,12 +37204,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("div", { staticClass: "partcipant__avatar" }, [
-                    _c("img", {
-                      attrs: { alt: "user.username", src: user.avatar }
-                    })
-                  ]),
-                  _vm._v(" "),
                   _c("div", { staticClass: "participant__info" }, [
                     _c("h3", [_vm._v(_vm._s(user.username))])
                   ])
