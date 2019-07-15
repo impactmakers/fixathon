@@ -15,7 +15,7 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PST on 1st August 2019.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PT on 1st August 2019.
         </p>                
 
         <h2 class="takepart__sub-title">Join with Makerlog:</h2>
@@ -39,7 +39,7 @@
       </p>
       <br />
       <h3 class="takepart__small-title">Don't know what you're going to work on yet?</h3>
-      <p class="takepart__p--lead">No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find here will spark an idea!</p>
+      <p class="takepart__p--lead">No problem! Please still register for the event. You can decide on your project later. We’ve created a <a title="Fixathon Project Inspiration" href='https://www.notion.so/fixathon/Fixathon-Project-Inspiration-1b44731d0057436da6bb41f1c09207af' target='_blank'>Fixathon Project Inspiration</a> page to help guide and inspire you. Hopefully, something you find will spark an idea.</p>
      
       <p>To learn more read our <a href="/faq" title="FAQs">FAQs</a>.</p>
     </div>
