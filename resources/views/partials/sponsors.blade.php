@@ -87,7 +87,7 @@
           </a>
         </li>
         <li class="sponsor__silver">
-          <a href='https://referralhero.com/' title='ReferralHero' target='_blank'>
+          <a href='https://referralhero.com/?utm_source=fixathon&utm_medium=banner&utm_campaign=sponsor' title='ReferralHero' target='_blank'>
             <img alt="ReferralHero" src="{{asset('img/sponsors/referralhero.png')}}">
           </a>
         </li>
