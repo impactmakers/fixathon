@@ -37,9 +37,6 @@
     @endif
   </div>
 </section>
-<div class="ph__container">
-<a href="https://www.producthunt.com/posts/the-climate-fixathon?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-the-climate-fixathon" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=161360&theme=dark" alt="The Climate Fixathon - An online hackathon for makers to help fix the climate 🛠🌎 | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
-</div>
 
 
 <!-- END INTRO -->
