@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Fixathon') }}</title>
-    <meta name="description" content="The world's first online hackathon for makers to help fix the climate. 2nd-30th August. Thusands in cash prizes to be won. Open to everyone.">
+    <meta name="description" content="The world's first online hackathon for makers to help fix the climate. 2nd-30th August. Thousands in cash prizes to be won. Open to everyone.">
     <meta name="keywords" content="hackathon,tech,climate change,climate emergency,climate breakdown,programmers,climate,event,global,makers,products, developers,online,impact,positive,volunteer">
     <meta name="Distribution" content="global"/>
     <meta name="Robots" content="all"/>
