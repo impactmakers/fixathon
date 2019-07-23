@@ -97,10 +97,16 @@
           </a>
         </li> 
         <li class="sponsor__silver">
+          <a href='https://womenmake.com/' title='Women Make' target='_blank'>
+            <img alt="Women Make" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/womenmake.png')}}">
+          </a>
+        </li>  
+        <li class="sponsor__silver">
           <a href='https://drawkit.io/' title='DrawKit' target='_blank'>
             <img alt="DrawKit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/drawkit.png')}}">
           </a>
         </li> 
+        
         <li class="sponsor__silver">
           <a href='https://rotorvideos.com/' title='rotor' target='_blank'>
             <img alt="Rotor" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/rotor.png')}}">
