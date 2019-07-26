@@ -115,6 +115,14 @@
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @paraschopra</a>
       </li>
+      <li class="judges__judge">
+        <img alt="Steph Smith" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/steph.jpg')}}">
+        <h3>Steph Smith</h3>
+        <p>Maker of eunoia.world, femake.tech, nomadhubb.com, begreat.me</p>
+        <a href='https://twitter.com/stephsmithio' target='_blank' class='judge__link'>
+        <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
+        @stephsmithio</a>
+      </li>
     </ul>
   </div>
 </section>
