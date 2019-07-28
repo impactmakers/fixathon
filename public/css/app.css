@@ -3527,8 +3527,7 @@ header.sticky {
 }
 
 .inspiration__container {
-  background: #ebecf4;
-  background: linear-gradient(180deg, #ebecf4 0%, white 100%);
+  background: #ffffff;
 }
 
 .inspiration__inner {
@@ -4776,6 +4775,243 @@ header.sticky {
   .takepart__small-title {
     font-size: 19px;
     line-height: 30px;
+  }
+}
+
+.products__container {
+  background-color: #ebecf4;
+}
+
+.products__inner {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .products__inner {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .products__inner {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products__inner {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .products__inner {
+    padding-bottom: 120px;
+  }
+}
+
+.products__title {
+  color: #02124f;
+}
+
+.products__intro {
+  color: #5E6878;
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+  .products__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .products__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.products__judge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px;
+  background: #ffffff;
+}
+
+.products__judge a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.products__judge a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.products__judge a:hover {
+  color: #038e0a;
+  transition: top 0.04s ease-out;
+}
+
+.products__judge a:active {
+  color: #038209;
+  position: relative;
+  top: 1px;
+}
+
+.products__judge img {
+  width: 140px;
+  height: 142px;
+}
+
+.products__judge h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .products__judge h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__judge h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .products__judge h3 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .products__judge h3 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.products__judge p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #5E6878;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .products__judge p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__judge p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .products__judge p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .products__judge p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.products__judge a {
+  display: flex;
+  align-items: center;
+  align-self: baseline center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3ea3ee;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+  .products__judge a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__judge a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .products__judge a {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .products__judge a {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.products__judge a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__judge {
+    width: 30%;
+    margin-bottom: 40px;
   }
 }
 

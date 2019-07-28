@@ -39,16 +39,7 @@
       </div>
     </div>
 
-    @if (!Auth::check())
-      <div class="prizes__cta-banner">
-        <h1 class="prizes__cta-title">
-          Want to take part in the Climate Fixathon?
-        </h1>
-        <a class="prizes__cta" href="#register">
-          <button type="submit" class="btn-simple btn-md btn-green btn-mobile">Register Now</button>
-        </a>
-      </div>
-    @endif    
+
   </div>
 </section>
 <!-- END PRICES -->

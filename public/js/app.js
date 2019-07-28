@@ -37263,7 +37263,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "a",
-      { staticClass: "intro__cta", attrs: { href: "#register" } },
+      {
+        staticClass: "intro__cta",
+        attrs: { href: "https://getmakerlog.com/events/the-climate-fixathon/" }
+      },
       [
         _c(
           "button",
@@ -37272,7 +37275,7 @@ var staticRenderFns = [
               "btn-simple btn-lg btn-white-blue btn-mobile centered__intro",
             attrs: { type: "submit" }
           },
-          [_vm._v("Register Now")]
+          [_vm._v("View Event")]
         )
       ]
     )

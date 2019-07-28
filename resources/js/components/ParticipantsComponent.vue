@@ -32,11 +32,11 @@
       <br />
       <br />
 
-      <a class="intro__cta" href="#register">
+      <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
         <button
           type="submit"
           class="btn-simple btn-lg btn-white-blue btn-mobile centered__intro"
-        >Register Now</button>
+        >View Event</button>
       </a>
     </div>
   </div>

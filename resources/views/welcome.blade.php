@@ -6,5 +6,6 @@
     @include('partials.spread')
     @include('partials.faqContent')
     @include('partials.participants')
+    @include('partials.products')
 
 @endsection

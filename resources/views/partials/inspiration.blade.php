@@ -1,5 +1,5 @@
 <!-- INSPIRATION -->
-<div class="border-img__top border-img__top--gray-light"></div>
+
 <section class="container inspiration__container" id="inspiration">
   <div class="inner inspiration__inner">
     <div class="centered__header inspiration__header">

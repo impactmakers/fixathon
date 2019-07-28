@@ -40,7 +40,7 @@
       </div>
     </section>
     
-    @include('partials.takePart')
+    @include('partials.products')
     @include('partials.inspiration')
     @include('partials.registrationBanner')
 

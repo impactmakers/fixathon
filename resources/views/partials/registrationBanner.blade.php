@@ -3,10 +3,10 @@
 <section class="container regbanner__container" id="register-banner">
   <div class="inner regbanner__inner">
     <h1 class="regbanner__title">
-      Want to participate in the Fixathon?
+      Want to follow along with the Fixathon?
     </h1>
-    <a class="regbanner__cta" href="#register">
-      <button type="submit" class="btn-simple btn-md btn-white-blue btn-mobile">Register Now</button>
+    <a class="regbanner__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
+      <button type="submit" class="btn-simple btn-md btn-white-blue btn-mobile">View Event</button>
     </a>
   </div>
 </section>

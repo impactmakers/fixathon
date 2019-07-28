@@ -25,8 +25,8 @@
     </ul>   
 
     @if (!Auth::check())
-      <a class="intro__cta" href="#register">
-        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">Register Now</button>
+      <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
+        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View Event</button>
       </a>
 
       <div class="intro__secondary-cta">

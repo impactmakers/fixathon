@@ -1,10 +1,5 @@
 .inspiration__container {
-    background: rgb(235, 236, 244);
-    background: linear-gradient(
-        180deg,
-        rgba(235, 236, 244, 1) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
+    background: $white;
 }
 
 .inspiration__inner {

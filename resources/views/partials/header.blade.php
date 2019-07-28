@@ -17,11 +17,12 @@
     <ul class="header__nav header__nav--right">
 
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="#sponsors">Sponsors</a>
+        <a class="header__nav-link" href="#products">Products</a>
       </li>
       <li class="header__nav-item">
         @if (!Auth::check())
-          <a class="header__nav-link" href="#register">Register</a>
+
+          <a class="header__nav-link" href="{{ url('redirect/makerlog') }}">Login</a>
         @else
           <a class="header__nav-link" href="/welcome">
             Event info
@@ -49,11 +50,11 @@
     <ul class="header__nav header__nav--right">
 
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="{{url('/#sponsors')}}">Sponsors</a>
+        <a class="header__nav-link" href="{{url('/#products')}}">Products</a>
       </li>
       <li class="header__nav-item">
         @if (!Auth::check())
-          <a class="header__nav-link" href="{{url('/#register')}}">Register</a>
+          <a class="header__nav-link" href="{{ url('redirect/makerlog') }}">Login</a>
         @else
           <a class="header__nav-link" target='_blank' href="/welcome">
             Event Info
