@@ -61,4 +61,23 @@ class HomeController extends Controller
 
         echo $response->getBody();
     }
+
+    public function products($page = 0){
+        $offset = '';
+        if($page !== 0){
+            $offset = "/?limit=20&offset=".($page*20);
+        }
+
+        $base_uri = env('MAKERLOG_URL');
+        $endpoint = '/events/'.env('MAKERLOG_EVENT').'/products'.$offset;
+        
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', $base_uri.$endpoint,[
+        'headers' => [
+                'Authorization' => 'Token '.env('MAKERLOG_TOKEN')
+            ]
+        ]);
+
+        echo $response->getBody();   
+    }
 }

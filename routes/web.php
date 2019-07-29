@@ -5,6 +5,7 @@ Route::get('/welcome', 'HomeController@welcome')->name('welcome');
 
 //Requests
 Route::get('/participants/{page?}', 'HomeController@participants')->name('participants');
+Route::get('/products/{page?}', 'HomeController@products')->name('products');
 Route::get('/event', 'HomeController@event')->name('event');
 
 // Auth routes the login, register, remember password
