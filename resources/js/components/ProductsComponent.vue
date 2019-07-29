@@ -1,0 +1,94 @@
+<template>
+  <div>
+    <ul class="products__list" v-if="totalProducts !== 0">
+      <li class="products__judge" v-for="product in filteredProducts">
+        <img :alt="product.name" :class="[product.icon ? '' : 'no-product-icon', judge__img]" :src="product.icon || '/img/icons/question.png'" @error="imageLoadError">
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+        <a :href="'https://getmakerlog.com/products/'+product.slug" :title="product.name" target='_blank'>
+            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
+        </a>
+      </li>
+    </ul>
+
+    <div style="text-align:center;margin-top:50px;width:100%;">
+      <button
+        style="margin:0px auto;"
+        class="btn-simple btn-md btn-white-blue btn-mobile"
+        v-if="more"
+        @click="loadMore()"
+      >
+        Load More
+      </button>
+    </div>
+
+    <div class="centered__intro participants__intro" v-if="totalProducts === 0">
+      <b>No products yet. Create the first one!</b>
+      <br />
+      <br />
+
+      <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
+        <button
+          type="submit"
+          class="btn-simple btn-lg btn-white-blue btn-mobile centered__intro"
+        >View Event</button>
+      </a>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      products: [],
+      totalProducts: 0,
+      page: 1,
+      loadingProducts: false
+    };
+  },
+  methods: {
+    loadMore: function(event) {
+      this.loadingProducts = true;
+      axios
+        .get("products/" + this.page)
+        .then(resp => {
+          this.products = this.products.concat(resp.data.results);
+          this.totalProducts = resp.data.count;
+          this.page = this.page + 1;
+          this.loadingProducts = false;
+        })
+        .catch(resp => {
+          console.log("Could not load more products");
+          this.loadingProducts = false;
+        });
+    },
+    imageLoadError: function(event) {
+      console.log('Image failed to load');
+      //event.target.src = "./img/icons/question.png";
+    }
+  },
+  mounted() {
+    axios
+      .get("products")
+      .then(resp => {
+        this.products = resp.data.results;
+        this.totalProducts = resp.data.count;
+        this.$emit('totals', this.totalProducts);
+      })
+      .catch(resp => {
+        console.log("Could not load products");
+      });
+  },
+  computed: {
+    more: function() {
+      return this.totalProducts > this.page * 20;
+    },
+    filteredProducts: function() {
+      return this.products.filter(p => {
+        return p.name !== 'MakerlogApp';
+      });
+    }
+  }
+};
+</script>
