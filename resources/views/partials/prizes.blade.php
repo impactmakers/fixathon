@@ -39,14 +39,14 @@
       </div>
     </div>
     <div class="prize__zeit">
-      <img alt="The ZEIT Award" class="prize__zeit-logo" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/runnerups.svg')}}">
+      <img alt="The ZEIT Award" class="prize__zeit-logo" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/zeit.svg')}}">
       <div class="prize__zeit-total">
         <h3 class="prize__title prize__zeit-title">
           The ZEIT Award
         </h3>
         <h2 class="prize__amount prize__zeit-amount">$300</h2>
       </div>
-      <span class="prize__zeit-text">Everyone who deploys their Fixathon project to ZEIT is eligible to win the ZEIT award. One project will win the ZEIT award. </span>
+      <span class="prize__zeit-text">Simply deploy your Fixathon project To           <a href='https://zeit.co/' title='Zeit' target='_blank'>ZEIT</a> to be in with a chance of winning the ZEIT Award.</span>
     </div>
 
 

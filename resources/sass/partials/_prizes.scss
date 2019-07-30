@@ -106,7 +106,7 @@
 
 .prize__zeit {
     @include mar-top-large;
-    background: $grayLight;
+    border: 1px solid $grayBorder;
     padding: 40px;
     align-items: center;
     display: flex;
@@ -118,9 +118,7 @@
 }
 
 .prize__zeit-logo {
-    width: 80px;
-    height: 80px;
-    background: $black;
+    width: 140px;
 }
 
 .prize__zeit-title {
@@ -135,12 +133,21 @@
 .prize__zeit-text {
     @include font-size($text-sm);
     color: $grayDark;
-    max-width: 580px;
+    max-width: 520px;
+    @include links-on-light;
 }
 
 .prize__zeit-total {
-    margin: 0 40px;
+    margin: 40px 0 40px;
+
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq('tablet') {
+        margin: 0;
+        padding: 0 50px;
+    }
 }
 
 .prizes__cta-banner {
@@ -154,8 +161,8 @@
     @include pad-bot-standard;
     @include mq('tablet') {
         flex-direction: row;
-        padding-top: 60px;
-        padding-bottom: 30px;
+
+        padding-bottom: 10px;
     }
 }
 

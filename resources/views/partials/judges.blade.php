@@ -123,6 +123,14 @@
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @stephsmithio</a>
       </li>
+      <li class="judges__judge">
+        <img alt="Christopher Skillicorn" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/christopher.jpg')}}">
+        <h3>Christopher Skillicorn</h3>
+        <p>Started Wulkano, a digital collective of sorts. Product design at ZEIT.</p>
+        <a href='https://twitter.com/skllcrn' target='_blank' class='judge__link'>
+        <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
+        @skllcrn</a>
+      </li>
     </ul>
   </div>
 </section>
