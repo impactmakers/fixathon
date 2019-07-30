@@ -38,6 +38,19 @@
         </ul>
       </div>
     </div>
+    <div class="prize__zeit">
+      <img alt="The ZEIT Award" class="prize__zeit-logo" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/runnerups.svg')}}">
+      <div class="prize__zeit-total">
+        <h3 class="prize__title prize__zeit-title">
+          The ZEIT Award
+        </h3>
+        <h2 class="prize__amount prize__zeit-amount">$300</h2>
+      </div>
+      <span class="prize__zeit-text">Everyone who deploys their Fixathon project to ZEIT is eligible to win the ZEIT award. One project will win the ZEIT award. </span>
+    </div>
+
+
+
 
     @if (!Auth::check())
       <div class="prizes__cta-banner">
