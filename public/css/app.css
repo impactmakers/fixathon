@@ -5015,6 +5015,12 @@ header.sticky {
   }
 }
 
+.no-product-icon {
+  width: 80px !important;
+  height: 80px !important;
+  padding: 31px 0px;
+}
+
 .home-banner {
   background: #ffd156;
 }

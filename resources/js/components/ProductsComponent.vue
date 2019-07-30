@@ -2,9 +2,16 @@
   <div>
     <ul class="products__list" v-if="totalProducts !== 0">
       <li class="products__judge" v-for="product in filteredProducts">
-        <img :alt="product.name" :class="[product.icon ? '' : 'no-product-icon', judge__img]" :src="product.icon || '/img/icons/question.png'" @error="imageLoadError">
+        <img :alt="product.name" :class="[product.icon ? '' : 'no-product-icon', 'judge__img']" :src="product.icon || '/img/icons/question.png'" @error="imageLoadError">
         <h3>{{product.name}}</h3>
         <p>{{product.description}}</p>
+        <ul class="team footer__im-from" style='margin-bottom:20px;'>
+          <li v-for="member in product.teamMembers">
+            <a :href="'https://getmakerlog.com/@'+member.username" target="_blank" style='margin-right:0px;'>
+              <img :src="member.avatar" :alt='member.username' style='width: 50px;height: 50px;border:2px solid #fff;border-radius:50px;margin-right:-10px;' class='footer__im-from-avatar'>
+            </a>
+          </li>
+        </ul>
         <a :href="'https://getmakerlog.com/products/'+product.slug" :title="product.name" target='_blank'>
             <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
         </a>
@@ -57,15 +64,31 @@ export default {
           this.totalProducts = resp.data.count;
           this.page = this.page + 1;
           this.loadingProducts = false;
+          this.getTeamMembers();
         })
         .catch(resp => {
           console.log("Could not load more products");
           this.loadingProducts = false;
         });
+
     },
     imageLoadError: function(event) {
       console.log('Image failed to load');
       //event.target.src = "./img/icons/question.png";
+    },
+    getTeamMembers: function(){
+      this.products.map(p => {
+        if(typeof p.teamMembers === 'undefined' || p.teamMembers === null){
+          axios
+            .get("teamMembers/"+p.slug)
+            .then(resp => {
+              Vue.set(p,'teamMembers',resp.data);
+            })
+            .catch(resp => {
+              console.log("Could not load team members");
+            });
+        }
+      });
     }
   },
   mounted() {
@@ -75,10 +98,12 @@ export default {
         this.products = resp.data.results;
         this.totalProducts = resp.data.count;
         this.$emit('totals', this.totalProducts);
+        this.getTeamMembers();
       })
       .catch(resp => {
-        console.log("Could not load products");
+        console.log("Could not load products" + resp);
       });
+
   },
   computed: {
     more: function() {

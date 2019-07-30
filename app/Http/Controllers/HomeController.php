@@ -80,4 +80,18 @@ class HomeController extends Controller
 
         echo $response->getBody();   
     }
+
+    public function teamMembers($product){
+        $base_uri = env('MAKERLOG_URL');
+        $endpoint = '/products/'.strtolower($product).'/people/';
+        
+        $client = new \GuzzleHttp\Client();
+        $response = $client->request('GET', $base_uri.$endpoint,[
+        'headers' => [
+                'Authorization' => 'Token '.env('MAKERLOG_TOKEN')
+            ]
+        ]);
+
+        echo $response->getBody();   
+    }
 }

@@ -22,6 +22,7 @@ export default {
   methods: {
     onTotalProducts (value) {
       this.totalProducts = value;
+      this.totalProducts--;
     }
   }
 };
