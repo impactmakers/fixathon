@@ -1902,6 +1902,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1921,13 +1939,26 @@ __webpack_require__.r(__webpack_exports__);
         _this.totalProducts = resp.data.count;
         _this.page = _this.page + 1;
         _this.loadingProducts = false;
+
+        _this.getTeamMembers();
       })["catch"](function (resp) {
         console.log("Could not load more products");
         _this.loadingProducts = false;
       });
     },
     imageLoadError: function imageLoadError(event) {
-      console.log('Image failed to load'); //event.target.src = "./img/icons/question.png";
+      console.log("Image failed to load"); //event.target.src = "./img/icons/question.png";
+    },
+    getTeamMembers: function getTeamMembers() {
+      this.products.map(function (p) {
+        if (typeof p.teamMembers === "undefined" || p.teamMembers === null) {
+          axios.get("teamMembers/" + p.slug).then(function (resp) {
+            Vue.set(p, "teamMembers", resp.data);
+          })["catch"](function (resp) {
+            console.log("Could not load team members");
+          });
+        }
+      });
     }
   },
   mounted: function mounted() {
@@ -1937,9 +1968,11 @@ __webpack_require__.r(__webpack_exports__);
       _this2.products = resp.data.results;
       _this2.totalProducts = resp.data.count;
 
-      _this2.$emit('totals', _this2.totalProducts);
+      _this2.$emit("totals", _this2.totalProducts);
+
+      _this2.getTeamMembers();
     })["catch"](function (resp) {
-      console.log("Could not load products");
+      console.log("Could not load products" + resp);
     });
   },
   computed: {
@@ -1948,7 +1981,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     filteredProducts: function filteredProducts() {
       return this.products.filter(function (p) {
-        return p.name !== 'MakerlogApp';
+        return p.name !== "MakerlogApp";
       });
     }
   }
@@ -1979,6 +2012,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1988,6 +2026,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onTotalProducts: function onTotalProducts(value) {
       this.totalProducts = value;
+      this.totalProducts--;
     }
   }
 });
@@ -37503,7 +37542,7 @@ var render = function() {
           _vm._l(_vm.filteredProducts, function(product) {
             return _c("li", { staticClass: "products__judge" }, [
               _c("img", {
-                class: [product.icon ? "" : "no-product-icon", _vm.judge__img],
+                class: [product.icon ? "" : "no-product-icon", "judge__img"],
                 attrs: {
                   alt: product.name,
                   src: product.icon || "/img/icons/question.png"
@@ -37514,6 +37553,32 @@ var render = function() {
               _c("h3", [_vm._v(_vm._s(product.name))]),
               _vm._v(" "),
               _c("p", [_vm._v(_vm._s(product.description))]),
+              _vm._v(" "),
+              _c(
+                "ul",
+                { staticClass: "product-members" },
+                _vm._l(product.teamMembers, function(member) {
+                  return _c("li", [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: { "margin-right": "0px" },
+                        attrs: {
+                          href: "https://getmakerlog.com/@" + member.username,
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "product-member",
+                          attrs: { src: member.avatar, alt: member.username }
+                        })
+                      ]
+                    )
+                  ])
+                }),
+                0
+              ),
               _vm._v(" "),
               _c(
                 "a",
@@ -37563,7 +37628,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("\n      Load More\n    ")]
+              [_vm._v("Load More")]
             )
           : _vm._e()
       ]
@@ -37630,7 +37695,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "inner twocol__inner products__inner" },
+    { staticClass: "inner products__inner" },
     [
       _c("div", { staticClass: "centered__header products__header" }, [
         _c(

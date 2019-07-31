@@ -38,6 +38,11 @@
         center bottom;
 }
 
+.border-img__bot--blue-lightgray {
+    background: $grayLight url('../../../public/img/decorative/border-blue.svg')
+        repeat-x center bottom;
+}
+
 .border-img__top--gray-light {
     background: $white
         url('../../../public/img/decorative/border-gray-light.svg') repeat-x

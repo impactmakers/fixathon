@@ -6,7 +6,7 @@
       Want to follow along with the Fixathon?
     </h1>
     <a class="regbanner__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
-      <button type="submit" class="btn-simple btn-md btn-white-blue btn-mobile">View Event</button>
+      <button type="submit" class="btn-simple btn-md btn-white-blue btn-mobile">View the Event</button>
     </a>
   </div>
 </section>

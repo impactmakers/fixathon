@@ -1,5 +1,10 @@
+
+
+
+
+
 <template>
-	<div class="inner twocol__inner products__inner">
+	<div class="inner products__inner">
 	    <div class="centered__header products__header">
 	      <h1 class="brush__title brush__title--large centered__title products__title">
 	        <span v-if='totalProducts !== 0'>{{totalProducts}}</span> Products
@@ -22,6 +27,7 @@ export default {
   methods: {
     onTotalProducts (value) {
       this.totalProducts = value;
+      this.totalProducts--;
     }
   }
 };
