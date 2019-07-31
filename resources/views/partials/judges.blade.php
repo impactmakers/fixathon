@@ -100,8 +100,8 @@
         @mrchrisadams</a>
       </li>
       <li class="judges__judge">
-        <img alt="Catherine Friend" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/catherine.jpg')}}">
-        <h3>Catherine Friend</h3>
+        <img alt="Cat Friend" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/catherine.jpg')}}">
+        <h3>Cat Friend</h3>
         <p>1password growth manager and ocean advocate.</p>
         <a href='https://twitter.com/cat__friend' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
@@ -126,7 +126,7 @@
       <li class="judges__judge">
         <img alt="Christopher Skillicorn" class="judge__img" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/people/christopher.jpg')}}">
         <h3>Christopher Skillicorn</h3>
-        <p>Started Wulkano, a digital collective of sorts. Product design at ZEIT.</p>
+        <p>Designer at ZEIT. Started Wulkano, a digital collective of sorts, and helped create Kap.</p>
         <a href='https://twitter.com/skllcrn' target='_blank' class='judge__link'>
         <img alt="Follow on Twitter" class="judge__twitter-icon" src="{{asset('img/icons/twitter.svg')}}">
         @skllcrn</a>
