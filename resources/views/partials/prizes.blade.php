@@ -46,9 +46,8 @@
         </h3>
         <h2 class="prize__amount prize__zeit-amount">$300</h2>
       </div>
-      <span class="prize__zeit-text">Simply deploy your Fixathon project To           <a href='https://zeit.co/' title='Zeit' target='_blank'>ZEIT</a> to be in with a chance of winning the ZEIT Award.</span>
+      <span class="prize__zeit-text">Simply deploy your Fixathon project To           <a href='https://zeit.co/' title='Zeit' target='_blank'>ZEIT Now</a> to be eligible for the ZEIT Cash Prize</span>
     </div>
-
 
 
 

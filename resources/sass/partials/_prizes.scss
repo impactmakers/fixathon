@@ -106,7 +106,8 @@
 
 .prize__zeit {
     @include mar-top-large;
-    border: 1px solid $grayBorder;
+    border-top: 1px solid $grayBorder;
+    border-bottom: 1px solid $grayBorder;
     padding: 40px;
     align-items: center;
     display: flex;
@@ -131,10 +132,15 @@
 }
 
 .prize__zeit-text {
-    @include font-size($text-sm);
+    @include font-size($text-xs);
     color: $grayDark;
-    max-width: 520px;
+    max-width: 380px;
+    text-align: center;
     @include links-on-light;
+    @include mq('tablet') {
+        text-align: left;
+        @include font-size($text-sm);
+    }
 }
 
 .prize__zeit-total {

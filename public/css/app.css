@@ -4081,7 +4081,8 @@ header.sticky {
 
 .prize__zeit {
   margin-top: 40px;
-  border: 1px solid #dde0e5;
+  border-top: 1px solid #dde0e5;
+  border-bottom: 1px solid #dde0e5;
   padding: 40px;
   align-items: center;
   display: flex;
@@ -4179,37 +4180,38 @@ header.sticky {
 }
 
 .prize__zeit-text {
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 22px;
   color: #5E6878;
-  max-width: 520px;
+  max-width: 380px;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
   .prize__zeit-text {
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .prize__zeit-text {
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .prize__zeit-text {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .prize__zeit-text {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -4233,6 +4235,42 @@ header.sticky {
   color: #038209;
   position: relative;
   top: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .prize__zeit-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 480px) {
+  .prize__zeit-text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .prize__zeit-text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1040px) {
+  .prize__zeit-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1340px) {
+  .prize__zeit-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .prize__zeit-total {
