@@ -104,6 +104,57 @@
     }
 }
 
+.prize__zeit {
+    @include mar-top-large;
+    border-top: 1px solid $grayBorder;
+    padding: 40px 40px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @include mq('tablet') {
+        flex-direction: row;
+        max-width: 1000px;
+    }
+}
+
+.prize__zeit-logo {
+    width: 140px;
+}
+
+.prize__zeit-title {
+    @include font-size($text-md);
+    margin: 0;
+}
+
+.prize__zeit-amount {
+    @include font-size($text-xxl);
+}
+
+.prize__zeit-text {
+    @include font-size($text-xs);
+    color: $grayDark;
+    max-width: 380px;
+    text-align: center;
+    @include links-on-light;
+    @include mq('tablet') {
+        text-align: left;
+        @include font-size($text-sm);
+    }
+}
+
+.prize__zeit-total {
+    margin: 40px 0 40px;
+
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mq('tablet') {
+        margin: 0;
+        padding: 0 50px;
+    }
+}
+
 .prizes__cta-banner {
     display: flex;
     width: 100%;
@@ -111,12 +162,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    @include pad-top-standard;
+    @include pad-top-large;
     @include pad-bot-standard;
     @include mq('tablet') {
         flex-direction: row;
-        padding-top: 60px;
-        padding-bottom: 30px;
+
+        padding-bottom: 10px;
     }
 }
 

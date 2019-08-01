@@ -62,6 +62,11 @@
           </a>
         </li>    
         <li class="sponsor__silver">
+          <a href='https://zeit.co/' title='Zeit' target='_blank'>
+            <img alt="Zeit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/zeit.png')}}">
+          </a>
+        </li>   
+        <li class="sponsor__silver">
           <a href='https://onesignal.com/' title='Bubble' target='_blank'>
             <img alt="OneSignal" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/onesignal.png')}}">
           </a>
