@@ -2407,6 +2407,10 @@ header.sticky {
   flex-direction: column;
 }
 
+.intro__header-content h1 {
+  font-weight: normal;
+}
+
 @media only screen and (min-width: 768px) {
   .intro__header-content {
     padding-left: 40px;
@@ -2994,14 +2998,45 @@ header.sticky {
   color: #ffffff;
   text-align: left;
   margin-top: 0;
+  font-weight: bold;
 }
 
 .intro__todo-content h3 {
+  font-size: 21px;
+  line-height: 30px;
   color: #ffffff;
   text-align: left;
   margin-top: 0;
   margin-bottom: 10px;
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .intro__todo-content h3 {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .intro__todo-content h3 {
+    font-size: 23px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .intro__todo-content h3 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .intro__todo-content h3 {
+    font-size: 26px;
+    line-height: 39px;
+  }
 }
 
 .intro__todo-content p {

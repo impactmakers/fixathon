@@ -26,7 +26,9 @@
 .intro__header-content {
     display: flex;
     flex-direction: column;
- 
+    h1 {
+        font-weight: normal;
+    }
     @include mq('tablet') {
         padding-left: 40px;
     }
@@ -226,11 +228,13 @@
         color: $white;
         text-align: left;
         margin-top: 0;
+        font-weight: bold;
         @include mq('tablet') {
             
         }
     }
     h3 {
+        @include font-size($text-lg);
         color: $white;
         text-align: left;
         margin-top: 0;  

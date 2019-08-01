@@ -25,6 +25,7 @@
           :href="'https://getmakerlog.com/products/'+product.slug"
           :title="product.name"
           target="_blank"
+          class="intro__next-cta"
         >
           <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
         </a>
