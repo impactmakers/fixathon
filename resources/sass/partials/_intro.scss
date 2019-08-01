@@ -9,6 +9,56 @@
     // background: $gray;
 }
 
+.intro__header {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+
+    @include mq('tablet') {
+        flex-direction: row;
+        @include pad-bot-standard;
+        @include mar-bot-small;
+    }
+}
+
+.intro__header-content {
+    display: flex;
+    flex-direction: column;
+ 
+    @include mq('tablet') {
+        padding-left: 40px;
+    }
+}
+
+.intro__timer {
+    text-align: center;
+    margin-top: 30px;
+    
+    h4 {
+        color: $blue;
+        @include brush-font;
+        @include font-size($text-lg);
+        transform: rotate(-1deg);
+        margin: 0;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        padding-top: 2px;
+    }
+    span {
+
+    }
+    @include mq('tablet') {
+        margin-top: 10px;
+        padding-right: 40px;
+    }
+}
+
 .intro__inner {
     flex-direction: column;
     align-items: center;
@@ -45,8 +95,12 @@
 
 .intro__key--welcome {
     padding-top: 10px;
+    margin: 0;
+    padding-bottom: 0;
+    display: none;
     @include mq('tablet') {
-        @include mar-bot-small;
+        flex-direction: row;
+        display: flex;
     }
 }
 
@@ -102,7 +156,10 @@
     justify-content: space-between;
 
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
+    @include mq('tablet') {
+        padding: 40px;
+    }
     @include white-box;
     @include links-on-light;
     @include mar-bot-standard;
@@ -159,8 +216,12 @@
 
 .intro__todo-content {
     display: flex;
-    padding: 40px;
     flex-direction: column;
+    padding: 20px;
+    @include mq('tablet') {
+        padding: 40px;
+    }
+    @include links-on-dark;
     h2 {
         color: $white;
         text-align: left;
@@ -172,11 +233,12 @@
     h3 {
         color: $white;
         text-align: left;
-        margin-top: 20px;  
-        margin-bottom: 0;
+        margin-top: 0;  
+        margin-bottom: 10px;
         padding-bottom: 0;
     }
     p {
+
         color: $white;
         margin: 0;
         margin-bottom: 20px;
@@ -184,13 +246,24 @@
             margin-bottom: 0;
         }
     }
-
+    ol {
+        margin-bottom: 0;
+    }
     li {
         margin: 0.5em 0;
         padding-left: 0;
         @include font-size($text);
         color: $white;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
+}
+
+.intro__todo-thanks {
+    border-top: 1px solid $white;
+    @include mar-top-standard;
+    @include pad-top-standard;
 }
 
 // product hunt badge

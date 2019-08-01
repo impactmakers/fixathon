@@ -275,6 +275,13 @@ $space-large-desktop: 120px;
         text-decoration: underline;
         color: $white;
     }
+    a:hover {
+        color: $whiteFaded;
+    }
+    a:active {
+        color: $whiteFaded;
+
+    }
 }
 
 @mixin no-underline {

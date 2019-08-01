@@ -82,7 +82,7 @@
           </a>
         </li>
         <li class="sponsor__silver">
-          <a href='https://upscri.be/' title='Upscribe' target='_blank'>
+          <a href='https://upscri.be/?rel=fixathon' title='Upscribe' target='_blank'>
             <img alt="Upscribe" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/upscribe.png')}}">
           </a>
         </li> 
