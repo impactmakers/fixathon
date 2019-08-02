@@ -1384,7 +1384,7 @@ module.exports = function spread(callback) {
 
 
 var bind = __webpack_require__(/*! ./helpers/bind */ "./node_modules/axios/lib/helpers/bind.js");
-var isBuffer = __webpack_require__(/*! is-buffer */ "./node_modules/axios/node_modules/is-buffer/index.js");
+var isBuffer = __webpack_require__(/*! is-buffer */ "./node_modules/is-buffer/index.js");
 
 /*global toString:true*/
 
@@ -1688,28 +1688,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/axios/node_modules/is-buffer/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/axios/node_modules/is-buffer/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-module.exports = function isBuffer (obj) {
-  return obj != null && obj.constructor != null &&
-    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/IdeasComponent.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/IdeasComponent.vue?vue&type=script&lang=js& ***!
@@ -1931,6 +1909,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1958,13 +1948,13 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     imageLoadError: function imageLoadError(event) {
-      console.log('Image failed to load'); //event.target.src = "./img/icons/question.png";
+      console.log("Image failed to load"); //event.target.src = "./img/icons/question.png";
     },
     getTeamMembers: function getTeamMembers() {
       this.products.map(function (p) {
-        if (typeof p.teamMembers === 'undefined' || p.teamMembers === null) {
+        if (typeof p.teamMembers === "undefined" || p.teamMembers === null) {
           axios.get("teamMembers/" + p.slug).then(function (resp) {
-            Vue.set(p, 'teamMembers', resp.data);
+            Vue.set(p, "teamMembers", resp.data);
           })["catch"](function (resp) {
             console.log("Could not load team members");
           });
@@ -1979,7 +1969,7 @@ __webpack_require__.r(__webpack_exports__);
       _this2.products = resp.data.results;
       _this2.totalProducts = resp.data.count;
 
-      _this2.$emit('totals', _this2.totalProducts);
+      _this2.$emit("totals", _this2.totalProducts);
 
       _this2.getTeamMembers();
     })["catch"](function (resp) {
@@ -1992,7 +1982,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     filteredProducts: function filteredProducts() {
       return this.products.filter(function (p) {
-        return p.name !== 'MakerlogApp';
+        return p.name !== "MakerlogApp";
       });
     }
   }
@@ -2009,6 +1999,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6480,6 +6475,28 @@ __webpack_require__.r(__webpack_exports__);
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/is-buffer/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/is-buffer/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+module.exports = function isBuffer (obj) {
+  return obj != null && obj.constructor != null &&
+    typeof obj.constructor.isBuffer === 'function' && obj.constructor.isBuffer(obj)
+}
 
 
 /***/ }),
@@ -37540,10 +37557,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "ul",
-                {
-                  staticClass: "team footer__im-from",
-                  staticStyle: { "margin-bottom": "20px" }
-                },
+                { staticClass: "product-members" },
                 _vm._l(product.teamMembers, function(member) {
                   return _c("li", [
                     _c(
@@ -37557,14 +37571,7 @@ var render = function() {
                       },
                       [
                         _c("img", {
-                          staticClass: "footer__im-from-avatar",
-                          staticStyle: {
-                            width: "50px",
-                            height: "50px",
-                            border: "2px solid #fff",
-                            "border-radius": "50px",
-                            "margin-right": "-10px"
-                          },
+                          staticClass: "product-member",
                           attrs: { src: member.avatar, alt: member.username }
                         })
                       ]
@@ -37577,6 +37584,7 @@ var render = function() {
               _c(
                 "a",
                 {
+                  staticClass: "intro__next-cta",
                   attrs: {
                     href: "https://getmakerlog.com/products/" + product.slug,
                     title: product.name,
@@ -37622,7 +37630,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("\n      Load More\n    ")]
+              [_vm._v("Load More")]
             )
           : _vm._e()
       ]
@@ -37689,7 +37697,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "inner twocol__inner products__inner" },
+    { staticClass: "inner products__inner" },
     [
       _c("div", { staticClass: "centered__header products__header" }, [
         _c(
@@ -50331,8 +50339,8 @@ $(window).scroll(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/saveEarth/fixathon/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/saveEarth/fixathon/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/shylands/dev/fixathon/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/shylands/dev/fixathon/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -2,18 +2,32 @@
   <div>
     <ul class="products__list" v-if="totalProducts !== 0">
       <li class="products__judge" v-for="product in filteredProducts">
-        <img :alt="product.name" :class="[product.icon ? '' : 'no-product-icon', 'judge__img']" :src="product.icon || '/img/icons/question.png'" @error="imageLoadError">
+        <img
+          :alt="product.name"
+          :class="[product.icon ? '' : 'no-product-icon', 'judge__img']"
+          :src="product.icon || '/img/icons/question.png'"
+          @error="imageLoadError"
+        />
         <h3>{{product.name}}</h3>
         <p>{{product.description}}</p>
-        <ul class="team footer__im-from" style='margin-bottom:20px;'>
+        <ul class="product-members">
           <li v-for="member in product.teamMembers">
-            <a :href="'https://getmakerlog.com/@'+member.username" target="_blank" style='margin-right:0px;'>
-              <img :src="member.avatar" :alt='member.username' style='width: 50px;height: 50px;border:2px solid #fff;border-radius:50px;margin-right:-10px;' class='footer__im-from-avatar'>
+            <a
+              :href="'https://getmakerlog.com/@'+member.username"
+              target="_blank"
+              style="margin-right:0px;"
+            >
+              <img :src="member.avatar" :alt="member.username" class="product-member" />
             </a>
           </li>
         </ul>
-        <a :href="'https://getmakerlog.com/products/'+product.slug" :title="product.name" target='_blank'>
-            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
+        <a
+          :href="'https://getmakerlog.com/products/'+product.slug"
+          :title="product.name"
+          target="_blank"
+          class="intro__next-cta"
+        >
+          <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
         </a>
       </li>
     </ul>
@@ -24,9 +38,7 @@
         class="btn-simple btn-md btn-white-blue btn-mobile"
         v-if="more"
         @click="loadMore()"
-      >
-        Load More
-      </button>
+      >Load More</button>
     </div>
 
     <div class="centered__intro participants__intro" v-if="totalProducts === 0">
@@ -70,19 +82,18 @@ export default {
           console.log("Could not load more products");
           this.loadingProducts = false;
         });
-
     },
     imageLoadError: function(event) {
-      console.log('Image failed to load');
+      console.log("Image failed to load");
       //event.target.src = "./img/icons/question.png";
     },
-    getTeamMembers: function(){
+    getTeamMembers: function() {
       this.products.map(p => {
-        if(typeof p.teamMembers === 'undefined' || p.teamMembers === null){
+        if (typeof p.teamMembers === "undefined" || p.teamMembers === null) {
           axios
-            .get("teamMembers/"+p.slug)
+            .get("teamMembers/" + p.slug)
             .then(resp => {
-              Vue.set(p,'teamMembers',resp.data);
+              Vue.set(p, "teamMembers", resp.data);
             })
             .catch(resp => {
               console.log("Could not load team members");
@@ -97,13 +108,12 @@ export default {
       .then(resp => {
         this.products = resp.data.results;
         this.totalProducts = resp.data.count;
-        this.$emit('totals', this.totalProducts);
+        this.$emit("totals", this.totalProducts);
         this.getTeamMembers();
       })
       .catch(resp => {
         console.log("Could not load products" + resp);
       });
-
   },
   computed: {
     more: function() {
@@ -111,7 +121,7 @@ export default {
     },
     filteredProducts: function() {
       return this.products.filter(p => {
-        return p.name !== 'MakerlogApp';
+        return p.name !== "MakerlogApp";
       });
     }
   }
