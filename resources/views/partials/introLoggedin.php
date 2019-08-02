@@ -43,7 +43,7 @@
 
             <li>We'll be adding <a href="https://getmakerlog.com/discussions/">Daily Standup threads on Makerlog</a>. Feel free to reply with what you plan to work on that day.</li>
             <li>Add your completed tasks and milestones to <a href="https://getmakerlog.com/log/">your Makerlog profile</a>.</li>
-            <li>Live stream via Twitch on the Makerlog event.</li>
+            <li>Live stream on our <a href="https://getmakerlog.com/events/the-climate-fixathon/">event page</a> by connecting a <a href="https://getmakerlog.com/apps/shipstreams/">Shipstreams</a> account.</li>
             <li>Tweet your progress using the <a href="https://twitter.com/search?q=fixathon&src=typed_query">#fixathon</a> and <a href="https://twitter.com/search?q=%23fixtheclimate&src=typed_query">#FixTheClimate</a> hashtags.</li>
             <li>Create a project channel in <a href="https://techimpactmakers.com/">Impact Makers</a> to communicate/get feedback.</li>
           </ol>

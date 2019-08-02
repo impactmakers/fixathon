@@ -26,7 +26,7 @@
         <div class="subpage__divider"></div>
         <h2>✅ How do I register?</h2>
         <p>  
-          To take part you must create a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PT on August 1st 2019.
+          To take part you must have created a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PT on August 1st 2019.
         </p>
       @endif
 
@@ -35,9 +35,9 @@
       <p>  
         To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 23:59 PT on Friday 30th August. 
       </p>
-      <p>  
-        Please ensure that all team members who worked on the project are added to it on Makerlog.
-      </p>
+      <p>
+        To add your project you need to do is visit your <a href="https://getmakerlog.com/products/">Makerlog products page</a> > Add your product > Whilst editing access the Events tab > Press 'Add Product' on the Fixathon event.</p>
+        <p> That's it! Please note that only the product owner can do this, don't forget to add your teammates on the Team tab too!</p>
 
       <div class="subpage__divider"></div>      
 
@@ -63,6 +63,9 @@
 
       <p>For example you could create a website that raises awareness for politicians who prioritise the planet, or an app that helps people to convince companies to reduce their emissions, or an API that makes ongoing atmospheric CO2 data available to anyone.</p>
 
+      <div class="subpage__divider"></div>
+      <h2>▲ How do I win the ZEIT prize?</h2>
+      <p>Any project that is deployed to <a href='https://zeit.co/' title='Zeit' target='_blank'>ZEIT Now</a> will be eligible for the ZEIT Cash Prize. There will be one winning project selected based on it's likelihood to help prevent climate breakdown. We'll also be taking design and implementation into account for this award.</p>
       
       <div class="subpage__divider"></div>
       <h2>💸 Can I enter a for-profit project?</h2>

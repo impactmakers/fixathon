@@ -47,8 +47,8 @@
           </a>
         </li>
         <li class="sponsor__silver">
-          <a href='https://twitter.com/bmweinstein7' title='@bmweinstein7' target='_blank'>
-            <img alt="Slite" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/bmweinstein.png')}}">
+          <a href='https://gizer.io/' title='Gizer' target='_blank'>
+            <img alt="Gizer" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/sponsors/gizer.jpg')}}">
           </a>
         </li>
         <li class="sponsor__silver">

@@ -50,7 +50,7 @@
         <button
           type="submit"
           class="btn-simple btn-lg btn-white-blue btn-mobile centered__intro"
-        >View Event</button>
+        >View the Event</button>
       </a>
     </div>
   </div>

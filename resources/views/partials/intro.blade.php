@@ -26,7 +26,7 @@
 
     @if (!Auth::check())
       <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
-        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View Event</button>
+        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View the Event</button>
       </a>
 
       <div class="intro__secondary-cta">

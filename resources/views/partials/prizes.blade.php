@@ -22,8 +22,9 @@
           <li>+ Free <a href='https://egghead.io' target='_blank'>Egghead.io</a> licenses</li>
           <li>+ Free <a href='https://getkirby.com' target='_blank'>Kirby</a> licenses</li>
           <li>+ Free <a href='https://drawkit.io' target='_blank'>Drawkit</a> illustrations</li>
-
           <li>+ 100 trees planted by <a href='https://offset.earth' target='_blank'>Offset Earth</a></li>
+          <li>+ 3,000 boost currency from <a href='https://gizer.io' target='_blank'>Gizer</a></li>
+
         </ul>
       </div>
       <div class="prize prize__runnerups">
@@ -35,6 +36,8 @@
         <span class="prize__strapline">Cash for your team to spend</span>
         <ul class="prize__items">
           <li>+ 25 trees planted by <a href='https://offset.earth' target='_blank'>Offset Earth</a></li>
+          <li>+ 300 boost currency from <a href='https://gizer.io' target='_blank'>Gizer</a></li>
+
         </ul>
       </div>
     </div>
