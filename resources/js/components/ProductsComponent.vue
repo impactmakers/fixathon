@@ -17,7 +17,7 @@
               target="_blank"
               style="margin-right:0px;"
             >
-              <img :src="member.avatar" :alt="member.username" class="product-member" />
+              <img :src="'img/avatars/'+member.username" :alt="member.username" class="product-member" @error='loadAvatarFromUrl($event,member.avatar)' />
             </a>
           </li>
         </ul>
@@ -86,6 +86,9 @@ export default {
     imageLoadError: function(event) {
       console.log("Image failed to load");
       //event.target.src = "./img/icons/question.png";
+    },
+    loadAvatarFromUrl: function(event,url){
+      event.target.src = url;
     },
     getTeamMembers: function() {
       this.products.map(p => {

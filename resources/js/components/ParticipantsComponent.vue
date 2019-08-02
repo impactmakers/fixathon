@@ -3,9 +3,10 @@
     <ul class="participants__list" v-if="totalParticipants !== 0">
       <li class="participant" v-for="user in participants">
         <a :href="'https://getmakerlog.com/@'+user.username" target="_blank">
-          <!-- <div class="partcipant__avatar">
-            <img alt="user.username" :src="user.avatar" />
-          </div> -->
+          <div class="partcipant__avatar">
+            <!-- <img alt="user.username" :src="user.avatar" /> -->
+            <img :src="'img/avatars/'+user.username" :alt="user.username" class="product-member" @error='loadAvatarFromUrl($event,user.avatar)' />
+          </div>
 
           <div class="participant__info">
             <h3>{{user.username}}</h3>
@@ -67,6 +68,9 @@ export default {
           console.log("Could not load more participants");
           this.loadingParticipants = false;
         });
+    },
+    loadAvatarFromUrl: function(event,url){
+      event.target.src = url;
     }
   },
   mounted() {
