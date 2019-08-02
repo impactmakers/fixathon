@@ -5,7 +5,7 @@
         <a :href="'https://getmakerlog.com/@'+user.username" target="_blank">
           <div class="partcipant__avatar">
             <!-- <img alt="user.username" :src="user.avatar" /> -->
-            <img :src="'img/avatars/'+user.username" :alt="user.username" class="product-member" @error='loadAvatarFromUrl($event,user.avatar)' />
+            <img :src="'img/avatars/'+user.username" :alt="user.username" class="product-member" @error='loadAvatarFromUrl($event,user.avatar)' style='border:0px;' />
           </div>
 
           <div class="participant__info">
