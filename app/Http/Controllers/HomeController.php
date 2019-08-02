@@ -23,7 +23,7 @@ class HomeController extends Controller
     public function welcome(Request $request){
 
         if(!Auth::check()){
-            return redirect()->to('/#register');
+            return redirect()->to('/redirect/makerlog');
         }
 
         return view('welcome');
