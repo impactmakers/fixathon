@@ -9,7 +9,8 @@
           @error="imageLoadError"
         />
         <h3>{{product.name}}</h3>
-        <p>{{product.description}}</p>
+        <p v-if="product.description.length<200">{{ product.description }}</p>
+        <p v-else>{{ product.description.substring(0,200)+"..." }}</p>
         <ul class="product-members">
           <li v-for="member in product.teamMembers">
             <a
@@ -124,6 +125,9 @@ export default {
     },
     filteredProducts: function() {
       return this.products.filter(p => {
+        if(p.name === "MakerlogApp"){
+          this.totalProducts--;
+        }
         return p.name !== "MakerlogApp";
       });
     }
