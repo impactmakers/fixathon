@@ -25,18 +25,35 @@
     </ul>   
 
     @if (!Auth::check())
-      <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
-        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View the Event</button>
-      </a>
+      <div class='takepart__actions'>
+        <a class="intro__cta takepart__cta--one" href="https://getmakerlog.com/events/the-climate-fixathon/">
+          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View the Event</button>
+        </a>
+
+        <a class="intro__cta" href="#register">
+          <button type="submit" class="btn-simple btn-lg btn-green btn-mobile"
+          >Register Now</button>
+        </a>
+      </div>
 
       <div class="intro__secondary-cta">
         <a href="#about">
           Learn more
         </a>
       </div>
+
+      <!--
+      <a class="intro__cta" href="#register" style='margin-top:50px;'>
+        <div class='intro__key-item' style='margin-bottom:20px;'> 📢 Announce: We extended the deadline until 08/30. Take part!</div>
+        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile centered__intro"
+        >Register Now</button>
+      </a>
+      -->
+    @else
+      <a class="intro__cta" href="https://getmakerlog.com/events/the-climate-fixathon/">
+        <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View the Event</button>
+      </a>
     @endif
   </div>
 </section>
-
-
 <!-- END INTRO -->

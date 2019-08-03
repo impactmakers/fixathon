@@ -9,8 +9,8 @@
           @error="imageLoadError"
         />
         <h3>{{product.name}}</h3>
-        <p v-if="product.description.length<200">{{ product.description }}</p>
-        <p v-else>{{ product.description.substring(0,200)+"..." }}</p>
+        <p v-if="product.description.length<160">{{ product.description }}</p>
+        <p v-else>{{ product.description.substring(0,160)+"..." }}</p>
         <ul class="product-members">
           <li v-for="member in product.teamMembers">
             <a

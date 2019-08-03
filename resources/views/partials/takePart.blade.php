@@ -15,7 +15,7 @@
 
       @if (!Auth::check())
         <p class="takepart__p">  
-          To take part you must <a href='https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon event by 23:59 PT on 1st August 2019.
+          To take part you must <a href='https://getmakerlog.com/begin?next=https://fixathon.io/redirect/makerlog' target='_blank'>create a user account</a> on Makerlog and register to attend the Climate Fixathon.
         </p>                
 
         <h2 class="takepart__sub-title">Join with Makerlog:</h2>

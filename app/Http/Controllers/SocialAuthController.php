@@ -17,7 +17,7 @@ class SocialAuthController extends Controller
 
     public function callback(SocialAccountService $service, $provider) {
     	$user = Socialite::driver('makerlog')->stateless()->user();
-        //$this->registerToEvent($user->token);
+        $this->registerToEvent($user->token);
 
         $user = $service->createOrGetUser($user,$user->getEmail(),$user->getAvatar(),$user->token,$user->refreshToken);
         auth()->login($user);

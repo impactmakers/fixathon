@@ -10,7 +10,9 @@
     @include('partials.becomeSponsor')
     @include('partials.participants')
     @include('partials.products')
-    @include('partials.inspiration')
+    @include('partials.takePart')
     @include('partials.registrationBanner')
+    @include('partials.inspiration')
+    @include('partials.spread')
 
 @endsection
