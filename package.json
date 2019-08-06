@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "lighthouse-plugin-greenhouse": "0.0.2",
         "vue-axios": "^2.1.4"
     }
 }

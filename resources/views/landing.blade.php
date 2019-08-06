@@ -11,8 +11,7 @@
     @include('partials.participants')
     @include('partials.products')
     @include('partials.takePart')
+
     @include('partials.registrationBanner')
-    @include('partials.inspiration')
-    @include('partials.spread')
 
 @endsection
