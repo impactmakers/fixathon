@@ -26,7 +26,7 @@
         <div class="subpage__divider"></div>
         <h2>✅ How do I register?</h2>
         <p>  
-          To take part you must have created a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the Climate Fixathon event by 23:59 PT on August 1st 2019.
+          To take part you must have created a user account on <a href="https://getmakerlog.com/begin/">Makerlog</a> and register to attend the <a href="https://getmakerlog.com/events/the-climate-fixathon/">Climate Fixathon event</a>.
         </p>
       @endif
 
