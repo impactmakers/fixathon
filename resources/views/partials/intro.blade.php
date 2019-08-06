@@ -26,11 +26,11 @@
 
     @if (!Auth::check())
       <div class='takepart__actions'>
-        <a class="intro__cta takepart__cta--one" href="https://getmakerlog.com/events/the-climate-fixathon/">
+        <a class="intro__cta takepart__cta takepart__cta--one" href="https://getmakerlog.com/events/the-climate-fixathon/">
           <button type="submit" class="btn-simple btn-lg btn-green btn-mobile">View the Event</button>
         </a>
 
-        <a class="intro__cta" href="#register">
+        <a class="intro__cta takepart__cta" href="#register">
           <button type="submit" class="btn-simple btn-lg btn-green btn-mobile"
           >Register Now</button>
         </a>

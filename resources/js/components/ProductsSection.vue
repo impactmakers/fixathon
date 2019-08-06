@@ -1,8 +1,3 @@
-
-
-
-
-
 <template>
 	<div class="inner products__inner">
 	    <div class="centered__header products__header">

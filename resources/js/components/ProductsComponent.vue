@@ -121,7 +121,7 @@ export default {
   },
   computed: {
     more: function() {
-      return this.totalProducts > this.page * 20;
+      return (this.totalProducts + 1) > this.page * 20;
     },
     filteredProducts: function() {
       return this.products.filter(p => {
