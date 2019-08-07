@@ -64,7 +64,8 @@ export default {
       products: [],
       totalProducts: 0,
       page: 1,
-      loadingProducts: false
+      loadingProducts: false,
+      filteredML: false
     };
   },
   methods: {
@@ -121,15 +122,20 @@ export default {
   },
   computed: {
     more: function() {
-      return (this.totalProducts + 1) > this.page * 20;
+      return this.totalProducts > (this.page * 20);
     },
     filteredProducts: function() {
-      return this.products.filter(p => {
-        if(p.name === "MakerlogApp"){
-          this.totalProducts--;
-        }
-        return p.name !== "MakerlogApp";
-      });
+      if(!this.filteredML){
+        this.products = this.products.filter(p => {
+          if(p.name === "MakerlogApp"){
+            this.filteredML = true;
+            this.totalProducts--;
+          }
+          return p.name !== "MakerlogApp";
+        });
+      }
+      
+      return this.products;
     }
   }
 };
