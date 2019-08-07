@@ -11,7 +11,7 @@
 
 .intro__header {
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
@@ -37,7 +37,7 @@
 .intro__timer {
     text-align: center;
     margin-top: 30px;
-    
+
     h4 {
         color: $blue;
         @include brush-font;
@@ -53,7 +53,6 @@
         padding-top: 2px;
     }
     span {
-
     }
     @include mq('tablet') {
         margin-top: 10px;
@@ -129,9 +128,16 @@
     }
 }
 
+.intro__subcta {
+    margin-top: 15px;
+    @include mq('tablet') {
+        margin: 0;
+    }
+}
+
 .intro__secondary-cta {
     @include links-on-light;
-    margin-top: 40px;
+    margin-top: 10px;
     @include font-size($text);
     @include mq('tablet') {
         margin-top: 50px;
@@ -230,19 +236,17 @@
         margin-top: 0;
         font-weight: bold;
         @include mq('tablet') {
-            
         }
     }
     h3 {
         @include font-size($text-lg);
         color: $white;
         text-align: left;
-        margin-top: 0;  
+        margin-top: 0;
         margin-bottom: 10px;
         padding-bottom: 0;
     }
     p {
-
         color: $white;
         margin: 0;
         margin-bottom: 20px;
