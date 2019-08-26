@@ -1,0 +1,33 @@
+.submit__container {
+    background: $yellowLight;
+    color: $black;
+}
+
+.submit__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    @include pad-top-standard;
+    @include pad-bot-standard;
+    @include mq('tablet') {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        height: 40px;
+    }
+}
+
+.submit__title {
+    text-align: center;
+    font-weight: bold;
+    @include links-on-light;
+    margin: 0 0 0 0;
+    @include font-size($text-md);
+    @include mq('tablet') {
+    }
+    a {
+        font-weight: bold;
+    }
+}

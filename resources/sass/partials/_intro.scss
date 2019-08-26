@@ -152,7 +152,7 @@
     list-style-type: none;
     width: 100%;
     display: grid;
-    justify-content: space-between;
+
     @include mq('tablet') {
         max-width: 48.5%;
     }
@@ -161,8 +161,6 @@
 .intro__next-item {
     border: 1px solid $grayBorder;
     display: flex;
-    justify-content: space-between;
-
     flex-direction: column;
     padding: 20px;
     @include mq('tablet') {
@@ -177,7 +175,6 @@
     h3 {
         @include font-size($text-lg);
         margin: 0 0 10px;
-        text-align: center;
     }
     p {
         @include font-size($text-sm);
@@ -194,7 +191,9 @@
 
 .intro__next-cta {
     width: 100%;
+    color: $blue !important;
     a {
+        color: $blue !important;
         width: 100%;
         text-decoration: none;
     }
@@ -229,7 +228,6 @@
     @include mq('tablet') {
         padding: 40px;
     }
-    @include links-on-dark;
     h2 {
         color: $white;
         text-align: left;
@@ -281,4 +279,8 @@
     bottom: 7px;
     right: 10px;
     z-index: 9;
+}
+
+.intro-submit-btn {
+    text-decoration: none;
 }

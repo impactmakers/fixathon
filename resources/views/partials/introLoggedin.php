@@ -37,49 +37,28 @@
     <div class="intro__sections">
       <div class="intro__todo">
         <div class="intro__todo-content">
-          <h2>It's time to get to work. We'd love to see everyone working as publically as possible to raise awareness in the tech community of climate breakdown. Here are a few ideas of things you can do:</h2>
-          <ol>
-          
+          <h3>Submit Your Product</h3>
+          <p>  
 
-            <li>We'll be adding <a href="https://getmakerlog.com/discussions/">Daily Standup threads on Makerlog</a>. Feel free to reply with what you plan to work on that day.</li>
-            <li>Add your completed tasks and milestones to <a href="https://getmakerlog.com/log/">your Makerlog profile</a>.</li>
-            <li>Live stream on our <a href="https://getmakerlog.com/events/the-climate-fixathon/">event page</a> by connecting a <a href="https://getmakerlog.com/apps/shipstreams/">Shipstreams</a> account.</li>
-            <li>Tweet your progress using the <a href="https://twitter.com/search?q=fixathon&src=typed_query">#fixathon</a> and <a href="https://twitter.com/search?q=%23fixtheclimate&src=typed_query">#FixTheClimate</a> hashtags.</li>
-            <li>Create a project channel in <a href="https://techimpactmakers.com/">Impact Makers</a> to communicate/get feedback.</li>
-          </ol>
-          <div class="intro__todo-thanks">
-            <h3>Thanks for taking part 🙌</h3>
+            To submit your project for consideration you must complete our project submission form by 23:59 PT on Friday 30th August. Check it out for more information on what you need to do.
+          </p>
+          <br />
 
-            <p>It's amazing to see so many people from around the globe taking part in the Fixathon. We wish you all the best and hope your projects help fix the climate!</p>
-            <p>If you have a question about the event please <a href="mailto:hi@fixathon.io">email us</a> or contact <a href="https://twitter.com/shylands">@shylands</a> or <a href="https://twitter.com/jp_aulet">@jp_aulet</a>.</p>
-          </div>
+          <a class="intro-submit-btn" href="https://forms.gle/USjZHhi2KbM2xztJ9">
+              <button type="submit" class="btn-simple btn-md btn-white-blue btn-mobile"
+              >Submit your project</button>
+            </a>
+ 
+                
 
         </div>
       </div>
 
-
-
     <ul class="intro__next-list">
       <li class="intro__next-item">
-        <h3>Add your Product</h3>
-        <p>You must add your project to Makerlog before 23:59 PT on August 1st. All you need to do is visit your <a href="https://getmakerlog.com/products/">Makerlog products page</a> > Add your product > Whilst editing access the Events tab > Press 'Add Product' on the Fixathon event.</p>
-        <p> That's it! Please note that only the product owner can do this, don't forget to add your teammates on the Team tab too!</p>
-        <div class="intro__next-cta">
-          <a href="https://getmakerlog.com/products/" title="Add your Product now" target='_blank'>
-            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Add your Product now</button>
-          </a>
-        </div>
-
-      </li>
-      <li class="intro__next-item">
-        <h3>Join Our Weekly Video Chat</h3>
-        <p>Online hackathons lack that IRL event buzz, so we've decided to hold a weekly Zoom call for all participants. It's a great opportunity to get to know each other, chat about your project and the climate emergency. 
-        </p><p>The first one will be this Saturday 3rd August at 9:00AM CEST for 1 hour, feel free to drop in! Click here to <a href="https://everytimezone.com/s/eeb3c996">see the time in your timezone</a>.</p>
-        <div class="intro__next-cta">
-          <a href="https://zoom.us/j/790951563" title="Join the Zoom Call" target='_blank'>
-            <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Join the Zoom Call</button>
-          </a>
-        </div>
+            <h3>Thanks for taking part 🙌</h3>
+            <p>It's been amazing to see so many people from around the globe taking part in the Fixathon. We wish you all the best and hope your projects help fix the climate!</p>
+            <p>If you have a question about the event please <a href="mailto:hi@fixathon.io">email us</a> or contact <a href="https://twitter.com/shylands">@shylands</a> or <a href="https://twitter.com/jp_aulet">@jp_aulet</a>.</p>
       </li>
     </ul> 
   

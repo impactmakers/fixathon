@@ -15,6 +15,28 @@
       </h1>
       @endif
 
+
+
+      <h2>📝 How do I submit my project?</h2>
+      <p>  
+
+      To submit your project for consideration you must complete our project submission form by 23:59 PT on Friday 30th August. Check it out for more information on what you need to do.
+      </p>
+
+
+      <a class="intro__cta intro__subcta" href="https://forms.gle/USjZHhi2KbM2xztJ9">
+          <button type="submit" class="btn-simple btn-md btn-green btn-mobile"
+          >Submit your project</button>
+        </a>
+        <br />
+        <br />
+      <br />
+      <p>
+        If you'd like to appear as a product on fixathon.io please also make sure it is added as a <a href="https://getmakerlog.com/products/">Makerlog product</a>. Once it is you should add it to the Fixathon event by editing the product and adding it to our event on the event tab.
+      </p>
+
+        <div class="subpage__divider"></div>
+
       <h2>🗓 What is the event schedule?</h2>
       <p>The Fixathon will officially <b>begin at 12:00 PT on Friday 2nd August</b> and <b>end at 23:59 PT on Friday 30th August</b>. Use a <a href="https://www.worldtimebuddy.com/">timezone converter</a> to find the start and end times in your local timezone. </p>
 
@@ -30,14 +52,6 @@
         </p>
       @endif
 
-      <div class="subpage__divider"></div>
-      <h2>📝 How do I submit my project?</h2>
-      <p>  
-        To submit your completed project for consideration you must add it to the Climate Fixathon event on Makerlog and set it as launched before 23:59 PT on Friday 30th August. 
-      </p>
-      <p>
-        To add your project you need to do is visit your <a href="https://getmakerlog.com/products/">Makerlog products page</a> > Add your product > Whilst editing access the Events tab > Press 'Add Product' on the Fixathon event.</p>
-        <p> That's it! Please note that only the product owner can do this, don't forget to add your teammates on the Team tab too!</p>
 
       <div class="subpage__divider"></div>      
 

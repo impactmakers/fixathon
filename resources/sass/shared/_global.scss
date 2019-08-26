@@ -33,6 +33,16 @@
         bottom;
 }
 
+.border-img__top--blue-yellow {
+    background: $yellowLight
+        url('../../../public/img/decorative/border-blue-2.svg') repeat-x center
+        bottom;
+}
+.border-img__top--yellow {
+    background: url('../../../public/img/decorative/border-yellow-top.svg')
+        repeat-x center bottom;
+}
+
 .border-img__bot--blue {
     background: url('../../../public/img/decorative/border-blue.svg') repeat-x
         center bottom;
