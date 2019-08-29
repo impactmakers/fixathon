@@ -5,15 +5,21 @@
 	        <span v-if='totalProducts !== 0'>{{totalProducts}}</span> Products
 	      </h1>
 	      <p class="centered__intro products__intro">
-	        Check out what participants are building for The Climate Fixathon.
+	        Check out what participants are building for The Climate Fixathon. <span v-if="!loadAll"> <a href='allProducts'>View all</a></span>
 	      </p>
-	    </div>      
-	    <products-component @totals="onTotalProducts"></products-component>           
+	    </div>
+	    <products-component @totals="onTotalProducts" v-bind:load-all='loadAll'></products-component>           
 	</div>
 </template>
 
 <script>
 export default {
+  props: {
+      loadAll: {
+        type: Boolean,
+        default: false
+      }
+  },
   data() {
     return {
       totalProducts: 0

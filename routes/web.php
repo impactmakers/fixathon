@@ -16,6 +16,7 @@ Auth::routes();
 //Route::view('/ideas', 'ideas')->name('ideas');
 Route::view('/codeOfConduct', 'coc')->name('coc');
 Route::view('/faq', 'faq')->name('faq');
+Route::view('/allProducts','allProducts')->name('allProducts');
 
 //Login/Register
 Route::get ( '/redirect/{service}', 'SocialAuthController@redirect' );

@@ -33,13 +33,19 @@
       </li>
     </ul>
 
-    <div style="text-align:center;margin-top:50px;width:100%;">
+    <div v-if='!loadAll' style="text-align:center;margin-top:50px;width:100%;">
       <button
         style="margin:0px auto;"
         class="btn-simple btn-md btn-white-blue btn-mobile"
         v-if="more"
         @click="loadMore()"
       >Load More</button>
+
+      <div class="intro__secondary-cta">
+        <a href="allProducts">
+          View All Products
+        </a>
+      </div>
     </div>
 
     <div class="centered__intro participants__intro" v-if="totalProducts === 0">
@@ -59,6 +65,7 @@
 
 <script>
 export default {
+  props: ['loadAll'],
   data() {
     return {
       products: [],
@@ -114,7 +121,17 @@ export default {
         this.products = resp.data.results;
         this.totalProducts = resp.data.count;
         this.$emit("totals", this.totalProducts);
-        this.getTeamMembers();
+        if(!this.loadAll){ this.getTeamMembers(); }
+      })
+      .then(() => {
+        if(this.loadAll == true){
+          this.loadMore(null);
+        }
+      })
+      .then(() => {
+        if(this.loadAll == true){
+          this.loadMore(null);
+        }
       })
       .catch(resp => {
         console.log("Could not load products" + resp);
