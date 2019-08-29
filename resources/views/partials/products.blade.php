@@ -2,7 +2,7 @@
 <!-- PRODUCTS -->
 <section class="container products__container" id="products">
   @if(isset($loadAll))
-  	<div style='margin-top: 120px;'></div>
+  	<div class="products-page-top"></div>
   @endif
   <products-section @if(isset($loadAll)) v-bind:load-all='true' @endif></products-section>
 </section>

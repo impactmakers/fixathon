@@ -17,7 +17,7 @@
     <ul class="header__nav header__nav--right">
 
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="#products">Products</a>
+        <a class="header__nav-link" href="/entries">Products</a>
       </li>
       <li class="header__nav-item">
         @if (!Auth::check())
@@ -50,7 +50,7 @@
     <ul class="header__nav header__nav--right">
 
       <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="{{url('/#products')}}">Products</a>
+        <a class="header__nav-link" href="/entries">Products</a>
       </li>
       <li class="header__nav-item">
         @if (!Auth::check())
