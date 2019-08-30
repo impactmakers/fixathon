@@ -48,7 +48,7 @@
       >Load More</button>
 
       <div class="intro__secondary-cta">
-        <a href="allProducts">View All Products</a>
+        <a href="/entries">View All Products</a>
       </div>
     </div>
 
