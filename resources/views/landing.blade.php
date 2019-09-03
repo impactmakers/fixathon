@@ -11,7 +11,7 @@
     @include('partials.becomeSponsor')
     @include('partials.participants')
     @include('partials.products')
-    @include('partials.takePart')
+
 
     @include('partials.registrationBanner')
 

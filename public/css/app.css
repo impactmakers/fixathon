@@ -5433,6 +5433,123 @@ header.sticky {
   }
 }
 
+.products-page-top {
+  padding-top: 60px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .products-page-top {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .products-page-top {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products-page-top {
+    padding-top: 160px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .products-page-top {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1040px) {
+  .products-page-top {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .products-page-top {
+    padding-top: 80px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (min-width: 768px) {
+  .products-page-top {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (min-width: 1040px) {
+  .products-page-top {
+    margin-top: 120px;
+  }
+}
+
+.products__secondaddry-cta {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products__secondaddry-cta a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.products__secondaddry-cta a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.products__secondaddry-cta a:hover {
+  color: #038e0a;
+  transition: top 0.04s ease-out;
+}
+
+.products__secondaddry-cta a:active {
+  color: #038209;
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (min-width: 480px) {
+  .products__secondaddry-cta {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__secondaddry-cta {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .products__secondaddry-cta {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .products__secondaddry-cta {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products__secondaddry-cta {
+    margin-top: 50px;
+  }
+}
+
 .products__container {
   background-color: #ebecf4;
 }
@@ -5617,39 +5734,61 @@ header.sticky {
   display: flex;
   align-items: center;
   align-self: baseline center;
-  font-size: 14px;
-  line-height: 22px;
-  color: #3ea3ee;
-  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: normal;
+  margin-top: 35px;
   text-decoration: none;
 }
 
 @media screen and (min-width: 480px) {
   .products__judge a {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .products__judge a {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 27px;
   }
 }
 
 @media screen and (min-width: 1040px) {
   .products__judge a {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   .products__judge a {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 30px;
   }
+}
+
+.products__judge a a {
+  font-weight: 400;
+  text-decoration: underline;
+  color: #052ab5;
+}
+
+.products__judge a a {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.products__judge a a:hover {
+  color: #038e0a;
+  transition: top 0.04s ease-out;
+}
+
+.products__judge a a:active {
+  color: #038209;
+  position: relative;
+  top: 1px;
 }
 
 .products__judge a img {
@@ -5662,7 +5801,7 @@ header.sticky {
   align-items: center;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 30px 10px;
+  margin: 0 0 10px 10px;
 }
 
 .product-members a {
@@ -5690,6 +5829,7 @@ header.sticky {
 .product-members li a {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 .product-member {
@@ -5707,6 +5847,11 @@ header.sticky {
   }
 
   .products__judge {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+
+  .products__all {
     width: 30%;
     margin-bottom: 40px;
   }

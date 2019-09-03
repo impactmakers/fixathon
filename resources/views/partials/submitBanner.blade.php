@@ -3,10 +3,10 @@
 <section class="container submit__container" id="register-banner">
   <div class="inner submit__inner">
     <span class="submit__title">
-      Submit your project by 23:59 PT on August 30th!
-      <a href="https://forms.gle/USjZHhi2KbM2xztJ9">
+      Winners will be announced on Thursday 5th September. Stay tuned!
+      <!-- <a href="https://forms.gle/USjZHhi2KbM2xztJ9">
       Submit project now
-      </a>
+      </a> -->
     </span>
   </div>
 </section>

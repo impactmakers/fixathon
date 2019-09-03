@@ -26,13 +26,9 @@
 
     @if (!Auth::check())
       <div class='takepart__actions'>
-        <a class="intro__cta takepart__cta--one" href="https://getmakerlog.com/events/the-climate-fixathon/">
-          <button type="submit" class="btn-simple btn-md btn-gray btn-mobile">View the Event</button>
-        </a>
-
         <a class="intro__cta intro__subcta" href="#register">
           <button type="submit" class="btn-simple btn-md btn-green btn-mobile"
-          >Register Now</button>
+          >View Products</button>
         </a>
       </div>
 

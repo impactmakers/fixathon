@@ -1926,7 +1926,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["loadAll"],
   data: function data() {
     return {
       products: [],
@@ -1980,7 +1991,17 @@ __webpack_require__.r(__webpack_exports__);
 
       _this2.$emit("totals", _this2.totalProducts);
 
-      _this2.getTeamMembers();
+      if (!_this2.loadAll) {
+        _this2.getTeamMembers();
+      }
+    }).then(function () {
+      if (_this2.loadAll == true) {
+        _this2.loadMore(null);
+      }
+    }).then(function () {
+      if (_this2.loadAll == true) {
+        _this2.loadMore(null);
+      }
     })["catch"](function (resp) {
       console.log("Could not load products" + resp);
     });
@@ -2033,7 +2054,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    loadAll: {
+      type: Boolean,
+      "default": false
+    }
+  },
   data: function data() {
     return {
       totalProducts: 0
@@ -37639,7 +37669,7 @@ var render = function() {
                 {
                   staticClass: "intro__next-cta",
                   attrs: {
-                    href: "https://getmakerlog.com/products/" + product.slug,
+                    href: product.website,
                     title: product.name,
                     target: "_blank"
                   }
@@ -37651,9 +37681,22 @@ var render = function() {
                       staticClass: "btn-simple btn-sm btn-green btn-full-width",
                       attrs: { type: "submit" }
                     },
-                    [_vm._v("View Product")]
+                    [_vm._v("Visit Website")]
                   )
                 ]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "products__secondary-cta",
+                  attrs: {
+                    href: "https://getmakerlog.com/products/" + product.slug,
+                    title: product.name,
+                    target: "_blank"
+                  }
+                },
+                [_vm._v("View on Makerlog")]
               )
             ])
           }),
@@ -37661,33 +37704,37 @@ var render = function() {
         )
       : _vm._e(),
     _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticStyle: {
-          "text-align": "center",
-          "margin-top": "50px",
-          width: "100%"
-        }
-      },
-      [
-        _vm.more
-          ? _c(
-              "button",
-              {
-                staticClass: "btn-simple btn-md btn-white-blue btn-mobile",
-                staticStyle: { margin: "0px auto" },
-                on: {
-                  click: function($event) {
-                    return _vm.loadMore()
-                  }
-                }
-              },
-              [_vm._v("Load More")]
-            )
-          : _vm._e()
-      ]
-    ),
+    !_vm.loadAll
+      ? _c(
+          "div",
+          {
+            staticStyle: {
+              "text-align": "center",
+              "margin-top": "50px",
+              width: "100%"
+            }
+          },
+          [
+            _vm.more
+              ? _c(
+                  "button",
+                  {
+                    staticClass: "btn-simple btn-md btn-white-blue btn-mobile",
+                    staticStyle: { margin: "0px auto" },
+                    on: {
+                      click: function($event) {
+                        return _vm.loadMore()
+                      }
+                    }
+                  },
+                  [_vm._v("Load More")]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm._m(0)
+          ]
+        )
+      : _vm._e(),
     _vm._v(" "),
     _vm.totalProducts === 0
       ? _c("div", { staticClass: "centered__intro participants__intro" }, [
@@ -37697,12 +37744,20 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(0)
+          _vm._m(1)
         ])
       : _vm._e()
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "intro__secondary-cta" }, [
+      _c("a", { attrs: { href: "/entries" } }, [_vm._v("View All Products")])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -37763,18 +37818,26 @@ var render = function() {
             _vm.totalProducts !== 0
               ? _c("span", [_vm._v(_vm._s(_vm.totalProducts))])
               : _vm._e(),
-            _vm._v(" Products\n      ")
+            _vm._v(" Products\n    ")
           ]
         ),
         _vm._v(" "),
         _c("p", { staticClass: "centered__intro products__intro" }, [
           _vm._v(
-            "\n        Check out what participants are building for The Climate Fixathon.\n      "
-          )
+            "\n      Check out what our participants built for The Climate Fixathon.\n      "
+          ),
+          !_vm.loadAll
+            ? _c("span", [
+                _c("a", { attrs: { href: "entries" } }, [_vm._v("View all")])
+              ])
+            : _vm._e()
         ])
       ]),
       _vm._v(" "),
-      _c("products-component", { on: { totals: _vm.onTotalProducts } })
+      _c("products-component", {
+        attrs: { "load-all": _vm.loadAll },
+        on: { totals: _vm.onTotalProducts }
+      })
     ],
     1
   )

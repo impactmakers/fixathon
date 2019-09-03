@@ -18,28 +18,38 @@
               target="_blank"
               style="margin-right:0px;"
             >
-              <img :src="'img/avatars/'+member.username" :alt="member.username" class="product-member" @error='loadAvatarFromUrl($event,member.avatar)' />
+              <img
+                :src="'img/avatars/'+member.username"
+                :alt="member.username"
+                class="product-member"
+                @error="loadAvatarFromUrl($event,member.avatar)"
+              />
             </a>
           </li>
         </ul>
+        <a :href="product.website" :title="product.name" target="_blank" class="intro__next-cta">
+          <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">Visit Website</button>
+        </a>
         <a
           :href="'https://getmakerlog.com/products/'+product.slug"
           :title="product.name"
           target="_blank"
-          class="intro__next-cta"
-        >
-          <button type="submit" class="btn-simple btn-sm btn-green btn-full-width">View Product</button>
-        </a>
+          class="products__secondary-cta"
+        >View on Makerlog</a>
       </li>
     </ul>
 
-    <div style="text-align:center;margin-top:50px;width:100%;">
+    <div v-if="!loadAll" style="text-align:center;margin-top:50px;width:100%;">
       <button
         style="margin:0px auto;"
         class="btn-simple btn-md btn-white-blue btn-mobile"
         v-if="more"
         @click="loadMore()"
       >Load More</button>
+
+      <div class="intro__secondary-cta">
+        <a href="/entries">View All Products</a>
+      </div>
     </div>
 
     <div class="centered__intro participants__intro" v-if="totalProducts === 0">
@@ -59,6 +69,7 @@
 
 <script>
 export default {
+  props: ["loadAll"],
   data() {
     return {
       products: [],
@@ -89,7 +100,7 @@ export default {
       console.log("Image failed to load");
       //event.target.src = "./img/icons/question.png";
     },
-    loadAvatarFromUrl: function(event,url){
+    loadAvatarFromUrl: function(event, url) {
       event.target.src = url;
     },
     getTeamMembers: function() {
@@ -114,7 +125,19 @@ export default {
         this.products = resp.data.results;
         this.totalProducts = resp.data.count;
         this.$emit("totals", this.totalProducts);
-        this.getTeamMembers();
+        if (!this.loadAll) {
+          this.getTeamMembers();
+        }
+      })
+      .then(() => {
+        if (this.loadAll == true) {
+          this.loadMore(null);
+        }
+      })
+      .then(() => {
+        if (this.loadAll == true) {
+          this.loadMore(null);
+        }
       })
       .catch(resp => {
         console.log("Could not load products" + resp);
@@ -122,19 +145,19 @@ export default {
   },
   computed: {
     more: function() {
-      return this.totalProducts > (this.page * 20);
+      return this.totalProducts > this.page * 20;
     },
     filteredProducts: function() {
-      if(!this.filteredML){
+      if (!this.filteredML) {
         this.products = this.products.filter(p => {
-          if(p.name === "MakerlogApp"){
+          if (p.name === "MakerlogApp") {
             this.filteredML = true;
             this.totalProducts--;
           }
           return p.name !== "MakerlogApp";
         });
       }
-      
+
       return this.products;
     }
   }
