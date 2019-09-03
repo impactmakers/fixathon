@@ -74,7 +74,7 @@ export default {
     return {
       products: [],
       totalProducts: 0,
-      page: 1,
+      page: 0,
       loadingProducts: false,
       filteredML: false
     };
@@ -82,12 +82,13 @@ export default {
   methods: {
     loadMore: function(event) {
       this.loadingProducts = true;
+      this.page = this.page + 1;
+      console.log(this.page);
       axios
         .get("products/" + this.page)
         .then(resp => {
           this.products = this.products.concat(resp.data.results);
           this.totalProducts = resp.data.count;
-          this.page = this.page + 1;
           this.loadingProducts = false;
           this.getTeamMembers();
         })
@@ -133,8 +134,7 @@ export default {
         if (this.loadAll == true) {
           this.loadMore(null);
         }
-      })
-      .then(() => {
+      
         if (this.loadAll == true) {
           this.loadMore(null);
         }
