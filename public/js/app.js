@@ -1942,7 +1942,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       products: [],
       totalProducts: 0,
-      page: 1,
+      page: 0,
       loadingProducts: false,
       filteredML: false
     };
@@ -1952,10 +1952,11 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.loadingProducts = true;
+      this.page = this.page + 1;
+      console.log(this.page);
       axios.get("products/" + this.page).then(function (resp) {
         _this.products = _this.products.concat(resp.data.results);
         _this.totalProducts = resp.data.count;
-        _this.page = _this.page + 1;
         _this.loadingProducts = false;
 
         _this.getTeamMembers();
@@ -1998,7 +1999,7 @@ __webpack_require__.r(__webpack_exports__);
       if (_this2.loadAll == true) {
         _this2.loadMore(null);
       }
-    }).then(function () {
+
       if (_this2.loadAll == true) {
         _this2.loadMore(null);
       }

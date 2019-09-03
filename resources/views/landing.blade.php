@@ -13,6 +13,4 @@
     @include('partials.products')
 
 
-    @include('partials.registrationBanner')
-
 @endsection
