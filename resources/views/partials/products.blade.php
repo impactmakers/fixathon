@@ -321,6 +321,7 @@
             <img class="winners__zeit-logo" alt="Zeit" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="{{asset('img/icons/zeit.svg')}}">
           </a>
           <p class="winners_award-description winners_award-description--zeit">The <b>ZEIT Award</b> is presented to the top Fixathon project deployed to <a href='https://zeit.co/' title='Zeit' target='_blank'>ZEIT Now</a>.</p>
+          <p class="desc-small">Imogen and Josh built an API and an app utalising it. Both projects have been selected as the winner</p>
         </li>
         <li class="products__judge winners__product winners__product--zeit">
         <h3 class="prize__title prize__title--winner winners__product-title">

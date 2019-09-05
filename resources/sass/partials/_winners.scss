@@ -108,8 +108,18 @@
     color: $gray;
 }
 
+.desc-small {
+    width:100%;
+    margin-top: 25px;
+    color: $gray;
+    max-width: 320px;
+    margin-bottom:0 !important;
+    @include font-size($text-xs);
+}
+
 .winners__product--zeit {
     border: 1px solid $grayBorder;
+
 }
 
 .winners__zeit-logo {
