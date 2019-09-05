@@ -20,7 +20,7 @@
         <a class="header__nav-link" href="/sponsors">Sponsors</a>
       </li>
       <li class="header__nav-item">
-        <a class="header__nav-link" href="/entries">Products</a>
+        <a class="header__nav-link" href="/entries">Winners</a>
       </li>
     </ul>
   </div>
@@ -42,11 +42,11 @@
     </a>
     <ul class="header__nav header__nav--right">
 
-      <li class="header__nav-item">
+      <li class="header__nav-item mobile-hide">
         <a class="header__nav-link" href="#sponsors">Sponsors</a>
       </li>
-      <li class="header__nav-item mobile-hide">
-        <a class="header__nav-link" href="/entries">Products</a>
+      <li class="header__nav-item">
+        <a class="header__nav-link" href="/entries">Winners</a>
       </li>
     </ul>
   </div>

@@ -1,0 +1,117 @@
+.winners__intro {
+    @include font-size($text-md);
+}
+
+.winners__header {
+    @include pad-bot-standard;
+}
+
+.winners__container {
+    background-color: $black;
+}
+
+.winners__inner {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.winners__award-container {
+    border-bottom: 1px solid $whiteFaded;
+    &:last-child {
+        border-bottom: 1px solid $whiteFaded;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    @include pad-top-large;
+    @include pad-bot-large;
+    @include mq('tablet') {
+        flex-direction: row;
+    }
+}
+
+.winners__award-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.winners__award-title {
+    @include font-size($text-xxl);
+    color: $white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.winners__award-icon {
+}
+.winners_award-description {
+    color: $whiteFaded;
+    max-width: 340px;
+    margin-bottom: 0;
+    @include font-size($text-md);
+    margin-top: 15px;
+}
+.winners__products {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 40px;
+    @include mq('mobile') {
+        grid-template-columns: 1fr;
+    }
+    @include mq('desktop') {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.winners__product {
+}
+.winners__product--winner {
+}
+.winners__product--runnerup {
+    background: $whiteFaded;
+}
+
+.winners__product-title {
+    align-self: flex-start;
+    margin-bottom: 25px !important;
+    margin-top: -5px !important;
+    font-size: 26px !important;
+}
+
+.winners__product-icon {
+    margin-right: 10px;
+    width: 30px !important;
+    height: 30px !important;
+    img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+// ZEIT
+
+.zeit__container {
+    background-color: $white;
+}
+
+.winners_award-description--zeit {
+    color: $gray;
+}
+
+.winners__product--zeit {
+    border: 1px solid $grayBorder;
+}
+
+.winners__zeit-logo {
+    margin-bottom: 10px;
+}

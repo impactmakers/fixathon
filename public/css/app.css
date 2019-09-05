@@ -5320,6 +5320,251 @@ header.sticky {
   }
 }
 
+.winners__intro {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media screen and (min-width: 480px) {
+  .winners__intro {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .winners__intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .winners__intro {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .winners__intro {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.winners__header {
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .winners__header {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .winners__header {
+    padding-bottom: 40px;
+  }
+}
+
+.winners__container {
+  background-color: #02124f;
+}
+
+.winners__inner {
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.winners__award-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.winners__award-container:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@media only screen and (min-width: 768px) {
+  .winners__award-container {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .winners__award-container {
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .winners__award-container {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .winners__award-container {
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .winners__award-container {
+    flex-direction: row;
+  }
+}
+
+.winners__award-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.winners__award-title {
+  font-size: 32px;
+  line-height: 41px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .winners__award-title {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .winners__award-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .winners__award-title {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .winners__award-title {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+.winners_award-description {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 340px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .winners_award-description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .winners_award-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .winners_award-description {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .winners_award-description {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.winners__products {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 40px;
+}
+
+@media only screen and (min-width: 480px) {
+  .winners__products {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .winners__products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.winners__product--runnerup {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.winners__product-title {
+  align-self: flex-start;
+  margin-bottom: 25px !important;
+  margin-top: -5px !important;
+  font-size: 26px !important;
+}
+
+.winners__product-icon {
+  margin-right: 10px;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.winners__product-icon img {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.zeit__container {
+  background-color: #ffffff;
+}
+
+.winners_award-description--zeit {
+  color: #5e6878;
+}
+
+.winners__product--zeit {
+  border: 1px solid #dde0e5;
+}
+
+.winners__zeit-logo {
+  margin-bottom: 10px;
+}
+
 .takepart__container {
   background: #ffffff;
 }
