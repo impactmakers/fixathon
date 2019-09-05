@@ -5,7 +5,7 @@
         <span v-if="totalProducts !== 0">{{totalProducts}}</span> Products
       </h1>
       <p class="centered__intro products__intro">
-        Check out what our participants built for The Climate Fixathon.
+        Check out all of the products our participants built for The Climate Fixathon.
         <span v-if="!loadAll">
           <a href="entries">View all</a>
         </span>

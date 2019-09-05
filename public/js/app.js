@@ -37825,7 +37825,7 @@ var render = function() {
         _vm._v(" "),
         _c("p", { staticClass: "centered__intro products__intro" }, [
           _vm._v(
-            "\n      Check out what our participants built for The Climate Fixathon.\n      "
+            "\n      Check out all of the products our participants built for The Climate Fixathon.\n      "
           ),
           !_vm.loadAll
             ? _c("span", [

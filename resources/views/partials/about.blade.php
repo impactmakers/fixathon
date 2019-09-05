@@ -1,4 +1,4 @@
-
+<div class="border-img__top border-img__top--blue"></div>
 <section class="container about__container" id="about">
   <div class="inner about__inner">
     <div class="centered__header about__header">

@@ -28,7 +28,7 @@
       <div class='takepart__actions'>
         <a class="intro__cta intro__subcta" href="/entries">
           <button type="submit" class="btn-simple btn-md btn-green btn-mobile"
-          >View Products</button>
+          >View the Fixathon Winners</button>
         </a>
       </div>
 

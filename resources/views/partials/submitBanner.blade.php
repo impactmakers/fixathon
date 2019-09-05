@@ -3,10 +3,10 @@
 <section class="container submit__container" id="register-banner">
   <div class="inner submit__inner">
     <span class="submit__title">
-      Winners will be announced on Thursday 5th September. Stay tuned!
-      <!-- <a href="https://forms.gle/USjZHhi2KbM2xztJ9">
-      Submit project now
-      </a> -->
+      We've now announced our winners
+      <a href="/entried">
+      View winning projects
+      </a>
     </span>
   </div>
 </section>
