@@ -4,6 +4,7 @@
 
     @include('partials.intro')
 
+    @include('partials.submitBanner')
     @include('partials.about')
     @include('partials.prizes')
     @include('partials.judges')

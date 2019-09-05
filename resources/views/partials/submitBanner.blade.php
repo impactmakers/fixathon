@@ -3,9 +3,9 @@
 <section class="container submit__container" id="register-banner">
   <div class="inner submit__inner">
     <span class="submit__title">
-      We've now announced our winners
-      <a href="/entried">
-      View winning projects
+      We've now announced our winners!
+      <a href="/entries">
+      View the winning projects
       </a>
     </span>
   </div>
