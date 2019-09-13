@@ -34,3 +34,4 @@
     </div>
   </div>
 </footer>
+<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
