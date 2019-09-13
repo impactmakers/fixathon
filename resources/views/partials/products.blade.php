@@ -147,7 +147,7 @@
                 style="margin-right:0px;"
               >
                 <img
-                  src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/avatars/2019/08/05/68429892_1355297077956344_899846118672695296_n.jpg"
+                  src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/avatars/2019/07/11/profile.png"
                   alt="@jlalmes"
                   class="product-member"
                 />
@@ -160,7 +160,7 @@
                 style="margin-right:0px;"
               >
                 <img
-                  src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/avatars/2019/07/11/profile.png"
+                  src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/avatars/2019/08/05/68429892_1355297077956344_899846118672695296_n.jpg"
                   alt="@katiebl"
                   class="product-member"
                 />
@@ -266,7 +266,7 @@
           <img
             alt=""
             class="judge__img"
-            src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/2019/08/31/Screen_Shot_2019-08-31_at_8.41.43_am.png"
+            src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/2019/09/06/warming-potential.png"
           />
           <h3>Warming Potential</h3>
           <p>The world’s first API for Life-Cycle Analysis (LCA). Calculate the warming potential of thousands of commodities with a single request.</p>
@@ -331,7 +331,7 @@
           <img
             alt=""
             class="judge__img"
-            src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/2019/08/31/Screen_Shot_2019-08-31_at_8.41.43_am.png"
+            src="https://makerlog.sfo2.cdn.digitaloceanspaces.com/media/uploads/2019/09/06/warming-potential.png"
           />
           <h3>Warming Potential</h3>
           <p>The world’s first API for Life-Cycle Analysis (LCA). Calculate the warming potential of thousands of commodities with a single request.</p>
